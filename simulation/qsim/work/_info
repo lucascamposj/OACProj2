@@ -1,0 +1,313 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Lucas\Desktop\OAC\simulation\qsim
+vmux1to2
+Z1 I:7QJz_hR2Zi1nQ0<:Mo5_0
+Z2 VbA<JNgamPe9H]><B1BbNG0
+Z3 dC:\Users\Lucas\Desktop\OAC\simulation\qsim
+Z4 w1540565445
+Z5 8ULA.vo
+Z6 FULA.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 !s100 8PB^E5ckDLh^UI_NzeC2;0
+Z10 !s108 1540565447.076000
+Z11 !s107 ULA.vo|
+Z12 !s90 -work|work|ULA.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vmux1to2_vlg_check_tst
+Z13 IJaL^1]bem1_]]2>0ol`G12
+Z14 VcCed;GECi0n9]CS64UO>Y0
+R3
+Z15 w1540565443
+Z16 8Waveform.vwf.vt
+Z17 FWaveform.vwf.vt
+L0 61
+R7
+r1
+31
+Z18 !s108 1540565447.180000
+Z19 !s107 Waveform.vwf.vt|
+Z20 !s90 -work|work|Waveform.vwf.vt|
+R8
+Z21 !s100 BP7WcL6_=<B_8BQOM`9[>1
+!i10b 1
+!s85 0
+!s101 -O0
+vmux1to2_vlg_sample_tst
+Z22 IokP?bga]JX6cXHOkWQoh?3
+Z23 V5F;azUDiNbcUL7Kl5@G@F0
+R3
+R15
+R16
+R17
+L0 29
+R7
+r1
+31
+R18
+R19
+R20
+R8
+Z24 !s100 zGAA3hV^6L9m>J6eoY2@13
+!i10b 1
+!s85 0
+!s101 -O0
+vmux1to2_vlg_vec_tst
+Z25 I5kN[293ZVcfFzL1n:A7ln2
+Z26 Vj[B[9`i2N8Qz?Xkma>AOE0
+R3
+R15
+R16
+R17
+Z27 L0 156
+R7
+r1
+31
+R18
+R19
+R20
+R8
+Z28 !s100 gB:L^0PE<k3MmAGRF?6b31
+!i10b 1
+!s85 0
+!s101 -O0
+vmux4to2
+Z29 I4Hzfgl^]7b3TWDiV1j>5g1
+Z30 V4fz;`<a^731>d[6;m:`e[3
+R3
+Z31 w1540576077
+R5
+R6
+L0 31
+R7
+r1
+31
+R12
+R8
+Z32 !s100 dh4G2z70KA>Ua:WbOO4ZS0
+Z33 !s108 1540576078.863000
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vmux4to2_vlg_check_tst
+Z34 I`elGaX65<;UlPhoTaSd_>0
+Z35 VQXJ10A6?5ZF1cX[6Ye6V;3
+R3
+Z36 w1540576076
+Z37 8Waveform1.vwf.vt
+Z38 FWaveform1.vwf.vt
+L0 67
+R7
+r1
+31
+Z39 !s108 1540576078.977000
+Z40 !s107 Waveform1.vwf.vt|
+Z41 !s90 -work|work|Waveform1.vwf.vt|
+R8
+Z42 !s100 <AF]NXOUoZzfc<]DhEn3A1
+!i10b 1
+!s85 0
+!s101 -O0
+vmux4to2_vlg_sample_tst
+Z43 IMge2<c>:FY19z<:]oEz3<2
+Z44 V507@f;UdBz<[<ZL?NP5mM2
+R3
+R36
+R37
+R38
+L0 29
+R7
+r1
+31
+R39
+R40
+R41
+R8
+Z45 !s100 1oVMKD:?Hhf8]W@mL4lWg2
+!i10b 1
+!s85 0
+!s101 -O0
+vmux4to2_vlg_vec_tst
+Z46 I][mo@18nKHnjOYz?`@=z93
+Z47 VZ:j]04[En^PMjFEdC=GR>3
+R3
+R36
+R37
+R38
+Z48 L0 162
+R7
+r1
+31
+R39
+R40
+R41
+R8
+Z49 !s100 4nW<558R?g:BLi[aDMN=d1
+!i10b 1
+!s85 0
+!s101 -O0
+vULA
+Z50 !s100 `d=dica8Uf4LF6a^WNk7`3
+Z51 I8c93zb_RkO1FTzHzXEO?U1
+Z52 VZ`JXg?^>]mf6;b=f`SYaf1
+Z53 dC:\Users\Lucas\Desktop\OACProj2\simulation\qsim
+Z54 w1540905884
+R5
+R6
+L0 31
+R7
+r1
+31
+R12
+R8
+Z55 n@u@l@a
+!i10b 1
+!s85 0
+Z56 !s108 1540905886.185000
+R11
+!s101 -O0
+vula1bit
+Z57 IV:fGNnYiUYdeDNHaE?4ak3
+Z58 VP]6WE6=Pm:lSmBLh<gaZ>1
+R3
+Z59 w1540578730
+R5
+R6
+L0 31
+R7
+r1
+31
+R12
+R8
+Z60 !s100 4kUbeQ=EeZo8jN;;?5CS72
+Z61 !s108 1540578731.258000
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vula1bit_vlg_check_tst
+Z62 I3d5akgnl4[8me0kfz<>]=0
+Z63 VLeXmlR[P:PPM4<a=kenQm1
+R3
+Z64 w1540578728
+Z65 8Waveform2.vwf.vt
+Z66 FWaveform2.vwf.vt
+L0 69
+R7
+r1
+31
+Z67 !s108 1540578731.423000
+Z68 !s107 Waveform2.vwf.vt|
+Z69 !s90 -work|work|Waveform2.vwf.vt|
+R8
+Z70 !s100 5A_lm3h7VVSgI?Fn;[zo40
+!i10b 1
+!s85 0
+!s101 -O0
+vula1bit_vlg_sample_tst
+Z71 I?=_RE<ThORiO[Uf]FzaQ31
+Z72 VZk:1;0786I2]OZ^4;N9QU0
+R3
+R64
+R65
+R66
+L0 29
+R7
+r1
+31
+R67
+R68
+R69
+R8
+Z73 !s100 >PH[JYVY_A98^g4fCSii90
+!i10b 1
+!s85 0
+!s101 -O0
+vula1bit_vlg_vec_tst
+Z74 IZi7JeeW3EFMoO34BZ@81P0
+Z75 V3jhLN?=nCao0dXFJW=fMe1
+R3
+R64
+R65
+R66
+Z76 L0 191
+R7
+r1
+31
+R67
+R68
+R69
+R8
+Z77 !s100 RAFK`OZVzGdf?Z4GJnf<X3
+!i10b 1
+!s85 0
+!s101 -O0
+vULA_vlg_check_tst
+!i10b 1
+Z78 !s100 0U8LIzFi?SWNB70HEAiYm3
+Z79 I4`J9gTA]MSA;EHCa^VQdo2
+Z80 VJP1;o0?mE:IZAa2dAmQ`R0
+R53
+Z81 w1540905882
+Z82 8Waveform3.vwf.vt
+Z83 FWaveform3.vwf.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z84 !s108 1540905886.296000
+Z85 !s107 Waveform3.vwf.vt|
+Z86 !s90 -work|work|Waveform3.vwf.vt|
+!s101 -O0
+R8
+Z87 n@u@l@a_vlg_check_tst
+vULA_vlg_sample_tst
+!i10b 1
+Z88 !s100 fGcOJ8L8R?omPUJggE^OS3
+Z89 I6C0^oMZ6][3SG3O1Jj?IU0
+Z90 V5naRYdWzXkJNIzmh@_Gc_0
+R53
+R81
+R82
+R83
+L0 29
+R7
+r1
+!s85 0
+31
+R84
+R85
+R86
+!s101 -O0
+R8
+Z91 n@u@l@a_vlg_sample_tst
+vULA_vlg_vec_tst
+!i10b 1
+Z92 !s100 9aA8LU@m3R_JUW1czfCCc0
+Z93 IW9Mbc6KWU42c1Vh3EAGI02
+Z94 V@H?nKIIOPXSf=Pjh4d^VA0
+R53
+R81
+R82
+R83
+Z95 L0 767
+R7
+r1
+!s85 0
+31
+R84
+R85
+R86
+!s101 -O0
+R8
+Z96 n@u@l@a_vlg_vec_tst
