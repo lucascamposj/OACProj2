@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ULA
-Wed Oct 31 14:55:45 2018
+Wed Oct 31 15:17:21 2018
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -41,16 +41,16 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Oct 31 14:55:45 2018       ;
+; Analysis & Synthesis Status        ; Successful - Wed Oct 31 15:17:21 2018       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; ULA                                         ;
-; Top-level Entity Name              ; SignExtent                                  ;
+; Top-level Entity Name              ; ShiftLeft2                                  ;
 ; Family                             ; Cyclone IV GX                               ;
 ; Total logic elements               ; 0                                           ;
 ;     Total combinational functions  ; 0                                           ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 48                                          ;
+; Total pins                         ; 64                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -67,7 +67,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; SignExtent         ; ULA                ;
+; Top-level entity name                                                      ; ShiftLeft2         ; ULA                ;
 ; Family name                                                                ; Cyclone IV GX      ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -170,7 +170,7 @@ applicable agreement for further details.
 +----------------------------------+-----------------+------------------------------------+------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                   ; Library ;
 +----------------------------------+-----------------+------------------------------------+------------------------------------------------+---------+
-; SignExtent.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Lucas/Desktop/OACProj2/SignExtent.bdf ;         ;
+; ShiftLeft2.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Lucas/Desktop/OACProj2/ShiftLeft2.bdf ;         ;
 +----------------------------------+-----------------+------------------------------------+------------------------------------------------+---------+
 
 
@@ -179,12 +179,12 @@ applicable agreement for further details.
 +--------------------------+------------------+
 ; Resource                 ; Usage            ;
 +--------------------------+------------------+
-; I/O pins                 ; 48               ;
+; I/O pins                 ; 64               ;
 ; DSP block 9-bit elements ; 0                ;
-; Maximum fan-out node     ; in[15]~input     ;
-; Maximum fan-out          ; 17               ;
-; Total fan-out            ; 80               ;
-; Average fan-out          ; 0.83             ;
+; Maximum fan-out node     ; out[31]~output   ;
+; Maximum fan-out          ; 1                ;
+; Total fan-out            ; 94               ;
+; Average fan-out          ; 0.73             ;
 +--------------------------+------------------+
 
 
@@ -193,7 +193,7 @@ applicable agreement for further details.
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
-; |SignExtent                ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 48   ; 0            ; |SignExtent         ; work         ;
+; |ShiftLeft2                ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 64   ; 0            ; |ShiftLeft2         ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -228,7 +228,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Wed Oct 31 14:55:44 2018
+    Info: Processing started: Wed Oct 31 15:17:20 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ULA -c ULA
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file ula.bdf
@@ -251,15 +251,23 @@ Info (12021): Found 1 design units, including 1 entities, in source file nor32.b
     Info (12023): Found entity 1: nor32
 Info (12021): Found 1 design units, including 1 entities, in source file signextent.bdf
     Info (12023): Found entity 1: SignExtent
-Info (12127): Elaborating entity "SignExtent" for the top level hierarchy
+Info (12021): Found 1 design units, including 1 entities, in source file shiftleft2.bdf
+    Info (12023): Found entity 1: ShiftLeft2
+Info (12127): Elaborating entity "ShiftLeft2" for the top level hierarchy
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "out[31]" is stuck at GND
+    Warning (13410): Pin "out[30]" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 48 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 16 input pins
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "in[1]"
+    Warning (15610): No output dependent on input pin "in[0]"
+Info (21057): Implemented 64 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 32 input pins
     Info (21059): Implemented 32 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 6 warnings
     Info: Peak virtual memory: 4699 megabytes
-    Info: Processing ended: Wed Oct 31 14:55:45 2018
+    Info: Processing ended: Wed Oct 31 15:17:21 2018
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

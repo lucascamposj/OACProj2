@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV GX"
 set_global_assignment -name DEVICE auto
-set_global_assignment -name TOP_LEVEL_ENTITY ULA
+set_global_assignment -name TOP_LEVEL_ENTITY ShiftLeft2
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "01:30:08  OCTOBER 26, 2018"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
@@ -48,20 +48,16 @@ set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda
 set_global_assignment -name BDF_FILE ULA.bdf
 set_global_assignment -name BDF_FILE Adder.bdf
 set_global_assignment -name BDF_FILE mux1to2.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "C:/Users/Lucas/Desktop/OACProj2/simulation/qsim/" -section_id eda_simulation
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
 set_global_assignment -name BDF_FILE mux4to2.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
 set_global_assignment -name BDF_FILE ula1bit.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2.vwf
 set_global_assignment -name BDF_FILE ULA1bitLAST.bdf
 set_global_assignment -name BDF_FILE Overflow.bdf
 set_global_assignment -name BDF_FILE test.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform3.vwf
 set_global_assignment -name BDF_FILE nor32.bdf
 set_global_assignment -name BDF_FILE SignExtent.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE signExtent.vwf
+set_global_assignment -name BDF_FILE ShiftLeft2.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

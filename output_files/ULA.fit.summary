@@ -1,7 +1,7 @@
-Fitter Status : Successful - Wed Oct 31 14:55:55 2018
+Fitter Status : Successful - Wed Oct 31 15:17:32 2018
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
 Revision Name : ULA
-Top-level Entity Name : SignExtent
+Top-level Entity Name : ShiftLeft2
 Family : Cyclone IV GX
 Device : EP4CGX22CF19C6
 Timing Models : Final
@@ -9,7 +9,7 @@ Total logic elements : 0 / 21,280 ( 0 % )
     Total combinational functions : 0 / 21,280 ( 0 % )
     Dedicated logic registers : 0 / 21,280 ( 0 % )
 Total registers : 0
-Total pins : 48 / 167 ( 29 % )
+Total pins : 64 / 167 ( 38 % )
 Total virtual pins : 0
 Total memory bits : 0 / 774,144 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 80 ( 0 % )
