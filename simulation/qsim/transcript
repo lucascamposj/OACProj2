@@ -2,25 +2,24 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module ULA
+# -- Compiling module SignExtent
 # 
 # Top level modules:
-# 	ULA
+# 	SignExtent
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module ULA_vlg_sample_tst
-# -- Compiling module ULA_vlg_check_tst
-# -- Compiling module ULA_vlg_vec_tst
+# -- Compiling module SignExtent_vlg_sample_tst
+# -- Compiling module SignExtent_vlg_check_tst
+# -- Compiling module SignExtent_vlg_vec_tst
 # 
 # Top level modules:
-# 	ULA_vlg_vec_tst
-# vsim -L cycloneiv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -voptargs=\"+acc\" -t 1ps -novopt work.ULA_vlg_vec_tst 
-# Loading work.ULA_vlg_vec_tst
-# Loading work.ULA
+# 	SignExtent_vlg_vec_tst
+# vsim -L cycloneiv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -voptargs=\"+acc\" -t 1ps -novopt work.SignExtent_vlg_vec_tst 
+# Loading work.SignExtent_vlg_vec_tst
+# Loading work.SignExtent
 # Loading cycloneiv_ver.cycloneiv_io_obuf
 # Loading cycloneiv_ver.cycloneiv_io_ibuf
-# Loading cycloneiv_ver.cycloneiv_lcell_comb
-# Loading work.ULA_vlg_sample_tst
-# Loading work.ULA_vlg_check_tst
+# Loading work.SignExtent_vlg_sample_tst
+# Loading work.SignExtent_vlg_check_tst
 # Simulation passed !
-# ** Note: $finish    : Waveform3.vwf.vt(790)
-#    Time: 32 us  Iteration: 0  Instance: /ULA_vlg_vec_tst/tb_out
+# ** Note: $finish    : signExtent.vwf.vt(705)
+#    Time: 1 us  Iteration: 0  Instance: /SignExtent_vlg_vec_tst/tb_out

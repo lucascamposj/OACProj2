@@ -1,5 +1,5 @@
 Flow report for ULA
-Wed Oct 31 11:23:39 2018
+Wed Oct 31 14:58:40 2018
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -40,16 +40,16 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed Oct 31 11:23:38 2018       ;
+; Flow Status                        ; Successful - Wed Oct 31 14:58:40 2018       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; ULA                                         ;
-; Top-level Entity Name              ; ULA                                         ;
+; Top-level Entity Name              ; SignExtent                                  ;
 ; Family                             ; Cyclone IV GX                               ;
-; Total logic elements               ; 146 / 21,280 ( < 1 % )                      ;
-;     Total combinational functions  ; 146 / 21,280 ( < 1 % )                      ;
+; Total logic elements               ; 0 / 21,280 ( 0 % )                          ;
+;     Total combinational functions  ; 0 / 21,280 ( 0 % )                          ;
 ;     Dedicated logic registers      ; 0 / 21,280 ( 0 % )                          ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 103 / 167 ( 62 % )                          ;
+; Total pins                         ; 48 / 167 ( 29 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 774,144 ( 0 % )                         ;
 ; Embedded Multiplier 9-bit elements ; 0 / 80 ( 0 % )                              ;
@@ -68,7 +68,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/31/2018 11:21:46 ;
+; Start date & time ; 10/31/2018 14:55:44 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ULA                 ;
 +-------------------+---------------------+
@@ -79,15 +79,16 @@ applicable agreement for further details.
 +-------------------------------------+--------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                            ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+--------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 268345868506688.154099570605512                  ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 268345868519177.154100854402084                  ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                               ; --            ; --          ; eda_simulation ;
 ; EDA_NETLIST_WRITER_OUTPUT_DIR       ; C:/Users/Lucas/Desktop/OACProj2/simulation/qsim/ ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                      ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                        ; <None>        ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                                         ; --            ; --          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                            ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                                           ; --            ; --          ; Top            ;
+; PARTITION_COLOR                     ; 16764057                                         ; --            ; SignExtent  ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                            ; --            ; SignExtent  ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                           ; --            ; SignExtent  ; Top            ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                                     ; --            ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; SignExtent                                       ; ULA           ; --          ; --             ;
 +-------------------------------------+--------------------------------------------------+---------------+-------------+----------------+
 
 
@@ -96,16 +97,16 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 4706 MB             ; 00:00:03                           ;
-; Fitter                    ; 00:00:11     ; 1.1                     ; 5222 MB             ; 00:00:10                           ;
+; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4687 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:08     ; 1.0                     ; 5220 MB             ; 00:00:09                           ;
 ; Assembler                 ; 00:00:00     ; 1.0                     ; 4612 MB             ; 00:00:00                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 4682 MB             ; 00:00:03                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4602 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4613 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4613 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4613 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4613 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:20     ; --                      ; --                  ; 00:00:21                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 4658 MB             ; 00:00:03                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4597 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4608 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4624 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4608 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4624 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:16     ; --                      ; --                  ; 00:00:18                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -134,9 +135,9 @@ quartus_fit --read_settings_files=off --write_settings_files=off ULA -c ULA
 quartus_asm --read_settings_files=off --write_settings_files=off ULA -c ULA
 quartus_sta ULA -c ULA
 quartus_eda --read_settings_files=off --write_settings_files=off ULA -c ULA
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog ULA -c ULA --vector_source=C:/Users/Lucas/Desktop/OACProj2/Waveform3.vwf --testbench_file=C:/Users/Lucas/Desktop/OACProj2/simulation/qsim/Waveform3.vwf.vt
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog ULA -c ULA --vector_source=C:/Users/Lucas/Desktop/OACProj2/signExtent.vwf --testbench_file=C:/Users/Lucas/Desktop/OACProj2/simulation/qsim/signExtent.vwf.vt
 quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Lucas/Desktop/OACProj2/simulation/qsim/ ULA -c ULA
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog ULA -c ULA --vector_source=C:/Users/Lucas/Desktop/OACProj2/Waveform3.vwf --testbench_file=C:/Users/Lucas/Desktop/OACProj2/simulation/qsim/Waveform3.vwf.vt
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog ULA -c ULA --vector_source=C:/Users/Lucas/Desktop/OACProj2/signExtent.vwf --testbench_file=C:/Users/Lucas/Desktop/OACProj2/simulation/qsim/signExtent.vwf.vt
 quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Lucas/Desktop/OACProj2/simulation/qsim/ ULA -c ULA
 
 
