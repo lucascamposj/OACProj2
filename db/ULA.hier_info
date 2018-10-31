@@ -194,6 +194,7 @@ B[29] => ula1bit:inst45.B
 B[30] => ula1bit:inst46.B
 B[31] => ULA1bitLAST:inst59.B
 Cout <= ULA1bitLAST:inst59.Cout
+Zero <= or32:inst1.out
 Result[0] <= ula1bit:inst.Result
 Result[1] <= ula1bit:inst20.Result
 Result[2] <= ula1bit:inst21.Result
@@ -4821,5 +4822,41 @@ sel[1] => _.IN0
 sel[1] => _.IN0
 sel[1] => _.IN0
 sel[1] => _.IN0
+
+
+|ULA|or32:inst1
+out <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => inst.IN2
+in[1] => inst.IN1
+in[2] => inst.IN0
+in[3] => inst.IN5
+in[4] => inst.IN4
+in[5] => inst.IN3
+in[6] => inst.IN7
+in[7] => inst.IN6
+in[8] => inst.IN8
+in[9] => inst.IN10
+in[10] => inst.IN9
+in[11] => inst.IN11
+in[12] => inst2.IN2
+in[13] => inst2.IN1
+in[14] => inst2.IN0
+in[15] => inst2.IN5
+in[16] => inst2.IN4
+in[17] => inst2.IN3
+in[18] => inst2.IN7
+in[19] => inst2.IN6
+in[20] => inst2.IN8
+in[21] => inst2.IN10
+in[22] => inst2.IN9
+in[23] => inst2.IN11
+in[24] => inst6.IN0
+in[25] => inst6.IN2
+in[26] => inst6.IN1
+in[27] => inst6.IN3
+in[28] => inst6.IN5
+in[29] => inst6.IN4
+in[30] => inst6.IN6
+in[31] => inst6.IN7
 
 

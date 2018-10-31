@@ -7,6 +7,7 @@ entity ULA is
         A               : in     vl_logic_vector(31 downto 0);
         B               : in     vl_logic_vector(31 downto 0);
         Cout            : out    vl_logic;
+        Zero            : out    vl_logic;
         Result          : out    vl_logic_vector(31 downto 0)
     );
 end ULA;

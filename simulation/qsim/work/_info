@@ -156,11 +156,11 @@ Z49 !s100 4nW<558R?g:BLi[aDMN=d1
 !s85 0
 !s101 -O0
 vULA
-Z50 !s100 `d=dica8Uf4LF6a^WNk7`3
-Z51 I8c93zb_RkO1FTzHzXEO?U1
-Z52 VZ`JXg?^>]mf6;b=f`SYaf1
+Z50 !s100 gDKQ4=gTT1B]PmdlQo=j73
+Z51 I>ggdZ:YfH<OZj:QB@en7g2
+Z52 VWV77QnSo1T=7]Tz;SRgKT0
 Z53 dC:\Users\Lucas\Desktop\OACProj2\simulation\qsim
-Z54 w1540905884
+Z54 w1540995818
 R5
 R6
 L0 31
@@ -172,7 +172,7 @@ R8
 Z55 n@u@l@a
 !i10b 1
 !s85 0
-Z56 !s108 1540905886.185000
+Z56 !s108 1540995819.803000
 R11
 !s101 -O0
 vula1bit
@@ -253,11 +253,11 @@ Z77 !s100 RAFK`OZVzGdf?Z4GJnf<X3
 !s101 -O0
 vULA_vlg_check_tst
 !i10b 1
-Z78 !s100 0U8LIzFi?SWNB70HEAiYm3
-Z79 I4`J9gTA]MSA;EHCa^VQdo2
-Z80 VJP1;o0?mE:IZAa2dAmQ`R0
+Z78 !s100 IJmaVA71G[mlHVeIV26062
+Z79 I]D4UG3lkfiIg;DanYPfUM2
+Z80 VX;25?=<fI8k2;ga?TVc<H1
 R53
-Z81 w1540905882
+Z81 w1540995817
 Z82 8Waveform3.vwf.vt
 Z83 FWaveform3.vwf.vt
 L0 61
@@ -265,7 +265,7 @@ R7
 r1
 !s85 0
 31
-Z84 !s108 1540905886.296000
+Z84 !s108 1540995819.905000
 Z85 !s107 Waveform3.vwf.vt|
 Z86 !s90 -work|work|Waveform3.vwf.vt|
 !s101 -O0
@@ -293,14 +293,14 @@ R8
 Z91 n@u@l@a_vlg_sample_tst
 vULA_vlg_vec_tst
 !i10b 1
-Z92 !s100 9aA8LU@m3R_JUW1czfCCc0
-Z93 IW9Mbc6KWU42c1Vh3EAGI02
-Z94 V@H?nKIIOPXSf=Pjh4d^VA0
+!s100 6EDj;3L^K`eR??NPB]12?0
+IK8je=nWm5IdAY@A8ULo2^0
+Z92 V@H?nKIIOPXSf=Pjh4d^VA0
 R53
 R81
 R82
 R83
-Z95 L0 767
+Z93 L0 794
 R7
 r1
 !s85 0
@@ -310,4 +310,4 @@ R85
 R86
 !s101 -O0
 R8
-Z96 n@u@l@a_vlg_vec_tst
+Z94 n@u@l@a_vlg_vec_tst

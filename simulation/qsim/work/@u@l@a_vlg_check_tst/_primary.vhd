@@ -5,6 +5,7 @@ entity ULA_vlg_check_tst is
         Cout            : in     vl_logic;
         Overflow        : in     vl_logic;
         Result          : in     vl_logic_vector(31 downto 0);
+        Zero            : in     vl_logic;
         sampler_rx      : in     vl_logic
     );
 end ULA_vlg_check_tst;
