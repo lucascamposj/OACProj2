@@ -2437,8 +2437,8 @@ applicable agreement for further details.
 )
 (symbol
 	(rect 592 8 704 104)
-	(text "or32" (rect 5 0 30 14)(font "Arial" (font_size 8)))
-	(text "inst1" (rect 8 80 31 92)(font "Arial" ))
+	(text "nor32" (rect 5 0 38 14)(font "Arial" (font_size 8)))
+	(text "inst2" (rect 8 80 31 92)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -5198,8 +5198,8 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 592 40)
 	(pt 584 40)
+	(pt 592 40)
 	(bus)
 )
 (connector
