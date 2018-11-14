@@ -1,6 +1,6 @@
 Analysis & Synthesis report for PipelineMIPS
-Fri Nov 02 09:02:45 2018
-Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+Wed Nov 14 21:19:31 2018
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -33,28 +33,24 @@ applicable agreement for further details.
 
 
 
-+----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                     ;
-+------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Fri Nov 02 09:02:45 2018           ;
-; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
-; Revision Name                      ; PipelineMIPS                                ;
-; Top-level Entity Name              ; PipelineMIPS                                ;
-; Family                             ; Cyclone IV GX                               ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total GXB Receiver Channel PCS     ; N/A until Partition Merge                   ;
-; Total GXB Receiver Channel PMA     ; N/A until Partition Merge                   ;
-; Total GXB Transmitter Channel PCS  ; N/A until Partition Merge                   ;
-; Total GXB Transmitter Channel PMA  ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
-+------------------------------------+---------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Failed - Wed Nov 14 21:19:31 2018               ;
+; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; PipelineMIPS                                    ;
+; Top-level Entity Name              ; PipelineMIPS                                    ;
+; Family                             ; Cyclone II                                      ;
+; Total logic elements               ; N/A until Partition Merge                       ;
+;     Total combinational functions  ; N/A until Partition Merge                       ;
+;     Dedicated logic registers      ; N/A until Partition Merge                       ;
+; Total registers                    ; N/A until Partition Merge                       ;
+; Total pins                         ; N/A until Partition Merge                       ;
+; Total virtual pins                 ; N/A until Partition Merge                       ;
+; Total memory bits                  ; N/A until Partition Merge                       ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
+; Total PLLs                         ; N/A until Partition Merge                       ;
++------------------------------------+-------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -63,7 +59,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Top-level entity name                                                      ; PipelineMIPS       ; PipelineMIPS       ;
-; Family name                                                                ; Cyclone IV GX      ; Cyclone IV GX      ;
+; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
 ; Enable compact report table                                                ; Off                ; Off                ;
@@ -102,14 +98,12 @@ applicable agreement for further details.
 ; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
 ; Auto ROM Replacement                                                       ; On                 ; On                 ;
 ; Auto RAM Replacement                                                       ; On                 ; On                 ;
-; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
 ; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
 ; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
 ; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
 ; Strict RAM Replacement                                                     ; Off                ; Off                ;
 ; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
 ; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
-; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
 ; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
 ; Auto Resource Sharing                                                      ; Off                ; Off                ;
 ; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
@@ -117,7 +111,7 @@ applicable agreement for further details.
 ; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
 ; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
 ; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
-; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
 ; Report Parameter Settings                                                  ; On                 ; On                 ;
 ; Report Source Assignments                                                  ; On                 ; On                 ;
 ; Report Connectivity Checks                                                 ; On                 ; On                 ;
@@ -143,32 +137,26 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
-+----------------------------+-------------+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
 
 
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Analysis & Synthesis
-    Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Fri Nov 02 09:02:43 2018
+Info: Running Quartus II 32-bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Nov 14 21:19:29 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off PipelineMIPS -c PipelineMIPS
-Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
+Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file ula1bitlast.bdf
     Info (12023): Found entity 1: ULA1bitLAST
 Info (12021): Found 1 design units, including 1 entities, in source file ula1bit.bdf
@@ -191,13 +179,29 @@ Info (12021): Found 1 design units, including 1 entities, in source file adder.b
     Info (12023): Found entity 1: Adder
 Info (12021): Found 1 design units, including 1 entities, in source file pipelinemips.bdf
     Info (12023): Found entity 1: PipelineMIPS
+Info (12021): Found 2 design units, including 1 entities, in source file pc.vhd
+    Info (12022): Found design unit 1: pc-beh
+    Info (12023): Found entity 1: pc
+Info (12021): Found 2 design units, including 1 entities, in source file register32.vhd
+    Info (12022): Found design unit 1: register32-description
+    Info (12023): Found entity 1: register32
+Info (12021): Found 1 design units, including 1 entities, in source file registerbank.bdf
+    Info (12023): Found entity 1: registerBank
+Info (12021): Found 2 design units, including 1 entities, in source file decodernto2n.vhd
+    Info (12022): Found design unit 1: decoderNTo2N-description
+    Info (12023): Found entity 1: decoderNTo2N
+Info (12021): Found 2 design units, including 1 entities, in source file mux32to1_32bits.vhd
+    Info (12022): Found design unit 1: mux32to1_32bits-behavioral
+    Info (12023): Found entity 1: mux32to1_32bits
 Info (12127): Elaborating entity "PipelineMIPS" for the top level hierarchy
-Warning (12158): Entity "PipelineMIPS" contains only dangling pins
-Error (12061): Can't synthesize current design -- Top partition does not contain any logic
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 1 error, 1 warning
-    Error: Peak virtual memory: 4677 megabytes
-    Error: Processing ended: Fri Nov 02 09:02:45 2018
+Error (275024): Width mismatch in port "in[15..0]" of instance "inst4" and type SignExtent -- source is ""PC2[15..0],IMM""
+Error (275044): Port "data1x[4..0]" of type muxReg of instance "inst5" is missing source signal
+Error (275044): Port "data0x[4..0]" of type muxReg of instance "inst5" is missing source signal
+Error (12153): Can't elaborate top-level user hierarchy
+Error: Quartus II 32-bit Analysis & Synthesis was unsuccessful. 4 errors, 1 warning
+    Error: Peak virtual memory: 400 megabytes
+    Error: Processing ended: Wed Nov 14 21:19:31 2018
     Error: Elapsed time: 00:00:02
-    Error: Total CPU time (on all processors): 00:00:01
+    Error: Total CPU time (on all processors): 00:00:02
 
 
