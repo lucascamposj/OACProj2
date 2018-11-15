@@ -1,0 +1,165 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Lucas\Desktop\OACProj2\simulation\qsim
+vAdder32
+Z1 !s100 :cQ18Pd;QUlge<>:g[Ro70
+Z2 ImYH]OH3Yk=[>4KbZCgK=f0
+Z3 VfTaU^>L1bLHda1f4YZ64;0
+Z4 dC:\Users\Lucas\Desktop\OACProj2\simulation\qsim
+Z5 w1541975522
+Z6 8PipelineMIPS.vo
+Z7 FPipelineMIPS.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|PipelineMIPS.vo|
+Z10 o-work work -O0
+Z11 n@adder32
+Z12 !s108 1541975522.886000
+Z13 !s107 PipelineMIPS.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vAdder32_vlg_check_tst
+Z14 !s100 VF;HK7Sang1XRX;WeoL_m1
+Z15 IZbOOf^?Z?hWLHY=cjEL4M2
+Z16 Vj;LP>_Zd[G2JdDIlh5A3R3
+R4
+Z17 w1541975520
+Z18 8test_adder32.vwf.vt
+Z19 Ftest_adder32.vwf.vt
+L0 59
+R8
+r1
+31
+Z20 !s108 1541975522.987000
+Z21 !s107 test_adder32.vwf.vt|
+Z22 !s90 -work|work|test_adder32.vwf.vt|
+R10
+Z23 n@adder32_vlg_check_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vAdder32_vlg_sample_tst
+Z24 !s100 0a3Aij>hKWcoHOgh=VAJj0
+Z25 Ihzll3m:T`@P>DgF6S2FoZ3
+Z26 V;=Qh2NBmOX<MW>>E=^40R0
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+31
+R20
+R21
+R22
+R10
+Z27 n@adder32_vlg_sample_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vAdder32_vlg_vec_tst
+Z28 IbVf1ljc8Ef12XQ7bkZ]`60
+Z29 VDI314C>fBj;K0oJg05NM[1
+R4
+R17
+R18
+R19
+Z30 L0 711
+R8
+r1
+31
+R20
+R21
+R22
+R10
+Z31 n@adder32_vlg_vec_tst
+Z32 !s100 EE@Ja]5_=8<_UWeO_iY?H3
+!i10b 1
+!s85 0
+!s101 -O0
+vEqual
+Z33 !s100 MGakC`lY90Ogd`F@]nzYO0
+Z34 I@i[B_^DJjc7f6Xa<HNcJV0
+Z35 V4cPaU;V_@nR9F]2IETD]i2
+R4
+Z36 w1541996289
+R6
+R7
+L0 31
+R8
+r1
+31
+R9
+R10
+Z37 n@equal
+!i10b 1
+!s85 0
+Z38 !s108 1541996290.214000
+R13
+!s101 -O0
+vEqual_vlg_check_tst
+!i10b 1
+Z39 !s100 <8oO2H>TVC=L^=QiPoJK=0
+Z40 ILSSYI1>LD9<H2_]LFG]9Z1
+Z41 V;0G<3zzW4Fl^=[J:S[gzC0
+R4
+Z42 w1541996287
+Z43 8test_equal.vwf.vt
+Z44 Ftest_equal.vwf.vt
+L0 59
+R8
+r1
+!s85 0
+31
+Z45 !s108 1541996290.315000
+Z46 !s107 test_equal.vwf.vt|
+Z47 !s90 -work|work|test_equal.vwf.vt|
+!s101 -O0
+R10
+Z48 n@equal_vlg_check_tst
+vEqual_vlg_sample_tst
+!i10b 1
+Z49 !s100 W2W>:R<;_iP1MANGg6Dnf1
+Z50 IF[2I8Jd29^XcA_LUOaaEe0
+Z51 VXK5]L?Bdc0M4RFonUnDAd0
+R4
+R42
+R43
+R44
+L0 29
+R8
+r1
+!s85 0
+31
+R45
+R46
+R47
+!s101 -O0
+R10
+Z52 n@equal_vlg_sample_tst
+vEqual_vlg_vec_tst
+!i10b 1
+!s100 aJKMilLCfZC;;UIhhEegC0
+I3E2J:9OAzYjGT]2z6;abj1
+Z53 V>Bd_L]HofQhdQYWSoKc4H2
+R4
+R42
+R43
+R44
+Z54 L0 154
+R8
+r1
+!s85 0
+31
+R45
+R46
+R47
+!s101 -O0
+R10
+Z55 n@equal_vlg_vec_tst

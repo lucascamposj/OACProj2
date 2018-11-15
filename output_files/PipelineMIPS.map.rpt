@@ -1,5 +1,5 @@
 Analysis & Synthesis report for PipelineMIPS
-Fri Nov 02 09:02:45 2018
+Mon Nov 12 02:15:17 2018
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -10,7 +10,12 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Elapsed Time Per Partition
+ 10. Analysis & Synthesis Messages
 
 
 
@@ -36,24 +41,24 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Fri Nov 02 09:02:45 2018           ;
+; Analysis & Synthesis Status        ; Successful - Mon Nov 12 02:15:17 2018       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; PipelineMIPS                                ;
-; Top-level Entity Name              ; PipelineMIPS                                ;
+; Top-level Entity Name              ; Equal                                       ;
 ; Family                             ; Cyclone IV GX                               ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total GXB Receiver Channel PCS     ; N/A until Partition Merge                   ;
-; Total GXB Receiver Channel PMA     ; N/A until Partition Merge                   ;
-; Total GXB Transmitter Channel PCS  ; N/A until Partition Merge                   ;
-; Total GXB Transmitter Channel PMA  ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 21                                          ;
+;     Total combinational functions  ; 21                                          ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 65                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total GXB Receiver Channel PCS     ; 0                                           ;
+; Total GXB Receiver Channel PMA     ; 0                                           ;
+; Total GXB Transmitter Channel PCS  ; 0                                           ;
+; Total GXB Transmitter Channel PMA  ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -62,7 +67,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; PipelineMIPS       ; PipelineMIPS       ;
+; Top-level entity name                                                      ; Equal              ; PipelineMIPS       ;
 ; Family name                                                                ; Cyclone IV GX      ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -160,13 +165,72 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                        ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path              ; Library ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------+---------+
+; nor32.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Lucas/Desktop/OACProj2/nor32.bdf ;         ;
+; Equal.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Lucas/Desktop/OACProj2/Equal.bdf ;         ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------+---------+
+
+
++-------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary     ;
++--------------------------+----------------------+
+; Resource                 ; Usage                ;
++--------------------------+----------------------+
+; I/O pins                 ; 65                   ;
+; DSP block 9-bit elements ; 0                    ;
+; Maximum fan-out node     ; nor32:inst40|inst5~0 ;
+; Maximum fan-out          ; 1                    ;
+; Total fan-out            ; 150                  ;
+; Average fan-out          ; 0.99                 ;
++--------------------------+----------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                     ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
+; |Equal                     ; 21 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 65   ; 0            ; |Equal              ; work         ;
+;    |nor32:inst40|          ; 21 (21)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Equal|nor32:inst40 ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Fri Nov 02 09:02:43 2018
+    Info: Processing started: Mon Nov 12 02:15:15 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off PipelineMIPS -c PipelineMIPS
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file ula1bitlast.bdf
@@ -191,13 +255,23 @@ Info (12021): Found 1 design units, including 1 entities, in source file adder.b
     Info (12023): Found entity 1: Adder
 Info (12021): Found 1 design units, including 1 entities, in source file pipelinemips.bdf
     Info (12023): Found entity 1: PipelineMIPS
-Info (12127): Elaborating entity "PipelineMIPS" for the top level hierarchy
-Warning (12158): Entity "PipelineMIPS" contains only dangling pins
-Error (12061): Can't synthesize current design -- Top partition does not contain any logic
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 1 error, 1 warning
-    Error: Peak virtual memory: 4677 megabytes
-    Error: Processing ended: Fri Nov 02 09:02:45 2018
-    Error: Elapsed time: 00:00:02
-    Error: Total CPU time (on all processors): 00:00:01
+Info (12021): Found 1 design units, including 1 entities, in source file adder32.bdf
+    Info (12023): Found entity 1: Adder32
+Info (12021): Found 1 design units, including 1 entities, in source file equal.bdf
+    Info (12023): Found entity 1: Equal
+Info (12127): Elaborating entity "Equal" for the top level hierarchy
+Info (12128): Elaborating entity "nor32" for hierarchy "nor32:inst40"
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 86 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 64 input pins
+    Info (21059): Implemented 1 output pins
+    Info (21061): Implemented 21 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4692 megabytes
+    Info: Processing ended: Mon Nov 12 02:15:17 2018
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

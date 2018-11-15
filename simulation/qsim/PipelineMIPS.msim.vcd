@@ -1,0 +1,214 @@
+$comment
+	File created using the following command:
+		vcd file PipelineMIPS.msim.vcd -direction
+$end
+$date
+	Mon Nov 12 02:18:10 2018
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module Equal_vlg_vec_tst $end
+$var reg 32 ! A [31:0] $end
+$var reg 32 " B [31:0] $end
+$var wire 1 # out $end
+$var wire 1 $ sampler $end
+$scope module i1 $end
+$var wire 1 % gnd $end
+$var wire 1 & vcc $end
+$var wire 1 ' unknown $end
+$var tri1 1 ( devclrn $end
+$var tri1 1 ) devpor $end
+$var tri1 1 * devoe $end
+$var wire 1 + out~output_o $end
+$var wire 1 , A[8]~input_o $end
+$var wire 1 - B[9]~input_o $end
+$var wire 1 . B[8]~input_o $end
+$var wire 1 / A[9]~input_o $end
+$var wire 1 0 inst40|inst5~13_combout $end
+$var wire 1 1 A[14]~input_o $end
+$var wire 1 2 B[14]~input_o $end
+$var wire 1 3 B[15]~input_o $end
+$var wire 1 4 A[15]~input_o $end
+$var wire 1 5 inst40|inst5~10_combout $end
+$var wire 1 6 B[13]~input_o $end
+$var wire 1 7 B[12]~input_o $end
+$var wire 1 8 A[12]~input_o $end
+$var wire 1 9 A[13]~input_o $end
+$var wire 1 : inst40|inst5~11_combout $end
+$var wire 1 ; A[10]~input_o $end
+$var wire 1 < A[11]~input_o $end
+$var wire 1 = B[11]~input_o $end
+$var wire 1 > B[10]~input_o $end
+$var wire 1 ? inst40|inst5~12_combout $end
+$var wire 1 @ inst40|inst5~14_combout $end
+$var wire 1 A A[25]~input_o $end
+$var wire 1 B A[24]~input_o $end
+$var wire 1 C B[24]~input_o $end
+$var wire 1 D B[25]~input_o $end
+$var wire 1 E inst40|inst5~3_combout $end
+$var wire 1 F A[27]~input_o $end
+$var wire 1 G A[26]~input_o $end
+$var wire 1 H B[26]~input_o $end
+$var wire 1 I B[27]~input_o $end
+$var wire 1 J inst40|inst5~2_combout $end
+$var wire 1 K A[29]~input_o $end
+$var wire 1 L A[28]~input_o $end
+$var wire 1 M B[28]~input_o $end
+$var wire 1 N B[29]~input_o $end
+$var wire 1 O inst40|inst5~1_combout $end
+$var wire 1 P B[31]~input_o $end
+$var wire 1 Q B[30]~input_o $end
+$var wire 1 R A[30]~input_o $end
+$var wire 1 S A[31]~input_o $end
+$var wire 1 T inst40|inst5~0_combout $end
+$var wire 1 U inst40|inst5~4_combout $end
+$var wire 1 V A[1]~input_o $end
+$var wire 1 W B[1]~input_o $end
+$var wire 1 X B[0]~input_o $end
+$var wire 1 Y A[0]~input_o $end
+$var wire 1 Z inst40|inst5~18_combout $end
+$var wire 1 [ B[3]~input_o $end
+$var wire 1 \ A[3]~input_o $end
+$var wire 1 ] B[2]~input_o $end
+$var wire 1 ^ A[2]~input_o $end
+$var wire 1 _ inst40|inst5~17_combout $end
+$var wire 1 ` A[4]~input_o $end
+$var wire 1 a A[5]~input_o $end
+$var wire 1 b B[4]~input_o $end
+$var wire 1 c B[5]~input_o $end
+$var wire 1 d inst40|inst5~16_combout $end
+$var wire 1 e B[7]~input_o $end
+$var wire 1 f A[7]~input_o $end
+$var wire 1 g A[6]~input_o $end
+$var wire 1 h B[6]~input_o $end
+$var wire 1 i inst40|inst5~15_combout $end
+$var wire 1 j inst40|inst5~19_combout $end
+$var wire 1 k B[18]~input_o $end
+$var wire 1 l A[19]~input_o $end
+$var wire 1 m B[19]~input_o $end
+$var wire 1 n A[18]~input_o $end
+$var wire 1 o inst40|inst5~7_combout $end
+$var wire 1 p B[16]~input_o $end
+$var wire 1 q A[17]~input_o $end
+$var wire 1 r A[16]~input_o $end
+$var wire 1 s B[17]~input_o $end
+$var wire 1 t inst40|inst5~8_combout $end
+$var wire 1 u B[20]~input_o $end
+$var wire 1 v A[20]~input_o $end
+$var wire 1 w B[21]~input_o $end
+$var wire 1 x A[21]~input_o $end
+$var wire 1 y inst40|inst5~6_combout $end
+$var wire 1 z B[23]~input_o $end
+$var wire 1 { A[23]~input_o $end
+$var wire 1 | B[22]~input_o $end
+$var wire 1 } A[22]~input_o $end
+$var wire 1 ~ inst40|inst5~5_combout $end
+$var wire 1 !! inst40|inst5~9_combout $end
+$var wire 1 "! inst40|inst5~20_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b101101110010101 !
+b101101110010101 "
+1#
+x$
+0%
+1&
+x'
+1(
+1)
+1*
+1+
+1,
+1-
+1.
+1/
+00
+11
+12
+03
+04
+05
+06
+17
+18
+09
+0:
+0;
+1<
+1=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+0Q
+0R
+0S
+0T
+0U
+0V
+0W
+1X
+1Y
+0Z
+0[
+0\
+1]
+1^
+0_
+1`
+0a
+1b
+0c
+0d
+1e
+1f
+0g
+0h
+0i
+0j
+0k
+0l
+0m
+0n
+0o
+0p
+0q
+0r
+0s
+0t
+0u
+0v
+0w
+0x
+0y
+0z
+0{
+0|
+0}
+0~
+0!!
+0"!
+$end
+#16000
