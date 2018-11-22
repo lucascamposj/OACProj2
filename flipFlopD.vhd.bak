@@ -1,0 +1,8 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+ENTITY flipFlopD IS PORT(
+	D		:	IN STD_LOGIC;
+	Clock	:	IN STD_LOGIC;
+	Q		:	OUT STD_LOGIC;
+)
