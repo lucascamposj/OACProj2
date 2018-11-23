@@ -1,6 +1,6 @@
 Analysis & Synthesis report for PipelineMIPS
-Thu Nov 22 16:45:34 2018
-Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Fri Nov 23 14:09:08 2018
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -10,12 +10,7 @@ Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Elapsed Time Per Partition
- 10. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Messages
 
 
 
@@ -41,20 +36,20 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 22 16:45:34 2018           ;
-; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Analysis & Synthesis Status        ; Failed - Fri Nov 23 14:09:08 2018               ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; PipelineMIPS                                    ;
-; Top-level Entity Name              ; IFID                                            ;
+; Top-level Entity Name              ; PipelineMIPS                                    ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 128                                             ;
-;     Total combinational functions  ; 0                                               ;
-;     Dedicated logic registers      ; 128                                             ;
-; Total registers                    ; 128                                             ;
-; Total pins                         ; 130                                             ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0                                               ;
-; Embedded Multiplier 9-bit elements ; 0                                               ;
-; Total PLLs                         ; 0                                               ;
+; Total logic elements               ; N/A until Partition Merge                       ;
+;     Total combinational functions  ; N/A until Partition Merge                       ;
+;     Dedicated logic registers      ; N/A until Partition Merge                       ;
+; Total registers                    ; N/A until Partition Merge                       ;
+; Total pins                         ; N/A until Partition Merge                       ;
+; Total virtual pins                 ; N/A until Partition Merge                       ;
+; Total memory bits                  ; N/A until Partition Merge                       ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
+; Total PLLs                         ; N/A until Partition Merge                       ;
 +------------------------------------+-------------------------------------------------+
 
 
@@ -63,7 +58,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; IFID               ; PipelineMIPS       ;
+; Top-level entity name                                                      ; PipelineMIPS       ; PipelineMIPS       ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -148,220 +143,18 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 8      ;
+; Number detected on machine ; 4      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                           ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                 ; Library ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------+---------+
-; flipFlopD.vhd                    ; yes             ; User VHDL File                     ; E:/OneDrive/Documents/OACproj2/flipFlopD.vhd ;         ;
-; IFID.bdf                         ; yes             ; User Block Diagram/Schematic File  ; E:/OneDrive/Documents/OACproj2/IFID.bdf      ;         ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------+---------+
-
-
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Estimated Total logic elements              ; 128   ;
-;                                             ;       ;
-; Total combinational functions               ; 0     ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 0     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 0     ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 128   ;
-;     -- Dedicated logic registers            ; 128   ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 130   ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-; Maximum fan-out node                        ; Clock ;
-; Maximum fan-out                             ; 128   ;
-; Total fan-out                               ; 448   ;
-; Average fan-out                             ; 1.74  ;
-+---------------------------------------------+-------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                             ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name     ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------+--------------+
-; |IFID                      ; 0 (0)             ; 128 (0)      ; 0           ; 0            ; 0       ; 0         ; 130  ; 0            ; |IFID                   ; work         ;
-;    |flipFlopD:inst100|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst100 ; work         ;
-;    |flipFlopD:inst101|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst101 ; work         ;
-;    |flipFlopD:inst102|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst102 ; work         ;
-;    |flipFlopD:inst103|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst103 ; work         ;
-;    |flipFlopD:inst104|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst104 ; work         ;
-;    |flipFlopD:inst105|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst105 ; work         ;
-;    |flipFlopD:inst106|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst106 ; work         ;
-;    |flipFlopD:inst107|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst107 ; work         ;
-;    |flipFlopD:inst108|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst108 ; work         ;
-;    |flipFlopD:inst109|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst109 ; work         ;
-;    |flipFlopD:inst10|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst10  ; work         ;
-;    |flipFlopD:inst110|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst110 ; work         ;
-;    |flipFlopD:inst111|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst111 ; work         ;
-;    |flipFlopD:inst112|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst112 ; work         ;
-;    |flipFlopD:inst113|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst113 ; work         ;
-;    |flipFlopD:inst114|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst114 ; work         ;
-;    |flipFlopD:inst115|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst115 ; work         ;
-;    |flipFlopD:inst116|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst116 ; work         ;
-;    |flipFlopD:inst117|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst117 ; work         ;
-;    |flipFlopD:inst118|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst118 ; work         ;
-;    |flipFlopD:inst119|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst119 ; work         ;
-;    |flipFlopD:inst11|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst11  ; work         ;
-;    |flipFlopD:inst120|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst120 ; work         ;
-;    |flipFlopD:inst121|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst121 ; work         ;
-;    |flipFlopD:inst122|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst122 ; work         ;
-;    |flipFlopD:inst123|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst123 ; work         ;
-;    |flipFlopD:inst124|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst124 ; work         ;
-;    |flipFlopD:inst125|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst125 ; work         ;
-;    |flipFlopD:inst126|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst126 ; work         ;
-;    |flipFlopD:inst127|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst127 ; work         ;
-;    |flipFlopD:inst128|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst128 ; work         ;
-;    |flipFlopD:inst12|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst12  ; work         ;
-;    |flipFlopD:inst13|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst13  ; work         ;
-;    |flipFlopD:inst14|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst14  ; work         ;
-;    |flipFlopD:inst15|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst15  ; work         ;
-;    |flipFlopD:inst16|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst16  ; work         ;
-;    |flipFlopD:inst17|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst17  ; work         ;
-;    |flipFlopD:inst18|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst18  ; work         ;
-;    |flipFlopD:inst19|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst19  ; work         ;
-;    |flipFlopD:inst20|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst20  ; work         ;
-;    |flipFlopD:inst21|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst21  ; work         ;
-;    |flipFlopD:inst22|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst22  ; work         ;
-;    |flipFlopD:inst23|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst23  ; work         ;
-;    |flipFlopD:inst24|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst24  ; work         ;
-;    |flipFlopD:inst25|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst25  ; work         ;
-;    |flipFlopD:inst26|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst26  ; work         ;
-;    |flipFlopD:inst27|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst27  ; work         ;
-;    |flipFlopD:inst28|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst28  ; work         ;
-;    |flipFlopD:inst29|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst29  ; work         ;
-;    |flipFlopD:inst2|       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst2   ; work         ;
-;    |flipFlopD:inst30|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst30  ; work         ;
-;    |flipFlopD:inst31|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst31  ; work         ;
-;    |flipFlopD:inst32|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst32  ; work         ;
-;    |flipFlopD:inst33|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst33  ; work         ;
-;    |flipFlopD:inst34|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst34  ; work         ;
-;    |flipFlopD:inst35|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst35  ; work         ;
-;    |flipFlopD:inst36|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst36  ; work         ;
-;    |flipFlopD:inst37|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst37  ; work         ;
-;    |flipFlopD:inst38|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst38  ; work         ;
-;    |flipFlopD:inst39|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst39  ; work         ;
-;    |flipFlopD:inst3|       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst3   ; work         ;
-;    |flipFlopD:inst40|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst40  ; work         ;
-;    |flipFlopD:inst41|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst41  ; work         ;
-;    |flipFlopD:inst42|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst42  ; work         ;
-;    |flipFlopD:inst43|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst43  ; work         ;
-;    |flipFlopD:inst44|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst44  ; work         ;
-;    |flipFlopD:inst45|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst45  ; work         ;
-;    |flipFlopD:inst46|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst46  ; work         ;
-;    |flipFlopD:inst47|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst47  ; work         ;
-;    |flipFlopD:inst48|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst48  ; work         ;
-;    |flipFlopD:inst49|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst49  ; work         ;
-;    |flipFlopD:inst4|       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst4   ; work         ;
-;    |flipFlopD:inst50|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst50  ; work         ;
-;    |flipFlopD:inst51|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst51  ; work         ;
-;    |flipFlopD:inst52|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst52  ; work         ;
-;    |flipFlopD:inst53|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst53  ; work         ;
-;    |flipFlopD:inst54|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst54  ; work         ;
-;    |flipFlopD:inst55|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst55  ; work         ;
-;    |flipFlopD:inst56|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst56  ; work         ;
-;    |flipFlopD:inst57|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst57  ; work         ;
-;    |flipFlopD:inst58|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst58  ; work         ;
-;    |flipFlopD:inst59|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst59  ; work         ;
-;    |flipFlopD:inst5|       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst5   ; work         ;
-;    |flipFlopD:inst60|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst60  ; work         ;
-;    |flipFlopD:inst61|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst61  ; work         ;
-;    |flipFlopD:inst62|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst62  ; work         ;
-;    |flipFlopD:inst63|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst63  ; work         ;
-;    |flipFlopD:inst64|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst64  ; work         ;
-;    |flipFlopD:inst65|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst65  ; work         ;
-;    |flipFlopD:inst66|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst66  ; work         ;
-;    |flipFlopD:inst67|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst67  ; work         ;
-;    |flipFlopD:inst68|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst68  ; work         ;
-;    |flipFlopD:inst69|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst69  ; work         ;
-;    |flipFlopD:inst6|       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst6   ; work         ;
-;    |flipFlopD:inst70|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst70  ; work         ;
-;    |flipFlopD:inst71|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst71  ; work         ;
-;    |flipFlopD:inst72|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst72  ; work         ;
-;    |flipFlopD:inst73|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst73  ; work         ;
-;    |flipFlopD:inst74|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst74  ; work         ;
-;    |flipFlopD:inst75|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst75  ; work         ;
-;    |flipFlopD:inst76|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst76  ; work         ;
-;    |flipFlopD:inst77|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst77  ; work         ;
-;    |flipFlopD:inst78|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst78  ; work         ;
-;    |flipFlopD:inst79|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst79  ; work         ;
-;    |flipFlopD:inst7|       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst7   ; work         ;
-;    |flipFlopD:inst80|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst80  ; work         ;
-;    |flipFlopD:inst81|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst81  ; work         ;
-;    |flipFlopD:inst82|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst82  ; work         ;
-;    |flipFlopD:inst83|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst83  ; work         ;
-;    |flipFlopD:inst84|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst84  ; work         ;
-;    |flipFlopD:inst85|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst85  ; work         ;
-;    |flipFlopD:inst86|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst86  ; work         ;
-;    |flipFlopD:inst87|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst87  ; work         ;
-;    |flipFlopD:inst88|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst88  ; work         ;
-;    |flipFlopD:inst89|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst89  ; work         ;
-;    |flipFlopD:inst8|       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst8   ; work         ;
-;    |flipFlopD:inst90|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst90  ; work         ;
-;    |flipFlopD:inst91|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst91  ; work         ;
-;    |flipFlopD:inst92|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst92  ; work         ;
-;    |flipFlopD:inst93|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst93  ; work         ;
-;    |flipFlopD:inst94|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst94  ; work         ;
-;    |flipFlopD:inst95|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst95  ; work         ;
-;    |flipFlopD:inst96|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst96  ; work         ;
-;    |flipFlopD:inst97|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst97  ; work         ;
-;    |flipFlopD:inst98|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst98  ; work         ;
-;    |flipFlopD:inst99|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst99  ; work         ;
-;    |flipFlopD:inst9|       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst9   ; work         ;
-;    |flipFlopD:inst|        ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |IFID|flipFlopD:inst    ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 128   ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 128   ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:02     ;
-+----------------+--------------+
 
 
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 32-bit Analysis & Synthesis
+Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Nov 22 16:45:20 2018
+    Info: Processing started: Fri Nov 23 14:09:05 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off PipelineMIPS -c PipelineMIPS
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file ula1bitlast.bdf
@@ -405,19 +198,18 @@ Info (12021): Found 2 design units, including 1 entities, in source file flipflo
     Info (12023): Found entity 1: flipFlopD
 Info (12021): Found 1 design units, including 1 entities, in source file ifid.bdf
     Info (12023): Found entity 1: IFID
-Info (12127): Elaborating entity "IFID" for the top level hierarchy
-Info (12128): Elaborating entity "flipFlopD" for hierarchy "flipFlopD:inst97"
-Warning (10492): VHDL Process Statement warning at flipFlopD.vhd(16): signal "Reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 258 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 66 input pins
-    Info (21059): Implemented 64 output pins
-    Info (21061): Implemented 128 logic cells
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 423 megabytes
-    Info: Processing ended: Thu Nov 22 16:45:34 2018
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:04
+Info (12021): Found 2 design units, including 1 entities, in source file registerbarrier128.vhd
+    Info (12022): Found design unit 1: registerBarrier128-description
+    Info (12023): Found entity 1: registerBarrier128
+Info (12127): Elaborating entity "PipelineMIPS" for the top level hierarchy
+Error (275024): Width mismatch in port "in[15..0]" of instance "inst4" and type SignExtent -- source is ""PC2[15..0],IMM""
+Error (275044): Port "data1x[4..0]" of type muxReg of instance "inst5" is missing source signal
+Error (275044): Port "data0x[4..0]" of type muxReg of instance "inst5" is missing source signal
+Error (12153): Can't elaborate top-level user hierarchy
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 4 errors, 1 warning
+    Error: Peak virtual memory: 4650 megabytes
+    Error: Processing ended: Fri Nov 23 14:09:08 2018
+    Error: Elapsed time: 00:00:03
+    Error: Total CPU time (on all processors): 00:00:03
 
 
