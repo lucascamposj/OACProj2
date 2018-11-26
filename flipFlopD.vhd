@@ -11,7 +11,7 @@ END flipFlopD;
 
 ARCHITECTURE Behavior OF flipFlopD IS
 BEGIN
-	PROCESS(Clock)
+	PROCESS(Clock,Reset)
 	BEGIN
 		IF Reset = '1' THEN
 			Q <= '0';

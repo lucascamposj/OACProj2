@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect 104 224 272 240)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "in[31..0]" (rect 5 0 46 12)(font "Arial" ))
+	(text "in[31..0]" (rect 5 0 45 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -98,25 +98,25 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "out[29..0]" (rect 474 216 521 228)(font "Arial" ))
-	(pt 464 232)
-	(pt 528 232)
-	(bus)
-)
-(connector
 	(text "out[31..0]" (rect 538 216 585 228)(font "Arial" ))
 	(pt 528 232)
 	(pt 696 232)
 	(bus)
 )
 (connector
-	(text "out[31..30]" (rect 362 312 415 324)(font "Arial" ))
+	(text "out[1..0]" (rect 362 312 403 324)(font "Arial" ))
 	(pt 528 328)
 	(pt 280 328)
 	(bus)
 )
 (connector
-	(text "in[31..2]" (rect 306 216 346 228)(font "Arial" ))
+	(text "out[31..2]" (rect 474 216 521 228)(font "Arial" ))
+	(pt 464 232)
+	(pt 528 232)
+	(bus)
+)
+(connector
+	(text "in[29..0]" (rect 306 216 346 228)(font "Arial" ))
 	(pt 296 232)
 	(pt 416 232)
 	(bus)
