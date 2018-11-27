@@ -3,64 +3,64 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'clock'
-Slack : -128.495
-TNS   : -17046.290
+Slack : -129.090
+TNS   : -17474.564
 
 Type  : Slow Model Setup 'clock2'
-Slack : -0.769
-TNS   : -29.630
+Slack : -4.751
+TNS   : -346.694
 
 Type  : Slow Model Hold 'clock'
-Slack : -0.582
-TNS   : -7.025
+Slack : -2.626
+TNS   : -56.088
 
 Type  : Slow Model Hold 'clock2'
-Slack : 0.695
+Slack : 4.615
 TNS   : 0.000
 
 Type  : Slow Model Recovery 'clock'
-Slack : -24.396
-TNS   : -15489.966
+Slack : -5.912
+TNS   : -1611.585
 
 Type  : Slow Model Removal 'clock'
-Slack : 1.413
-TNS   : 0.000
+Slack : -0.489
+TNS   : -7.298
 
 Type  : Slow Model Minimum Pulse Width 'clock'
 Slack : -2.000
-TNS   : -2747.668
+TNS   : -2437.668
 
 Type  : Slow Model Minimum Pulse Width 'clock2'
 Slack : -1.423
 TNS   : -229.060
 
 Type  : Fast Model Setup 'clock'
-Slack : -58.425
-TNS   : -7043.597
+Slack : -58.343
+TNS   : -7234.800
 
 Type  : Fast Model Setup 'clock2'
-Slack : 0.190
-TNS   : 0.000
+Slack : -1.828
+TNS   : -129.694
 
 Type  : Fast Model Hold 'clock'
-Slack : -0.303
-TNS   : -3.700
+Slack : -1.414
+TNS   : -29.000
 
 Type  : Fast Model Hold 'clock2'
-Slack : 0.289
+Slack : 2.281
 TNS   : 0.000
 
 Type  : Fast Model Recovery 'clock'
-Slack : -10.538
-TNS   : -6497.251
+Slack : -2.567
+TNS   : -680.836
 
 Type  : Fast Model Removal 'clock'
-Slack : 1.169
-TNS   : 0.000
+Slack : -0.296
+TNS   : -6.116
 
 Type  : Fast Model Minimum Pulse Width 'clock'
 Slack : -2.000
-TNS   : -2772.244
+TNS   : -2462.244
 
 Type  : Fast Model Minimum Pulse Width 'clock2'
 Slack : -1.423

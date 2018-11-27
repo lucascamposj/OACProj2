@@ -165,22 +165,6 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 880 440 1056 456)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "Overflow" (rect 90 0 134 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-)
-(pin
-	(output)
 	(rect 880 568 1056 584)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "Cout" (rect 90 0 113 12)(font "Arial" ))
@@ -482,49 +466,6 @@ applicable agreement for further details.
 		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37))
 	)
 )
-(symbol
-	(rect 672 416 824 544)
-	(text "Overflow" (rect 5 0 59 14)(font "Arial" (font_size 8)))
-	(text "inst1" (rect 8 112 31 124)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "A" (rect 0 0 9 14)(font "Arial" (font_size 8)))
-		(text "A" (rect 21 27 30 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "B" (rect 0 0 8 14)(font "Arial" (font_size 8)))
-		(text "B" (rect 21 43 29 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "Binvert" (rect 0 0 40 14)(font "Arial" (font_size 8)))
-		(text "Binvert" (rect 21 59 61 73)(font "Arial" (font_size 8)))
-		(line (pt 0 64)(pt 16 64))
-	)
-	(port
-		(pt 0 80)
-		(input)
-		(text "AdderR" (rect 0 0 43 14)(font "Arial" (font_size 8)))
-		(text "AdderR" (rect 21 75 64 89)(font "Arial" (font_size 8)))
-		(line (pt 0 80)(pt 16 80))
-	)
-	(port
-		(pt 152 32)
-		(output)
-		(text "Overflow" (rect 0 0 54 14)(font "Arial" (font_size 8)))
-		(text "Overflow" (rect 77 27 131 41)(font "Arial" (font_size 8)))
-		(line (pt 152 32)(pt 136 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 136 112))
-	)
-)
 (connector
 	(pt 176 152)
 	(pt 176 168)
@@ -699,40 +640,16 @@ applicable agreement for further details.
 	(pt 648 248)
 )
 (connector
-	(pt 648 496)
-	(pt 672 496)
-)
-(connector
 	(pt 648 248)
 	(pt 648 320)
-)
-(connector
-	(pt 648 320)
-	(pt 648 496)
-)
-(connector
-	(pt 432 464)
-	(pt 672 464)
 )
 (connector
 	(pt 432 184)
 	(pt 432 264)
 )
 (connector
-	(pt 432 264)
-	(pt 432 464)
-)
-(connector
-	(pt 672 448)
-	(pt 416 448)
-)
-(connector
 	(pt 416 248)
 	(pt 480 248)
-)
-(connector
-	(pt 416 248)
-	(pt 416 448)
 )
 (connector
 	(pt 416 168)
@@ -763,22 +680,6 @@ applicable agreement for further details.
 	(pt 256 216)
 )
 (connector
-	(pt 256 216)
-	(pt 392 216)
-)
-(connector
-	(pt 392 216)
-	(pt 392 480)
-)
-(connector
-	(pt 392 480)
-	(pt 672 480)
-)
-(connector
-	(pt 824 448)
-	(pt 880 448)
-)
-(connector
 	(pt 576 264)
 	(pt 592 264)
 )
@@ -796,8 +697,5 @@ applicable agreement for further details.
 (junction (pt 432 184))
 (junction (pt 432 264))
 (junction (pt 648 248))
-(junction (pt 648 320))
-(junction (pt 416 248))
 (junction (pt 416 168))
 (junction (pt 416 136))
-(junction (pt 256 216))

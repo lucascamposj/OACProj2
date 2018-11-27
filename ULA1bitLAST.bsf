@@ -20,7 +20,7 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 168 176)
+	(rect 16 16 152 176)
 	(text "ULA1bitLAST" (rect 5 0 81 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 144 25 156)(font "Arial" ))
 	(port
@@ -73,34 +73,27 @@ applicable agreement for further details.
 		(line (pt 0 128)(pt 16 128))
 	)
 	(port
-		(pt 152 32)
+		(pt 136 32)
 		(output)
 		(text "Result" (rect 0 0 35 14)(font "Arial" (font_size 8)))
-		(text "Result" (rect 96 27 131 41)(font "Arial" (font_size 8)))
-		(line (pt 152 32)(pt 136 32))
+		(text "Result" (rect 80 27 115 41)(font "Arial" (font_size 8)))
+		(line (pt 136 32)(pt 120 32))
 	)
 	(port
-		(pt 152 48)
+		(pt 136 48)
 		(output)
 		(text "Set" (rect 0 0 18 14)(font "Arial" (font_size 8)))
-		(text "Set" (rect 113 43 131 57)(font "Arial" (font_size 8)))
-		(line (pt 152 48)(pt 136 48))
+		(text "Set" (rect 97 43 115 57)(font "Arial" (font_size 8)))
+		(line (pt 136 48)(pt 120 48))
 	)
 	(port
-		(pt 152 64)
-		(output)
-		(text "Overflow" (rect 0 0 54 14)(font "Arial" (font_size 8)))
-		(text "Overflow" (rect 77 59 131 73)(font "Arial" (font_size 8)))
-		(line (pt 152 64)(pt 136 64))
-	)
-	(port
-		(pt 152 80)
+		(pt 136 64)
 		(output)
 		(text "Cout" (rect 0 0 25 14)(font "Arial" (font_size 8)))
-		(text "Cout" (rect 106 75 131 89)(font "Arial" (font_size 8)))
-		(line (pt 152 80)(pt 136 80))
+		(text "Cout" (rect 90 59 115 73)(font "Arial" (font_size 8)))
+		(line (pt 136 64)(pt 120 64))
 	)
 	(drawing
-		(rectangle (rect 16 16 136 144))
+		(rectangle (rect 16 16 120 144))
 	)
 )
