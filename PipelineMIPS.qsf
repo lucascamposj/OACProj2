@@ -122,6 +122,7 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE test_hazard.vwf
 set_global_assignment -name VHDL_FILE registerBarrier149.vhd
 set_global_assignment -name VECTOR_WAVEFORM_FILE test_IFID.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE test_IDEX.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE test_EXMEM.vwf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

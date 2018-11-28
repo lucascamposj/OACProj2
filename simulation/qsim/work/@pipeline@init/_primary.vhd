@@ -19,6 +19,7 @@ entity PipelineInit is
         EXImm           : out    vl_logic_vector(5 downto 0);
         ForwardB        : out    vl_logic_vector(1 downto 0);
         EXopALU         : out    vl_logic_vector(2 downto 0);
+        EXBranch        : out    vl_logic_vector(1 downto 0);
         outALU          : out    vl_logic_vector(31 downto 0);
         MEMBranch       : out    vl_logic_vector(1 downto 0);
         DJAL            : out    vl_logic;

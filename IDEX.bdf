@@ -522,7 +522,7 @@ applicable agreement for further details.
 		(pt 200 32)
 		(output)
 		(text "output[148..0]" (rect 0 0 68 12)(font "Arial" ))
-		(text "output[148..0]" (rect 122 27 190 39)(font "Arial" ))
+		(text "output[148..0]" (rect 122 27 179 39)(font "Arial" ))
 		(line (pt 200 32)(pt 184 32)(line_width 3))
 	)
 	(drawing
@@ -666,18 +666,6 @@ applicable agreement for further details.
 	(pt 976 -80)
 )
 (connector
-	(text "Input[144..148]" (rect 146 504 220 516)(font "Arial" ))
-	(pt 136 520)
-	(pt 224 520)
-	(bus)
-)
-(connector
-	(text "output[144..148]" (rect 906 408 986 420)(font "Arial" ))
-	(pt 976 424)
-	(pt 896 424)
-	(bus)
-)
-(connector
 	(pt 320 136)
 	(pt 328 136)
 )
@@ -728,4 +716,16 @@ applicable agreement for further details.
 (connector
 	(pt 320 40)
 	(pt 320 136)
+)
+(connector
+	(text "output[148..144]" (rect 906 408 986 420)(font "Arial" ))
+	(pt 976 424)
+	(pt 896 424)
+	(bus)
+)
+(connector
+	(text "Input[148..144]" (rect 146 504 220 516)(font "Arial" ))
+	(pt 136 520)
+	(pt 224 520)
+	(bus)
 )

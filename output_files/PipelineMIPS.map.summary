@@ -1,4 +1,4 @@
-Analysis & Synthesis Status : Successful - Tue Nov 27 19:41:33 2018
+Analysis & Synthesis Status : Successful - Tue Nov 27 22:52:42 2018
 Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Full Version
 Revision Name : PipelineMIPS
 Top-level Entity Name : PipelineInit
@@ -7,7 +7,7 @@ Total logic elements : 5,335
     Total combinational functions : 4,175
     Dedicated logic registers : 1,464
 Total registers : 1464
-Total pins : 494
+Total pins : 528
 Total virtual pins : 0
 Total memory bits : 65,536
 Embedded Multiplier 9-bit elements : 8

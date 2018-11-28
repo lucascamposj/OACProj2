@@ -20,6 +20,7 @@ entity PipelineInit_vlg_check_tst is
         DJumpPC         : in     vl_logic_vector(31 downto 0);
         DRSDados0       : in     vl_logic_vector(31 downto 0);
         DRTDados1       : in     vl_logic_vector(31 downto 0);
+        EXBranch        : in     vl_logic_vector(1 downto 0);
         EXHIGH          : in     vl_logic_vector(31 downto 0);
         EXImm           : in     vl_logic_vector(5 downto 0);
         EXLOW           : in     vl_logic_vector(31 downto 0);

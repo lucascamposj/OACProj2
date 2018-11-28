@@ -216,7 +216,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1016 -128 1192 -112)
+	(rect 736 -112 912 -96)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "EscreveRegOut" (rect 90 0 169 12)(font "Arial" ))
 	(pt 0 8)
@@ -232,7 +232,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1016 -96 1195 -80)
+	(rect 736 -80 915 -64)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "MemParaRegOut" (rect 90 0 173 12)(font "Arial" ))
 	(pt 0 8)
@@ -248,7 +248,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1016 -56 1192 -40)
+	(rect 736 -48 912 -32)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "BranchOut[1..0]" (rect 90 0 167 12)(font "Arial" ))
 	(pt 0 8)
@@ -264,7 +264,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1016 -24 1194 -8)
+	(rect 736 -8 914 8)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "EscreveMemOut" (rect 90 0 172 12)(font "Arial" ))
 	(pt 0 8)
@@ -280,7 +280,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1016 48 1198 64)
+	(rect 736 64 918 80)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "outALUOut[31..0]" (rect 90 0 176 12)(font "Arial" ))
 	(pt 0 8)
@@ -296,7 +296,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1016 88 1192 104)
+	(rect 736 104 912 120)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "ZeroOut" (rect 90 0 130 12)(font "Arial" ))
 	(pt 0 8)
@@ -312,7 +312,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1016 168 1227 184)
+	(rect 736 184 947 200)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "RegDstAdressOut[4..0]" (rect 90 0 205 12)(font "Arial" ))
 	(pt 0 8)
@@ -328,7 +328,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1016 16 1195 32)
+	(rect 736 32 915 48)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "EXnPCOut[31..0]" (rect 90 0 173 12)(font "Arial" ))
 	(pt 0 8)
@@ -344,7 +344,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1016 128 1212 144)
+	(rect 736 144 932 160)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "LoadValueOut[31..0]" (rect 90 0 190 12)(font "Arial" ))
 	(pt 0 8)
@@ -394,7 +394,7 @@ applicable agreement for further details.
 		(pt 200 32)
 		(output)
 		(text "output[106..0]" (rect 0 0 68 12)(font "Arial" ))
-		(text "output[106..0]" (rect 122 27 190 39)(font "Arial" ))
+		(text "output[106..0]" (rect 122 27 179 39)(font "Arial" ))
 		(line (pt 200 32)(pt 184 32)(line_width 3))
 	)
 	(drawing
@@ -430,96 +430,6 @@ applicable agreement for further details.
 	(pt 312 112)
 )
 (connector
-	(text "Output[102]" (rect 914 -32 971 -20)(font "Arial" ))
-	(pt 912 -16)
-	(pt 1016 -16)
-)
-(connector
-	(text "Output[70..101]" (rect 914 8 990 20)(font "Arial" ))
-	(pt 912 24)
-	(pt 1016 24)
-	(bus)
-)
-(connector
-	(text "Output[38..69]" (rect 914 40 984 52)(font "Arial" ))
-	(pt 912 56)
-	(pt 1016 56)
-	(bus)
-)
-(connector
-	(text "Output[37]" (rect 914 80 965 92)(font "Arial" ))
-	(pt 912 96)
-	(pt 1016 96)
-)
-(connector
-	(text "Output[5..36]" (rect 914 120 978 132)(font "Arial" ))
-	(pt 912 136)
-	(pt 1016 136)
-	(bus)
-)
-(connector
-	(text "Output[4..0]" (rect 914 160 973 172)(font "Arial" ))
-	(pt 912 176)
-	(pt 1016 176)
-	(bus)
-)
-(connector
-	(text "Output[103..104]" (rect 914 -64 996 -52)(font "Arial" ))
-	(pt 912 -48)
-	(pt 1016 -48)
-	(bus)
-)
-(connector
-	(text "Output[105]" (rect 914 -104 971 -92)(font "Arial" ))
-	(pt 912 -88)
-	(pt 1016 -88)
-)
-(connector
-	(text "Output[106]" (rect 914 -136 971 -124)(font "Arial" ))
-	(pt 912 -120)
-	(pt 1016 -120)
-)
-(connector
-	(text "Input[4..0]" (rect 34 176 84 188)(font "Arial" ))
-	(pt 32 192)
-	(pt 136 192)
-	(bus)
-)
-(connector
-	(text "Input[5..36]" (rect 34 136 90 148)(font "Arial" ))
-	(pt 32 152)
-	(pt 136 152)
-	(bus)
-)
-(connector
-	(text "Input[37]" (rect 34 96 77 108)(font "Arial" ))
-	(pt 32 112)
-	(pt 136 112)
-)
-(connector
-	(text "Input[38..69]" (rect 34 56 96 68)(font "Arial" ))
-	(pt 32 72)
-	(pt 136 72)
-	(bus)
-)
-(connector
-	(text "Input[70..101]" (rect 34 24 102 36)(font "Arial" ))
-	(pt 32 40)
-	(pt 136 40)
-	(bus)
-)
-(connector
-	(text "Input[102]" (rect 34 -16 83 -4)(font "Arial" ))
-	(pt 32 0)
-	(pt 136 0)
-)
-(connector
-	(text "Input[103..104]" (rect 34 -48 108 -36)(font "Arial" ))
-	(pt 32 -32)
-	(pt 136 -32)
-	(bus)
-)
-(connector
 	(text "Input[106]" (rect 34 -120 83 -108)(font "Arial" ))
 	(pt 32 -104)
 	(pt 136 -104)
@@ -552,4 +462,94 @@ applicable agreement for further details.
 (connector
 	(pt 304 32)
 	(pt 304 128)
+)
+(connector
+	(text "Output[102]" (rect 634 -16 691 -4)(font "Arial" ))
+	(pt 632 0)
+	(pt 736 0)
+)
+(connector
+	(text "Output[37]" (rect 634 96 685 108)(font "Arial" ))
+	(pt 632 112)
+	(pt 736 112)
+)
+(connector
+	(text "Output[4..0]" (rect 634 176 693 188)(font "Arial" ))
+	(pt 632 192)
+	(pt 736 192)
+	(bus)
+)
+(connector
+	(text "Output[105]" (rect 634 -88 691 -76)(font "Arial" ))
+	(pt 632 -72)
+	(pt 736 -72)
+)
+(connector
+	(text "Output[106]" (rect 634 -120 691 -108)(font "Arial" ))
+	(pt 632 -104)
+	(pt 736 -104)
+)
+(connector
+	(text "Output[69..38]" (rect 634 56 704 68)(font "Arial" ))
+	(pt 632 72)
+	(pt 736 72)
+	(bus)
+)
+(connector
+	(text "Output[36..5]" (rect 634 136 698 148)(font "Arial" ))
+	(pt 632 152)
+	(pt 736 152)
+	(bus)
+)
+(connector
+	(text "Output[101..70]" (rect 634 24 710 36)(font "Arial" ))
+	(pt 632 40)
+	(pt 736 40)
+	(bus)
+)
+(connector
+	(text "Output[104..103]" (rect 634 -56 716 -44)(font "Arial" ))
+	(pt 632 -40)
+	(pt 736 -40)
+	(bus)
+)
+(connector
+	(text "Input[104..103]" (rect 42 -48 116 -36)(font "Arial" ))
+	(pt 32 -32)
+	(pt 144 -32)
+	(bus)
+)
+(connector
+	(text "Input[102]" (rect 42 -16 91 -4)(font "Arial" ))
+	(pt 32 0)
+	(pt 144 0)
+)
+(connector
+	(text "Input[101..70]" (rect 42 24 110 36)(font "Arial" ))
+	(pt 32 40)
+	(pt 144 40)
+	(bus)
+)
+(connector
+	(text "Input[69..38]" (rect 42 56 104 68)(font "Arial" ))
+	(pt 32 72)
+	(pt 144 72)
+	(bus)
+)
+(connector
+	(text "Input[37]" (rect 42 96 85 108)(font "Arial" ))
+	(pt 32 112)
+	(pt 144 112)
+)
+(connector
+	(text "Input[36..5]" (rect 42 136 98 148)(font "Arial" ))
+	(pt 32 152)
+	(pt 144 152)
+	(bus)
+)
+(connector
+	(text "Input[4..0]" (rect 42 176 92 188)(font "Arial" ))
+	(pt 32 192)
+	(pt 144 192)
+	(bus)
 )

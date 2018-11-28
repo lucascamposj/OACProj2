@@ -15,7 +15,7 @@ BEGIN
 	BEGIN
 		IF Reset = '1' THEN
 			Q <= '0';
-		ELSIF Clock'EVENT AND Clock = '1' THEN
+		elsif rising_edge(clock) then
 			Q <= D;
 		END IF;
 	END PROCESS;
