@@ -6,7 +6,8 @@ entity controlALU is
  funct : in STD_LOGIC_VECTOR(5 downto 0);
  opALU : in STD_LOGIC_VECTOR(2 downto 0);
  operation : out STD_LOGIC_VECTOR(3 downto 0);
- controlCoproc : out STD_LOGIC_VECTOR(1 downto 0)
+ controlCoproc : out STD_LOGIC_VECTOR(1 downto 0);
+ controlOverflow : out STD_LOGIC
  );
 end controlALU;
 

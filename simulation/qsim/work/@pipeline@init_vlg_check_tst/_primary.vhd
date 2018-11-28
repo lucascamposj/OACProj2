@@ -15,6 +15,7 @@ entity PipelineInit_vlg_check_tst is
         DCtrlopALU      : in     vl_logic_vector(2 downto 0);
         DCtrlOrigALU    : in     vl_logic;
         DCtrlRegDst     : in     vl_logic_vector(1 downto 0);
+        DInstruction    : in     vl_logic_vector(31 downto 0);
         DJAL            : in     vl_logic;
         DJump           : in     vl_logic;
         DJumpPC         : in     vl_logic_vector(31 downto 0);

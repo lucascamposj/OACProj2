@@ -5,6 +5,7 @@ entity PipelineInit is
         OrigPC          : out    vl_logic;
         MEMZero         : out    vl_logic;
         clock           : in     vl_logic;
+        DInstruction    : out    vl_logic_vector(31 downto 0);
         Flush           : out    vl_logic;
         Jump            : out    vl_logic;
         WBEscreveReg    : out    vl_logic;

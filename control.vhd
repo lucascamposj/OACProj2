@@ -13,7 +13,9 @@ entity control is
  memParaReg : out STD_LOGIC;
  escreveMem : out STD_LOGIC;
  branch : out STD_LOGIC_VECTOR(1 downto 0);
- origALU : out STD_LOGIC
+ origALU : out STD_LOGIC;
+ notOp : out STD_LOGIC;
+ controlOverflow : out STD_LOGIC
  );
 end control;
 
@@ -92,6 +94,21 @@ begin
  case opcode is
   when "101011"|"001111"|"001000"|"001100"|"001101"|"001110"|"100011" => origALU <= '1';  -- SW, LUI, ADDI, ANDI, ORI, XORI, LW
   when others => origALU <= '0';
+ end case;
+ 
+  case opcode is
+  when "000000"|"000010"|"000011"|"000100"|"000101"|"000001"|"101011"|"001111"|"001000"|"001100"|"001101"|"001110"|"100011" => notOP <= '0';  -- J, JAL, BEQ, BNE, BGEZ, SW, LUI, ADDI, ANDI, ORI, XORI, LW
+  when others => notOP <= '1';
+ end case;
+ 
+ case opcode is
+	when "000000" =>
+		case funct is
+			when "100000"|"100010" => controlOverflow <= '1';  -- ADD, SUB
+			when others => controlOverflow <= '0'; 
+		end case;
+	when "001000" => controlOverflow <= '1'; -- ADDI
+   when others => controlOverflow <= '0';
  end case;
  
 end process;
