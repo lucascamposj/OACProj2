@@ -1,6 +1,6 @@
 Flow report for PipelineMIPS
-Tue Nov 27 22:53:53 2018
-Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
+Thu Nov 29 14:50:46 2018
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -37,26 +37,26 @@ applicable agreement for further details.
 
 
 
-+----------------------------------------------------------------------------------+
-; Flow Summary                                                                     ;
-+------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue Nov 27 22:53:53 2018       ;
-; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Full Version ;
-; Revision Name                      ; PipelineMIPS                                ;
-; Top-level Entity Name              ; PipelineInit                                ;
-; Family                             ; Cyclone II                                  ;
-; Total logic elements               ; 4,572 / 68,416 ( 7 % )                      ;
-;     Total combinational functions  ; 4,175 / 68,416 ( 6 % )                      ;
-;     Dedicated logic registers      ; 1,464 / 68,416 ( 2 % )                      ;
-; Total registers                    ; 1464                                        ;
-; Total pins                         ; 528 / 622 ( 85 % )                          ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 65,536 / 1,152,000 ( 6 % )                  ;
-; Embedded Multiplier 9-bit elements ; 8 / 300 ( 3 % )                             ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
-; Device                             ; EP2C70F896C6                                ;
-; Timing Models                      ; Final                                       ;
-+------------------------------------+---------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Flow Summary                                                                         ;
++------------------------------------+-------------------------------------------------+
+; Flow Status                        ; Successful - Thu Nov 29 14:50:46 2018           ;
+; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; PipelineMIPS                                    ;
+; Top-level Entity Name              ; PipelineInit                                    ;
+; Family                             ; Cyclone II                                      ;
+; Total logic elements               ; 4,647 / 68,416 ( 7 % )                          ;
+;     Total combinational functions  ; 4,155 / 68,416 ( 6 % )                          ;
+;     Dedicated logic registers      ; 1,464 / 68,416 ( 2 % )                          ;
+; Total registers                    ; 1464                                            ;
+; Total pins                         ; 586 / 622 ( 94 % )                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 65,536 / 1,152,000 ( 6 % )                      ;
+; Embedded Multiplier 9-bit elements ; 8 / 300 ( 3 % )                                 ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                                   ;
+; Device                             ; EP2C70F896I8                                    ;
+; Timing Models                      ; Final                                           ;
++------------------------------------+-------------------------------------------------+
 
 
 +-----------------------------------------+
@@ -64,31 +64,31 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/27/2018 22:52:16 ;
+; Start date & time ; 11/29/2018 14:48:10 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; PipelineMIPS        ;
 +-------------------+---------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                      ;
-+-------------------------------------+---------------------------------+---------------+--------------+----------------+
-; Assignment Name                     ; Value                           ; Default Value ; Entity Name  ; Section Id     ;
-+-------------------------------------+---------------------------------+---------------+--------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 268345868506688.154336633502832 ; --            ; --           ; --             ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                              ; --            ; --           ; eda_simulation ;
-; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                     ; --            ; --           ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)       ; <None>        ; --           ; --             ;
-; EDA_TIME_SCALE                      ; 1 ps                            ; --            ; --           ; eda_simulation ;
-; PARTITION_COLOR                     ; 16764057                        ; --            ; Hazard       ; Top            ;
-; PARTITION_COLOR                     ; 16764057                        ; --            ; PipelineInit ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; Hazard       ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; PipelineInit ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; Hazard       ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; PipelineInit ; Top            ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                    ; --            ; --           ; --             ;
-; TOP_LEVEL_ENTITY                    ; PipelineInit                    ; PipelineMIPS  ; --           ; --             ;
-+-------------------------------------+---------------------------------+---------------+--------------+----------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                     ;
++-------------------------------------+--------------------------------+---------------+--------------+----------------+
+; Assignment Name                     ; Value                          ; Default Value ; Entity Name  ; Section Id     ;
++-------------------------------------+--------------------------------+---------------+--------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 10995770589204.154351008814648 ; --            ; --           ; --             ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                             ; --            ; --           ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                    ; --            ; --           ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)      ; <None>        ; --           ; --             ;
+; EDA_TIME_SCALE                      ; 1 ps                           ; --            ; --           ; eda_simulation ;
+; PARTITION_COLOR                     ; 16764057                       ; --            ; Hazard       ; Top            ;
+; PARTITION_COLOR                     ; 16764057                       ; --            ; PipelineInit ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING          ; --            ; Hazard       ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING          ; --            ; PipelineInit ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                         ; --            ; Hazard       ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                         ; --            ; PipelineInit ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                   ; --            ; --           ; --             ;
+; TOP_LEVEL_ENTITY                    ; PipelineInit                   ; PipelineMIPS  ; --           ; --             ;
++-------------------------------------+--------------------------------+---------------+--------------+----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -96,12 +96,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:26     ; 1.0                     ; 4746 MB             ; 00:00:24                           ;
-; Fitter                    ; 00:00:57     ; 1.5                     ; 5123 MB             ; 00:01:18                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 4559 MB             ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 4717 MB             ; 00:00:03                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4579 MB             ; 00:00:02                           ;
-; Total                     ; 00:01:30     ; --                      ; --                  ; 00:01:48                           ;
+; Analysis & Synthesis      ; 00:00:39     ; 1.0                     ; 466 MB              ; 00:00:35                           ;
+; Fitter                    ; 00:01:29     ; 1.0                     ; 667 MB              ; 00:01:29                           ;
+; Assembler                 ; 00:00:07     ; 1.0                     ; 405 MB              ; 00:00:07                           ;
+; TimeQuest Timing Analyzer ; 00:00:08     ; 1.0                     ; 460 MB              ; 00:00:06                           ;
+; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 388 MB              ; 00:00:03                           ;
+; Total                     ; 00:02:26     ; --                      ; --                  ; 00:02:20                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -110,11 +110,11 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; DESKTOP-EFJGGBP  ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; DESKTOP-EFJGGBP  ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; DESKTOP-EFJGGBP  ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; DESKTOP-EFJGGBP  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-EFJGGBP  ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; DESKTOP-UK4BK2L  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; DESKTOP-UK4BK2L  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; DESKTOP-UK4BK2L  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-UK4BK2L  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-UK4BK2L  ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 

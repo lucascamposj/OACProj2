@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Tue Nov 27 22:52:42 2018
-Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Full Version
+Analysis & Synthesis Status : Successful - Thu Nov 29 14:48:51 2018
+Quartus II 32-bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : PipelineMIPS
 Top-level Entity Name : PipelineInit
 Family : Cyclone II
-Total logic elements : 5,335
-    Total combinational functions : 4,175
+Total logic elements : 5,315
+    Total combinational functions : 4,155
     Dedicated logic registers : 1,464
 Total registers : 1464
-Total pins : 528
+Total pins : 586
 Total virtual pins : 0
 Total memory bits : 65,536
 Embedded Multiplier 9-bit elements : 8

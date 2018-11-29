@@ -1,6 +1,6 @@
 Assembler report for PipelineMIPS
-Tue Nov 27 22:53:44 2018
-Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
+Thu Nov 29 14:50:33 2018
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -9,7 +9,10 @@ Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
   1. Legal Notice
   2. Assembler Summary
   3. Assembler Settings
-  4. Assembler Messages
+  4. Assembler Generated Files
+  5. Assembler Device Options: E:/OneDrive/Documents/OAC22018/OACProj2/output_files/PipelineMIPS.sof
+  6. Assembler Device Options: E:/OneDrive/Documents/OAC22018/OACProj2/output_files/PipelineMIPS.pof
+  7. Assembler Messages
 
 
 
@@ -35,11 +38,11 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Nov 27 22:53:44 2018 ;
+; Assembler Status      ; Successful - Thu Nov 29 14:50:33 2018 ;
 ; Revision Name         ; PipelineMIPS                          ;
 ; Top-level Entity Name ; PipelineInit                          ;
 ; Family                ; Cyclone II                            ;
-; Device                ; EP2C70F896C6                          ;
+; Device                ; EP2C70F896I8                          ;
 +-----------------------+---------------------------------------+
 
 
@@ -75,19 +78,53 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
++-----------------------------------------------------------------------+
+; Assembler Generated Files                                             ;
++-----------------------------------------------------------------------+
+; File Name                                                             ;
++-----------------------------------------------------------------------+
+; E:/OneDrive/Documents/OAC22018/OACProj2/output_files/PipelineMIPS.sof ;
+; E:/OneDrive/Documents/OAC22018/OACProj2/output_files/PipelineMIPS.pof ;
++-----------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------+
+; Assembler Device Options: E:/OneDrive/Documents/OAC22018/OACProj2/output_files/PipelineMIPS.sof ;
++----------------+--------------------------------------------------------------------------------+
+; Option         ; Setting                                                                        ;
++----------------+--------------------------------------------------------------------------------+
+; Device         ; EP2C70F896I8                                                                   ;
+; JTAG usercode  ; 0x00A09F35                                                                     ;
+; Checksum       ; 0x00A09F35                                                                     ;
++----------------+--------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------+
+; Assembler Device Options: E:/OneDrive/Documents/OAC22018/OACProj2/output_files/PipelineMIPS.pof ;
++--------------------+----------------------------------------------------------------------------+
+; Option             ; Setting                                                                    ;
++--------------------+----------------------------------------------------------------------------+
+; Device             ; EPCS16                                                                     ;
+; JTAG usercode      ; 0x00000000                                                                 ;
+; Checksum           ; 0x181CCDA9                                                                 ;
+; Compression Ratio  ; 3                                                                          ;
++--------------------+----------------------------------------------------------------------------+
+
+
 +--------------------+
 ; Assembler Messages ;
 +--------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Assembler
-    Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
-    Info: Processing started: Tue Nov 27 22:53:43 2018
+Info: Running Quartus II 32-bit Assembler
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu Nov 29 14:50:26 2018
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off PipelineMIPS -c PipelineMIPS
-Warning (292011): Can't generate programming files because you are currently using the Quartus II software in Evaluation Mode
-Info: Quartus II 64-Bit Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4570 megabytes
-    Info: Processing ended: Tue Nov 27 22:53:44 2018
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+Info (115031): Writing out detailed assembly data for power analysis
+Info (115030): Assembler is generating device programming files
+Info: Quartus II 32-bit Assembler was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 406 megabytes
+    Info: Processing ended: Thu Nov 29 14:50:33 2018
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:07
 
 
