@@ -9,6 +9,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 entity pc is
 	port(
 		clock: in std_logic;
+		enable: in std_logic;
 		address_to_load: in std_logic_vector(31 downto 0);
 		current_address: out std_logic_vector(31 downto 0)
 	);
@@ -21,9 +22,11 @@ architecture beh of pc is
 	
 	process(clock)
 		begin
-		current_address <= address;
-		if clock='0' and clock'event then
-			address <= address_to_load;
+		if enable = '1' then
+			current_address <= address;
+			if clock='0' and clock'event then
+				address <= address_to_load;
+			end if;
 		end if;
 	end process;
 	

@@ -17,11 +17,11 @@ ARCHITECTURE description OF IF2ID IS
 BEGIN
 	process(Clock, Flush)
 	begin
-		if Flush = '1' then
-			PCOut <= x"00000000";
-			InstructionOut <= x"00000000";
-		elsif rising_edge(clock) then
-			if Stall = '0' then
+		if rising_edge(clock) then
+			if Flush = '1' then
+				PCOut <= x"00000000";
+				InstructionOut <= x"00000000";
+			elsif Stall = '0' then
 				PCOut <= PC;
 				InstructionOut <= Instruction;
 			end if;

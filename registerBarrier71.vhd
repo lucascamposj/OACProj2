@@ -15,10 +15,10 @@ ARCHITECTURE description OF registerBarrier71 IS
 BEGIN
 	process(clock, clear)
 	begin
-		if clear = '1' then
-			output <= (0 => '0', others => '0');
-		elsif rising_edge(clock) then
-			if load = '1' then
+		if rising_edge(clock) then
+			if clear = '1' then
+				output <= (0 => '0', others => '0');
+			elsif load = '1' then
 				output <= input;
 			end if;
 		end if;

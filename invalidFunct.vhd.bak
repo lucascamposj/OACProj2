@@ -1,0 +1,13 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity invalidFunct is port(
+	funct		: in STD_LOGIC_VECTOR(5 downto 0)
+);
+end invalidFunct;
+
+architecture bhv of control is
+begin
+process(funct)
+
+end bhv;

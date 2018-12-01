@@ -3,27 +3,27 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'clock'
-Slack : -179.099
-TNS   : -16431.707
+Slack : -174.285
+TNS   : -16216.298
 
 Type  : Slow Model Setup 'clock2'
-Slack : -7.956
-TNS   : -4849.244
+Slack : -4.881
+TNS   : -4354.750
+
+Type  : Slow Model Setup 'IDEX:inst9|registerBarrier149:inst|output[142]'
+Slack : -0.957
+TNS   : -1.372
 
 Type  : Slow Model Hold 'clock'
-Slack : -4.642
-TNS   : -105.021
+Slack : -1.981
+TNS   : -30.869
+
+Type  : Slow Model Hold 'IDEX:inst9|registerBarrier149:inst|output[142]'
+Slack : -1.420
+TNS   : -34.915
 
 Type  : Slow Model Hold 'clock2'
-Slack : 0.969
-TNS   : 0.000
-
-Type  : Slow Model Recovery 'clock'
-Slack : -3.706
-TNS   : -881.954
-
-Type  : Slow Model Removal 'clock'
-Slack : 2.057
+Slack : 0.974
 TNS   : 0.000
 
 Type  : Slow Model Minimum Pulse Width 'clock2'
@@ -34,28 +34,32 @@ Type  : Slow Model Minimum Pulse Width 'clock'
 Slack : -1.941
 TNS   : -702.389
 
-Type  : Fast Model Setup 'clock'
-Slack : -56.207
-TNS   : -4821.056
-
-Type  : Fast Model Setup 'clock2'
-Slack : -2.307
-TNS   : -851.634
-
-Type  : Fast Model Hold 'clock'
-Slack : -1.280
-TNS   : -27.705
-
-Type  : Fast Model Hold 'clock2'
-Slack : 0.245
+Type  : Slow Model Minimum Pulse Width 'IDEX:inst9|registerBarrier149:inst|output[142]'
+Slack : 0.500
 TNS   : 0.000
 
-Type  : Fast Model Recovery 'clock'
-Slack : -0.997
-TNS   : -238.192
+Type  : Fast Model Setup 'clock'
+Slack : -55.064
+TNS   : -4792.141
 
-Type  : Fast Model Removal 'clock'
-Slack : 1.386
+Type  : Fast Model Setup 'clock2'
+Slack : -1.344
+TNS   : -656.559
+
+Type  : Fast Model Setup 'IDEX:inst9|registerBarrier149:inst|output[142]'
+Slack : -0.236
+TNS   : -0.263
+
+Type  : Fast Model Hold 'clock'
+Slack : -1.224
+TNS   : -65.805
+
+Type  : Fast Model Hold 'IDEX:inst9|registerBarrier149:inst|output[142]'
+Slack : 0.219
+TNS   : 0.000
+
+Type  : Fast Model Hold 'clock2'
+Slack : 0.248
 TNS   : 0.000
 
 Type  : Fast Model Minimum Pulse Width 'clock2'
@@ -65,5 +69,9 @@ TNS   : -1829.060
 Type  : Fast Model Minimum Pulse Width 'clock'
 Slack : -1.380
 TNS   : -473.380
+
+Type  : Fast Model Minimum Pulse Width 'IDEX:inst9|registerBarrier149:inst|output[142]'
+Slack : 0.500
+TNS   : 0.000
 
 ------------------------------------------------------------
