@@ -50,7 +50,7 @@ begin
   when "000011"|"100011"|"001111"|"001000"|"001100"|"001101"|"001110"|"011100" => escreveReg <= '1'; -- JAL, LW,LUI, ADDI, ANDI, ORI, XORI, CLO
   when "000000" =>
    case funct is
-	 when "011001"|"011010"|"001000" => escreveReg <= '0'; -- MULT, DIV, JR
+	 when "011000"|"011010"|"001000" => escreveReg <= '0'; -- MULT, DIV, JR
 	 when others => escreveReg <= '1'; -- Resto das Tipo R
 	end case;
   when others => escreveReg <= '0';

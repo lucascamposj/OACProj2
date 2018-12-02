@@ -1,5 +1,5 @@
 Flow report for PipelineMIPS
-Sat Dec 01 13:43:46 2018
+Sat Dec 01 23:39:09 2018
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,13 +40,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Sat Dec 01 13:43:46 2018           ;
+; Flow Status                        ; Successful - Sat Dec 01 23:39:09 2018           ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; PipelineMIPS                                    ;
 ; Top-level Entity Name              ; PipelineInit                                    ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 4,826 / 68,416 ( 7 % )                          ;
-;     Total combinational functions  ; 4,419 / 68,416 ( 6 % )                          ;
+; Total logic elements               ; 4,828 / 68,416 ( 7 % )                          ;
+;     Total combinational functions  ; 4,428 / 68,416 ( 6 % )                          ;
 ;     Dedicated logic registers      ; 1,464 / 68,416 ( 2 % )                          ;
 ; Total registers                    ; 1464                                            ;
 ; Total pins                         ; 587 / 622 ( 94 % )                              ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/01/2018 13:41:08 ;
+; Start date & time ; 12/01/2018 23:36:38 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; PipelineMIPS        ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+--------------------------------+---------------+--------------+----------------+
 ; Assignment Name                     ; Value                          ; Default Value ; Entity Name  ; Section Id     ;
 +-------------------------------------+--------------------------------+---------------+--------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 10995770589204.154367886700224 ; --            ; --           ; --             ;
+; COMPILER_SIGNATURE_ID               ; 10995770589203.154371459608272 ; --            ; --           ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                             ; --            ; --           ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                    ; --            ; --           ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)      ; <None>        ; --           ; --             ;
@@ -96,12 +96,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:37     ; 1.0                     ; 477 MB              ; 00:00:35                           ;
-; Fitter                    ; 00:01:32     ; 1.0                     ; 666 MB              ; 00:01:32                           ;
+; Analysis & Synthesis      ; 00:00:37     ; 1.0                     ; 470 MB              ; 00:00:35                           ;
+; Fitter                    ; 00:01:30     ; 1.0                     ; 666 MB              ; 00:01:29                           ;
 ; Assembler                 ; 00:00:06     ; 1.0                     ; 409 MB              ; 00:00:06                           ;
-; TimeQuest Timing Analyzer ; 00:00:07     ; 1.0                     ; 463 MB              ; 00:00:06                           ;
+; TimeQuest Timing Analyzer ; 00:00:06     ; 1.0                     ; 451 MB              ; 00:00:05                           ;
 ; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 384 MB              ; 00:00:03                           ;
-; Total                     ; 00:02:25     ; --                      ; --                  ; 00:02:22                           ;
+; Total                     ; 00:02:22     ; --                      ; --                  ; 00:02:18                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

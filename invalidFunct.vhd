@@ -2,29 +2,28 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 
 entity invalidFunct is port(
-	controlJump			: in STD_LOGIC_VECTOR(1 downto 0);
-	extent 				: in STD_LOGIC;
-	regDst 				: in STD_LOGIC_VECTOR(1 downto 0);
-	opALU 				: in STD_LOGIC_VECTOR(2 downto 0);
-	escreveReg 			: in STD_LOGIC;
-	memParaReg 			: in STD_LOGIC;
-	escreveMem 			: in STD_LOGIC;
-	branch 				: in STD_LOGIC_VECTOR(1 downto 0);
-	origALU				: in STD_LOGIC;
-	notOp 				: in STD_LOGIC;
-	controlOverflow 	: in STD_LOGIC;
+	opCode				: in STD_LOGIC_VECTOR(5 downto 0);
+	funct					: in std_LOGIC_VECTOR(5 downto 0);
 	isInvalid			: out STD_LOGIC
 );
 end invalidFunct;
 
 architecture bhv of invalidFunct is
 begin
-process(controlJump, extent, regDst, opALU, escreveReg, memParaReg, escreveMem, branch, origALU, notOp, controlOverflow)
+process(opCode, funct)
 begin
-	if controlJump = "00" and extent = '0' and regDst = "00" and escreveReg = '0' and memParaReg = '0' and escreveMem = '0' and branch = "00" and origALU = '0' and notOp = '0' and controlOverflow = '0' then
-		isInvalid <= '1';
-	else
-		isInvalid <= '0';
-	end if;
+	case opCode is
+		when "000000" =>
+			case funct is
+				when "100000"|"100100"|"100101"|"100111"|"100110"|"001000"|"101010"|"100011"|"000000"|"000010"|"011000"|"011010"|"010000"|"010010"|"100010"|"100001" => isInvalid <= '0';
+				when others => isInvalid <= '1';
+			end case;
+		when "011100" =>
+			case funct is
+				when "100001" => isInvalid <= '0';
+				when others => isInvalid <= '1';
+			end case;
+		when others => isInvalid <= '0';
+	end case;
 end process;
 end bhv;
