@@ -1,5 +1,5 @@
 Analysis & Synthesis report for PipelineMIPS
-Wed Nov 28 09:48:40 2018
+Wed Nov 28 12:56:05 2018
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -487,7 +487,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Nov 28 09:48:40 2018       ;
+; Analysis & Synthesis Status        ; Successful - Wed Nov 28 12:56:05 2018       ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Full Version ;
 ; Revision Name                      ; PipelineMIPS                                ;
 ; Top-level Entity Name              ; PipelineInit                                ;
@@ -668,12 +668,12 @@ applicable agreement for further details.
 ; altram.inc                       ; yes             ; Megafunction                           ; c:/altera/13.0/quartus/libraries/megafunctions/altram.inc            ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                           ; c:/altera/13.0/quartus/libraries/megafunctions/altdpram.inc          ;         ;
 ; db/altsyncram_ukd1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/Lucas/Desktop/OACProj2/db/altsyncram_ukd1.tdf               ;         ;
-; pipelinedata.mif                 ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Lucas/Desktop/OACProj2/pipelinedata.mif                     ;         ;
+; PipelineData.mif                 ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Lucas/Desktop/OACProj2/PipelineData.mif                     ;         ;
 ; mux2to1_32bits.vhd               ; yes             ; Auto-Found Wizard-Generated File       ; C:/Users/Lucas/Desktop/OACProj2/mux2to1_32bits.vhd                   ;         ;
 ; db/mux_k4e.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/Lucas/Desktop/OACProj2/db/mux_k4e.tdf                       ;         ;
 ; rominstructions.vhd              ; yes             ; Auto-Found Wizard-Generated File       ; C:/Users/Lucas/Desktop/OACProj2/rominstructions.vhd                  ;         ;
 ; db/altsyncram_9681.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/Lucas/Desktop/OACProj2/db/altsyncram_9681.tdf               ;         ;
-; testinst.mif                     ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Lucas/Desktop/OACProj2/testinst.mif                         ;         ;
+; testInst.mif                     ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Lucas/Desktop/OACProj2/testInst.mif                         ;         ;
 ; mux.tdf                          ; yes             ; Megafunction                           ; c:/altera/13.0/quartus/libraries/megafunctions/mux.tdf               ;         ;
 ; db/mux_omc.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/Lucas/Desktop/OACProj2/db/mux_omc.tdf                       ;         ;
 ; db/mux_lmc.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/Lucas/Desktop/OACProj2/db/mux_lmc.tdf                       ;         ;
@@ -7083,7 +7083,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:22     ;
+; Top            ; 00:00:25     ;
 +----------------+--------------+
 
 
@@ -7093,7 +7093,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
-    Info: Processing started: Wed Nov 28 09:48:03 2018
+    Info: Processing started: Wed Nov 28 12:55:22 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off PipelineMIPS -c PipelineMIPS
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
 Info (12021): Found 2 design units, including 1 entities, in source file registerbarrier128.vhd
@@ -7277,6 +7277,9 @@ Info (12133): Instantiated megafunction "ramData:inst14|altsyncram:altsyncram_co
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ukd1.tdf
     Info (12023): Found entity 1: altsyncram_ukd1
 Info (12128): Elaborating entity "altsyncram_ukd1" for hierarchy "ramData:inst14|altsyncram:altsyncram_component|altsyncram_ukd1:auto_generated"
+Warning (113028): 16374 out of 16384 addresses are uninitialized. The Quartus II software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported.
+    Warning (113027): Addresses ranging from 10 to 16383 are not initialized
+Critical Warning (127004): Memory depth (1024) in the design file differs from memory depth (16384) in the Memory Initialization File "C:/Users/Lucas/Desktop/OACProj2/PipelineData.mif" -- truncated remaining initial content value to fit RAM
 Warning (12125): Using design file mux2to1_32bits.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: mux2to1_32bits-SYN
     Info (12023): Found entity 1: mux2to1_32bits
@@ -7319,6 +7322,9 @@ Info (12133): Instantiated megafunction "romInstructions:inst8|altsyncram:altsyn
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_9681.tdf
     Info (12023): Found entity 1: altsyncram_9681
 Info (12128): Elaborating entity "altsyncram_9681" for hierarchy "romInstructions:inst8|altsyncram:altsyncram_component|altsyncram_9681:auto_generated"
+Warning (113028): 4060 out of 4096 addresses are uninitialized. The Quartus II software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported.
+    Warning (113027): Addresses ranging from 36 to 4095 are not initialized
+Critical Warning (127004): Memory depth (1024) in the design file differs from memory depth (4096) in the Memory Initialization File "C:/Users/Lucas/Desktop/OACProj2/testInst.mif" -- truncated remaining initial content value to fit RAM
 Info (12128): Elaborating entity "pc" for hierarchy "pc:inst3"
 Warning (10492): VHDL Process Statement warning at pc.vhd(24): signal "address" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12128): Elaborating entity "ControleExececao" for hierarchy "ControleExececao:inst48"
@@ -7673,10 +7679,10 @@ Info (21057): Implemented 6182 device resources after synthesis - the final reso
     Info (21061): Implemented 5549 logic cells
     Info (21064): Implemented 64 RAM segments
     Info (21062): Implemented 8 DSP elements
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 213 warnings
-    Info: Peak virtual memory: 4746 megabytes
-    Info: Processing ended: Wed Nov 28 09:48:40 2018
-    Info: Elapsed time: 00:00:37
-    Info: Total CPU time (on all processors): 00:00:35
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 219 warnings
+    Info: Peak virtual memory: 4736 megabytes
+    Info: Processing ended: Wed Nov 28 12:56:05 2018
+    Info: Elapsed time: 00:00:43
+    Info: Total CPU time (on all processors): 00:00:38
 
 

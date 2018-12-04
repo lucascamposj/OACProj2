@@ -129,5 +129,5 @@ set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name VHDL_FILE registerBarrier150.vhd
 set_global_assignment -name BDF_FILE ControleExeceção.bdf
 set_global_assignment -name BDF_FILE ControleExececao.bdf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/Lucas/Desktop/OACProj2/test_PIPELINE.vwf"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/Lucas/Desktop/OACProj2/test_PIPELINE.vwf"

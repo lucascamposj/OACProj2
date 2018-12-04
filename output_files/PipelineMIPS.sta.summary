@@ -3,40 +3,40 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'clock'
-Slack : -123.991
-TNS   : -18767.816
+Slack : -130.213
+TNS   : -19420.426
 
 Type  : Slow Model Setup 'EXMEM:inst23|registerBarrier107:inst|output[0]'
-Slack : -14.852
-TNS   : -469.370
+Slack : -13.881
+TNS   : -438.536
 
 Type  : Slow Model Setup 'clock2'
-Slack : -3.039
-TNS   : -206.224
+Slack : -5.145
+TNS   : -384.075
 
 Type  : Slow Model Hold 'EXMEM:inst23|registerBarrier107:inst|output[0]'
-Slack : -18.724
-TNS   : -585.491
+Slack : -18.653
+TNS   : -583.074
 
 Type  : Slow Model Hold 'clock'
-Slack : -2.935
-TNS   : -46.760
+Slack : -2.305
+TNS   : -67.070
 
 Type  : Slow Model Hold 'clock2'
-Slack : 2.400
+Slack : 5.062
 TNS   : 0.000
 
 Type  : Slow Model Recovery 'clock'
-Slack : -5.610
-TNS   : -1223.682
+Slack : -6.111
+TNS   : -1334.186
 
 Type  : Slow Model Removal 'clock'
-Slack : -0.338
-TNS   : -2.996
+Slack : -0.546
+TNS   : -4.608
 
 Type  : Slow Model Minimum Pulse Width 'EXMEM:inst23|registerBarrier107:inst|output[0]'
-Slack : -13.338
-TNS   : -4824.056
+Slack : -12.438
+TNS   : -4844.354
 
 Type  : Slow Model Minimum Pulse Width 'clock'
 Slack : -2.000
@@ -47,40 +47,40 @@ Slack : -1.423
 TNS   : -229.060
 
 Type  : Fast Model Setup 'clock'
-Slack : -55.689
-TNS   : -7796.266
+Slack : -58.378
+TNS   : -8123.453
 
 Type  : Fast Model Setup 'EXMEM:inst23|registerBarrier107:inst|output[0]'
-Slack : -5.598
-TNS   : -176.296
+Slack : -5.582
+TNS   : -175.777
 
 Type  : Fast Model Setup 'clock2'
-Slack : -1.219
-TNS   : -76.316
+Slack : -2.278
+TNS   : -169.045
 
 Type  : Fast Model Hold 'EXMEM:inst23|registerBarrier107:inst|output[0]'
 Slack : -7.874
-TNS   : -250.229
+TNS   : -247.307
 
 Type  : Fast Model Hold 'clock'
-Slack : -1.612
-TNS   : -15.568
+Slack : -1.008
+TNS   : -30.365
 
 Type  : Fast Model Hold 'clock2'
-Slack : 1.372
+Slack : 2.748
 TNS   : 0.000
 
 Type  : Fast Model Recovery 'clock'
-Slack : -2.431
-TNS   : -503.827
+Slack : -2.809
+TNS   : -597.935
 
 Type  : Fast Model Removal 'clock'
-Slack : -0.187
-TNS   : -1.841
+Slack : -0.537
+TNS   : -11.240
 
 Type  : Fast Model Minimum Pulse Width 'EXMEM:inst23|registerBarrier107:inst|output[0]'
-Slack : -5.835
-TNS   : -1926.452
+Slack : -5.466
+TNS   : -1885.422
 
 Type  : Fast Model Minimum Pulse Width 'clock'
 Slack : -2.000
