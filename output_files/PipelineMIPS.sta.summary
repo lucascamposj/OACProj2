@@ -3,63 +3,63 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'clock'
-Slack : -175.335
-TNS   : -16999.337
+Slack : -136.217
+TNS   : -12538.569
 
 Type  : Slow Model Setup 'clock2'
-Slack : -5.286
-TNS   : -4984.831
+Slack : -3.597
+TNS   : -3317.398
 
 Type  : Slow Model Setup 'IDEX:inst9|registerBarrier149:inst|output[142]'
-Slack : 0.472
+Slack : 0.650
 TNS   : 0.000
 
 Type  : Slow Model Hold 'clock'
-Slack : -2.389
-TNS   : -17.362
+Slack : -2.021
+TNS   : -24.370
 
 Type  : Slow Model Hold 'IDEX:inst9|registerBarrier149:inst|output[142]'
-Slack : -1.736
-TNS   : -48.920
+Slack : -1.121
+TNS   : -30.214
 
 Type  : Slow Model Hold 'clock2'
-Slack : 0.966
+Slack : 0.631
 TNS   : 0.000
 
 Type  : Slow Model Minimum Pulse Width 'clock2'
-Slack : -2.567
-TNS   : -2618.757
+Slack : -2.000
+TNS   : -1829.060
 
 Type  : Slow Model Minimum Pulse Width 'clock'
-Slack : -1.941
-TNS   : -702.389
+Slack : -1.380
+TNS   : -473.380
 
 Type  : Slow Model Minimum Pulse Width 'IDEX:inst9|registerBarrier149:inst|output[142]'
 Slack : 0.500
 TNS   : 0.000
 
 Type  : Fast Model Setup 'clock'
-Slack : -55.951
-TNS   : -5097.413
+Slack : -61.388
+TNS   : -5546.701
 
 Type  : Fast Model Setup 'clock2'
-Slack : -1.344
-TNS   : -827.662
+Slack : -1.460
+TNS   : -1032.311
 
 Type  : Fast Model Setup 'IDEX:inst9|registerBarrier149:inst|output[142]'
-Slack : 0.268
+Slack : 0.438
 TNS   : 0.000
 
 Type  : Fast Model Hold 'clock'
-Slack : -1.459
-TNS   : -54.832
+Slack : -1.407
+TNS   : -48.414
 
 Type  : Fast Model Hold 'IDEX:inst9|registerBarrier149:inst|output[142]'
-Slack : 0.079
-TNS   : 0.000
+Slack : -0.090
+TNS   : -1.001
 
 Type  : Fast Model Hold 'clock2'
-Slack : 0.243
+Slack : 0.254
 TNS   : 0.000
 
 Type  : Fast Model Minimum Pulse Width 'clock2'

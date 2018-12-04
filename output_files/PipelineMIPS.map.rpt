@@ -1,5 +1,5 @@
 Analysis & Synthesis report for PipelineMIPS
-Sat Dec 01 23:37:17 2018
+Mon Dec 03 21:55:57 2018
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -20,8 +20,8 @@ Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
  12. Registers Removed During Synthesis
  13. General Register Statistics
  14. Multiplexer Restructuring Statistics (Restructuring Performed)
- 15. Source assignments for ramData:inst14|altsyncram:altsyncram_component|altsyncram_nqd1:auto_generated
- 16. Source assignments for romInstructions:inst8|altsyncram:altsyncram_component|altsyncram_ln81:auto_generated
+ 15. Source assignments for ramData:inst14|altsyncram:altsyncram_component|altsyncram_pqd1:auto_generated
+ 16. Source assignments for romInstructions:inst8|altsyncram:altsyncram_component|altsyncram_nn81:auto_generated
  17. Parameter Settings for User Entity Instance: controlPC:inst29|mux4to1_32bits:inst|LPM_MUX:LPM_MUX_component
  18. Parameter Settings for User Entity Instance: ramData:inst14|altsyncram:altsyncram_component
  19. Parameter Settings for User Entity Instance: mux2to1_32bits:inst15|LPM_MUX:LPM_MUX_component
@@ -486,16 +486,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Dec 01 23:37:17 2018           ;
+; Analysis & Synthesis Status        ; Successful - Mon Dec 03 21:55:57 2018           ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; PipelineMIPS                                    ;
 ; Top-level Entity Name              ; PipelineInit                                    ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 5,459                                           ;
-;     Total combinational functions  ; 4,428                                           ;
+; Total logic elements               ; 5,424                                           ;
+;     Total combinational functions  ; 4,393                                           ;
 ;     Dedicated logic registers      ; 1,464                                           ;
 ; Total registers                    ; 1464                                            ;
-; Total pins                         ; 587                                             ;
+; Total pins                         ; 571                                             ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 65,536                                          ;
 ; Embedded Multiplier 9-bit elements ; 8                                               ;
@@ -643,6 +643,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; registerBarrier149.vhd           ; yes             ; User VHDL File                         ; E:/OneDrive/Documents/OAC22018/OACProj2/registerBarrier149.vhd          ;         ;
 ; IF2ID.vhd                        ; yes             ; User VHDL File                         ; E:/OneDrive/Documents/OAC22018/OACProj2/IF2ID.vhd                       ;         ;
 ; invalidFunct.vhd                 ; yes             ; User VHDL File                         ; E:/OneDrive/Documents/OAC22018/OACProj2/invalidFunct.vhd                ;         ;
+; typeIException.vhd               ; yes             ; User VHDL File                         ; E:/OneDrive/Documents/OAC22018/OACProj2/typeIException.vhd              ;         ;
 ; mux4to1_32bits.vhd               ; yes             ; Auto-Found Wizard-Generated File       ; E:/OneDrive/Documents/OAC22018/OACProj2/mux4to1_32bits.vhd              ;         ;
 ; lpm_mux.tdf                      ; yes             ; Megafunction                           ; e:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.tdf           ;         ;
 ; aglobal130.inc                   ; yes             ; Megafunction                           ; e:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc        ;         ;
@@ -659,13 +660,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; altrom.inc                       ; yes             ; Megafunction                           ; e:/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc            ;         ;
 ; altram.inc                       ; yes             ; Megafunction                           ; e:/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc            ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                           ; e:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_nqd1.tdf           ; yes             ; Auto-Generated Megafunction            ; E:/OneDrive/Documents/OAC22018/OACProj2/db/altsyncram_nqd1.tdf          ;         ;
-; nivel3dia1_data.mif              ; yes             ; Auto-Found Memory Initialization File  ; E:/OneDrive/Documents/OAC22018/OACProj2/nivel3dia1_data.mif             ;         ;
+; db/altsyncram_pqd1.tdf           ; yes             ; Auto-Generated Megafunction            ; E:/OneDrive/Documents/OAC22018/OACProj2/db/altsyncram_pqd1.tdf          ;         ;
+; nivel2dia2_data.mif              ; yes             ; Auto-Found Memory Initialization File  ; E:/OneDrive/Documents/OAC22018/OACProj2/nivel2dia2_data.mif             ;         ;
 ; mux2to1_32bits.vhd               ; yes             ; Auto-Found Wizard-Generated File       ; E:/OneDrive/Documents/OAC22018/OACProj2/mux2to1_32bits.vhd              ;         ;
 ; db/mux_k4e.tdf                   ; yes             ; Auto-Generated Megafunction            ; E:/OneDrive/Documents/OAC22018/OACProj2/db/mux_k4e.tdf                  ;         ;
 ; rominstructions.vhd              ; yes             ; Auto-Found Wizard-Generated File       ; E:/OneDrive/Documents/OAC22018/OACProj2/rominstructions.vhd             ;         ;
-; db/altsyncram_ln81.tdf           ; yes             ; Auto-Generated Megafunction            ; E:/OneDrive/Documents/OAC22018/OACProj2/db/altsyncram_ln81.tdf          ;         ;
-; nivel3dia1_code.mif              ; yes             ; Auto-Found Memory Initialization File  ; E:/OneDrive/Documents/OAC22018/OACProj2/nivel3dia1_code.mif             ;         ;
+; db/altsyncram_nn81.tdf           ; yes             ; Auto-Generated Megafunction            ; E:/OneDrive/Documents/OAC22018/OACProj2/db/altsyncram_nn81.tdf          ;         ;
+; nivel2dia2_code.mif              ; yes             ; Auto-Found Memory Initialization File  ; E:/OneDrive/Documents/OAC22018/OACProj2/nivel2dia2_code.mif             ;         ;
 ; mux.tdf                          ; yes             ; Megafunction                           ; e:/altera/13.0sp1/quartus/libraries/megafunctions/mux.tdf               ;         ;
 ; db/mux_omc.tdf                   ; yes             ; Auto-Generated Megafunction            ; E:/OneDrive/Documents/OAC22018/OACProj2/db/mux_omc.tdf                  ;         ;
 ; db/mux_lmc.tdf                   ; yes             ; Auto-Generated Megafunction            ; E:/OneDrive/Documents/OAC22018/OACProj2/db/mux_lmc.tdf                  ;         ;
@@ -697,29 +698,29 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+--------+
 ; Resource                                    ; Usage  ;
 +---------------------------------------------+--------+
-; Estimated Total logic elements              ; 5,459  ;
+; Estimated Total logic elements              ; 5,424  ;
 ;                                             ;        ;
-; Total combinational functions               ; 4428   ;
+; Total combinational functions               ; 4393   ;
 ; Logic element usage by number of LUT inputs ;        ;
-;     -- 4 input functions                    ; 2890   ;
-;     -- 3 input functions                    ; 1199   ;
-;     -- <=2 input functions                  ; 339    ;
+;     -- 4 input functions                    ; 2905   ;
+;     -- 3 input functions                    ; 1196   ;
+;     -- <=2 input functions                  ; 292    ;
 ;                                             ;        ;
 ; Logic elements by mode                      ;        ;
-;     -- normal mode                          ; 3722   ;
+;     -- normal mode                          ; 3687   ;
 ;     -- arithmetic mode                      ; 706    ;
 ;                                             ;        ;
 ; Total registers                             ; 1464   ;
 ;     -- Dedicated logic registers            ; 1464   ;
 ;     -- I/O registers                        ; 0      ;
 ;                                             ;        ;
-; I/O pins                                    ; 587    ;
+; I/O pins                                    ; 571    ;
 ; Total memory bits                           ; 65536  ;
 ; Embedded Multiplier 9-bit elements          ; 8      ;
 ; Maximum fan-out node                        ; clock2 ;
 ; Maximum fan-out                             ; 1056   ;
-; Total fan-out                               ; 21559  ;
-; Average fan-out                             ; 3.29   ;
+; Total fan-out                               ; 21542  ;
+; Average fan-out                             ; 3.31   ;
 +---------------------------------------------+--------+
 
 
@@ -728,7 +729,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                       ; Library Name ;
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |PipelineInit                                ; 4428 (5)          ; 1464 (0)     ; 65536       ; 8            ; 0       ; 4         ; 587  ; 0            ; |PipelineInit                                                                                                                                             ; work         ;
+; |PipelineInit                                ; 4393 (5)          ; 1464 (0)     ; 65536       ; 8            ; 0       ; 4         ; 571  ; 0            ; |PipelineInit                                                                                                                                             ; work         ;
 ;    |Adder32:inst12|                          ; 58 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|Adder32:inst12                                                                                                                              ; work         ;
 ;       |Adder:inst10|                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|Adder32:inst12|Adder:inst10                                                                                                                 ; work         ;
 ;       |Adder:inst11|                         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|Adder32:inst12|Adder:inst11                                                                                                                 ; work         ;
@@ -775,19 +776,17 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;             |mux_k4e:auto_generated|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|Coproc:inst16|mux2to1_32bits:inst5|lpm_mux:LPM_MUX_component|mux_k4e:auto_generated                                                         ; work         ;
 ;       |register32:inst1|                     ; 31 (31)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|Coproc:inst16|register32:inst1                                                                                                              ; work         ;
 ;       |register32:inst|                      ; 32 (32)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|Coproc:inst16|register32:inst                                                                                                               ; work         ;
-;    |EXMEM:inst23|                            ; 72 (0)            ; 107 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|EXMEM:inst23                                                                                                                                ; work         ;
-;       |registerBarrier107:inst|              ; 72 (72)           ; 107 (107)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|EXMEM:inst23|registerBarrier107:inst                                                                                                        ; work         ;
-;    |Hazard:inst25|                           ; 28 (20)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|Hazard:inst25                                                                                                                               ; work         ;
+;    |EXMEM:inst23|                            ; 97 (0)            ; 107 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|EXMEM:inst23                                                                                                                                ; work         ;
+;       |registerBarrier107:inst|              ; 97 (97)           ; 107 (107)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|EXMEM:inst23|registerBarrier107:inst                                                                                                        ; work         ;
+;    |Hazard:inst25|                           ; 26 (20)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|Hazard:inst25                                                                                                                               ; work         ;
 ;       |Equal5:inst10|                        ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|Hazard:inst25|Equal5:inst10                                                                                                                 ; work         ;
 ;       |Equal5:inst3|                         ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|Hazard:inst25|Equal5:inst3                                                                                                                  ; work         ;
-;       |Equal5:inst5|                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|Hazard:inst25|Equal5:inst5                                                                                                                  ; work         ;
-;       |Equal5:inst6|                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|Hazard:inst25|Equal5:inst6                                                                                                                  ; work         ;
-;    |IDEX:inst9|                              ; 101 (0)           ; 134 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|IDEX:inst9                                                                                                                                  ; work         ;
-;       |registerBarrier149:inst|              ; 101 (101)         ; 134 (134)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|IDEX:inst9|registerBarrier149:inst                                                                                                          ; work         ;
+;    |IDEX:inst9|                              ; 90 (0)            ; 134 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|IDEX:inst9                                                                                                                                  ; work         ;
+;       |registerBarrier149:inst|              ; 90 (90)           ; 134 (134)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|IDEX:inst9|registerBarrier149:inst                                                                                                          ; work         ;
 ;    |IF2ID:inst|                              ; 65 (65)           ; 64 (64)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|IF2ID:inst                                                                                                                                  ; work         ;
 ;    |MEMWB:inst24|                            ; 0 (0)             ; 71 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|MEMWB:inst24                                                                                                                                ; work         ;
 ;       |registerBarrier71:inst|               ; 0 (0)             ; 71 (71)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|MEMWB:inst24|registerBarrier71:inst                                                                                                         ; work         ;
-;    |ULA:inst10|                              ; 818 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10                                                                                                                                  ; work         ;
+;    |ULA:inst10|                              ; 807 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10                                                                                                                                  ; work         ;
 ;       |ShiftLeft:inst5|                      ; 86 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ShiftLeft:inst5                                                                                                                  ; work         ;
 ;          |mux1to2:inst169|                   ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ShiftLeft:inst5|mux1to2:inst169                                                                                                  ; work         ;
 ;             |mux:inst10|                     ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ShiftLeft:inst5|mux1to2:inst169|mux:inst10                                                                                       ; work         ;
@@ -1292,7 +1291,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;             |mux:inst10|                     ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst20|mux4to2:inst12|mux:inst10                                                                                         ; work         ;
 ;                |lpm_mux:$00001|              ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst20|mux4to2:inst12|mux:inst10|lpm_mux:$00001                                                                          ; work         ;
 ;                   |mux_omc:auto_generated|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst20|mux4to2:inst12|mux:inst10|lpm_mux:$00001|mux_omc:auto_generated                                                   ; work         ;
-;       |ULA1bit:inst21|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst21                                                                                                                   ; work         ;
+;       |ULA1bit:inst21|                       ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst21                                                                                                                   ; work         ;
 ;          |Adder:inst7|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst21|Adder:inst7                                                                                                       ; work         ;
 ;          |mux1to2:inst14|                    ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst21|mux1to2:inst14                                                                                                    ; work         ;
 ;             |mux:inst10|                     ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst21|mux1to2:inst14|mux:inst10                                                                                         ; work         ;
@@ -1302,11 +1301,11 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;             |mux:inst10|                     ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst21|mux1to2:inst17|mux:inst10                                                                                         ; work         ;
 ;                |lpm_mux:$00001|              ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst21|mux1to2:inst17|mux:inst10|lpm_mux:$00001                                                                          ; work         ;
 ;                   |mux_lmc:auto_generated|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst21|mux1to2:inst17|mux:inst10|lpm_mux:$00001|mux_lmc:auto_generated                                                   ; work         ;
-;          |mux4to2:inst12|                    ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst21|mux4to2:inst12                                                                                                    ; work         ;
-;             |mux:inst10|                     ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst21|mux4to2:inst12|mux:inst10                                                                                         ; work         ;
-;                |lpm_mux:$00001|              ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst21|mux4to2:inst12|mux:inst10|lpm_mux:$00001                                                                          ; work         ;
-;                   |mux_omc:auto_generated|   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst21|mux4to2:inst12|mux:inst10|lpm_mux:$00001|mux_omc:auto_generated                                                   ; work         ;
-;       |ULA1bit:inst22|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst22                                                                                                                   ; work         ;
+;          |mux4to2:inst12|                    ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst21|mux4to2:inst12                                                                                                    ; work         ;
+;             |mux:inst10|                     ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst21|mux4to2:inst12|mux:inst10                                                                                         ; work         ;
+;                |lpm_mux:$00001|              ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst21|mux4to2:inst12|mux:inst10|lpm_mux:$00001                                                                          ; work         ;
+;                   |mux_omc:auto_generated|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst21|mux4to2:inst12|mux:inst10|lpm_mux:$00001|mux_omc:auto_generated                                                   ; work         ;
+;       |ULA1bit:inst22|                       ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst22                                                                                                                   ; work         ;
 ;          |Adder:inst7|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst22|Adder:inst7                                                                                                       ; work         ;
 ;          |mux1to2:inst14|                    ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst22|mux1to2:inst14                                                                                                    ; work         ;
 ;             |mux:inst10|                     ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst22|mux1to2:inst14|mux:inst10                                                                                         ; work         ;
@@ -1316,11 +1315,11 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;             |mux:inst10|                     ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst22|mux1to2:inst17|mux:inst10                                                                                         ; work         ;
 ;                |lpm_mux:$00001|              ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst22|mux1to2:inst17|mux:inst10|lpm_mux:$00001                                                                          ; work         ;
 ;                   |mux_lmc:auto_generated|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst22|mux1to2:inst17|mux:inst10|lpm_mux:$00001|mux_lmc:auto_generated                                                   ; work         ;
-;          |mux4to2:inst12|                    ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst22|mux4to2:inst12                                                                                                    ; work         ;
-;             |mux:inst10|                     ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst22|mux4to2:inst12|mux:inst10                                                                                         ; work         ;
-;                |lpm_mux:$00001|              ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst22|mux4to2:inst12|mux:inst10|lpm_mux:$00001                                                                          ; work         ;
-;                   |mux_omc:auto_generated|   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst22|mux4to2:inst12|mux:inst10|lpm_mux:$00001|mux_omc:auto_generated                                                   ; work         ;
-;       |ULA1bit:inst23|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst23                                                                                                                   ; work         ;
+;          |mux4to2:inst12|                    ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst22|mux4to2:inst12                                                                                                    ; work         ;
+;             |mux:inst10|                     ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst22|mux4to2:inst12|mux:inst10                                                                                         ; work         ;
+;                |lpm_mux:$00001|              ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst22|mux4to2:inst12|mux:inst10|lpm_mux:$00001                                                                          ; work         ;
+;                   |mux_omc:auto_generated|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst22|mux4to2:inst12|mux:inst10|lpm_mux:$00001|mux_omc:auto_generated                                                   ; work         ;
+;       |ULA1bit:inst23|                       ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst23                                                                                                                   ; work         ;
 ;          |Adder:inst7|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst23|Adder:inst7                                                                                                       ; work         ;
 ;          |mux1to2:inst14|                    ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst23|mux1to2:inst14                                                                                                    ; work         ;
 ;             |mux:inst10|                     ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst23|mux1to2:inst14|mux:inst10                                                                                         ; work         ;
@@ -1330,11 +1329,11 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;             |mux:inst10|                     ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst23|mux1to2:inst17|mux:inst10                                                                                         ; work         ;
 ;                |lpm_mux:$00001|              ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst23|mux1to2:inst17|mux:inst10|lpm_mux:$00001                                                                          ; work         ;
 ;                   |mux_lmc:auto_generated|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst23|mux1to2:inst17|mux:inst10|lpm_mux:$00001|mux_lmc:auto_generated                                                   ; work         ;
-;          |mux4to2:inst12|                    ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst23|mux4to2:inst12                                                                                                    ; work         ;
-;             |mux:inst10|                     ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst23|mux4to2:inst12|mux:inst10                                                                                         ; work         ;
-;                |lpm_mux:$00001|              ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst23|mux4to2:inst12|mux:inst10|lpm_mux:$00001                                                                          ; work         ;
-;                   |mux_omc:auto_generated|   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst23|mux4to2:inst12|mux:inst10|lpm_mux:$00001|mux_omc:auto_generated                                                   ; work         ;
-;       |ULA1bit:inst24|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst24                                                                                                                   ; work         ;
+;          |mux4to2:inst12|                    ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst23|mux4to2:inst12                                                                                                    ; work         ;
+;             |mux:inst10|                     ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst23|mux4to2:inst12|mux:inst10                                                                                         ; work         ;
+;                |lpm_mux:$00001|              ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst23|mux4to2:inst12|mux:inst10|lpm_mux:$00001                                                                          ; work         ;
+;                   |mux_omc:auto_generated|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst23|mux4to2:inst12|mux:inst10|lpm_mux:$00001|mux_omc:auto_generated                                                   ; work         ;
+;       |ULA1bit:inst24|                       ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst24                                                                                                                   ; work         ;
 ;          |Adder:inst7|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst24|Adder:inst7                                                                                                       ; work         ;
 ;          |mux1to2:inst14|                    ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst24|mux1to2:inst14                                                                                                    ; work         ;
 ;             |mux:inst10|                     ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst24|mux1to2:inst14|mux:inst10                                                                                         ; work         ;
@@ -1344,10 +1343,10 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;             |mux:inst10|                     ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst24|mux1to2:inst17|mux:inst10                                                                                         ; work         ;
 ;                |lpm_mux:$00001|              ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst24|mux1to2:inst17|mux:inst10|lpm_mux:$00001                                                                          ; work         ;
 ;                   |mux_lmc:auto_generated|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst24|mux1to2:inst17|mux:inst10|lpm_mux:$00001|mux_lmc:auto_generated                                                   ; work         ;
-;          |mux4to2:inst12|                    ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst24|mux4to2:inst12                                                                                                    ; work         ;
-;             |mux:inst10|                     ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst24|mux4to2:inst12|mux:inst10                                                                                         ; work         ;
-;                |lpm_mux:$00001|              ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst24|mux4to2:inst12|mux:inst10|lpm_mux:$00001                                                                          ; work         ;
-;                   |mux_omc:auto_generated|   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst24|mux4to2:inst12|mux:inst10|lpm_mux:$00001|mux_omc:auto_generated                                                   ; work         ;
+;          |mux4to2:inst12|                    ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst24|mux4to2:inst12                                                                                                    ; work         ;
+;             |mux:inst10|                     ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst24|mux4to2:inst12|mux:inst10                                                                                         ; work         ;
+;                |lpm_mux:$00001|              ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst24|mux4to2:inst12|mux:inst10|lpm_mux:$00001                                                                          ; work         ;
+;                   |mux_omc:auto_generated|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst24|mux4to2:inst12|mux:inst10|lpm_mux:$00001|mux_omc:auto_generated                                                   ; work         ;
 ;       |ULA1bit:inst25|                       ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst25                                                                                                                   ; work         ;
 ;          |Adder:inst7|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst25|Adder:inst7                                                                                                       ; work         ;
 ;          |mux1to2:inst17|                    ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst25|mux1to2:inst17                                                                                                    ; work         ;
@@ -1412,8 +1411,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;             |mux:inst10|                     ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst30|mux4to2:inst12|mux:inst10                                                                                         ; work         ;
 ;                |lpm_mux:$00001|              ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst30|mux4to2:inst12|mux:inst10|lpm_mux:$00001                                                                          ; work         ;
 ;                   |mux_omc:auto_generated|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst30|mux4to2:inst12|mux:inst10|lpm_mux:$00001|mux_omc:auto_generated                                                   ; work         ;
-;       |ULA1bit:inst31|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst31                                                                                                                   ; work         ;
-;          |Adder:inst7|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst31|Adder:inst7                                                                                                       ; work         ;
+;       |ULA1bit:inst31|                       ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst31                                                                                                                   ; work         ;
+;          |Adder:inst7|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst31|Adder:inst7                                                                                                       ; work         ;
 ;          |mux1to2:inst14|                    ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst31|mux1to2:inst14                                                                                                    ; work         ;
 ;             |mux:inst10|                     ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst31|mux1to2:inst14|mux:inst10                                                                                         ; work         ;
 ;                |lpm_mux:$00001|              ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst31|mux1to2:inst14|mux:inst10|lpm_mux:$00001                                                                          ; work         ;
@@ -1426,8 +1425,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;             |mux:inst10|                     ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst31|mux4to2:inst12|mux:inst10                                                                                         ; work         ;
 ;                |lpm_mux:$00001|              ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst31|mux4to2:inst12|mux:inst10|lpm_mux:$00001                                                                          ; work         ;
 ;                   |mux_omc:auto_generated|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst31|mux4to2:inst12|mux:inst10|lpm_mux:$00001|mux_omc:auto_generated                                                   ; work         ;
-;       |ULA1bit:inst32|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst32                                                                                                                   ; work         ;
-;          |Adder:inst7|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst32|Adder:inst7                                                                                                       ; work         ;
+;       |ULA1bit:inst32|                       ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst32                                                                                                                   ; work         ;
+;          |Adder:inst7|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst32|Adder:inst7                                                                                                       ; work         ;
 ;          |mux1to2:inst14|                    ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst32|mux1to2:inst14                                                                                                    ; work         ;
 ;             |mux:inst10|                     ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst32|mux1to2:inst14|mux:inst10                                                                                         ; work         ;
 ;                |lpm_mux:$00001|              ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst32|mux1to2:inst14|mux:inst10|lpm_mux:$00001                                                                          ; work         ;
@@ -1440,8 +1439,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;             |mux:inst10|                     ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst32|mux4to2:inst12|mux:inst10                                                                                         ; work         ;
 ;                |lpm_mux:$00001|              ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst32|mux4to2:inst12|mux:inst10|lpm_mux:$00001                                                                          ; work         ;
 ;                   |mux_omc:auto_generated|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst32|mux4to2:inst12|mux:inst10|lpm_mux:$00001|mux_omc:auto_generated                                                   ; work         ;
-;       |ULA1bit:inst33|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst33                                                                                                                   ; work         ;
-;          |Adder:inst7|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst33|Adder:inst7                                                                                                       ; work         ;
+;       |ULA1bit:inst33|                       ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst33                                                                                                                   ; work         ;
+;          |Adder:inst7|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst33|Adder:inst7                                                                                                       ; work         ;
 ;          |mux1to2:inst14|                    ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst33|mux1to2:inst14                                                                                                    ; work         ;
 ;             |mux:inst10|                     ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst33|mux1to2:inst14|mux:inst10                                                                                         ; work         ;
 ;                |lpm_mux:$00001|              ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst33|mux1to2:inst14|mux:inst10|lpm_mux:$00001                                                                          ; work         ;
@@ -1564,12 +1563,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;             |mux:inst10|                     ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst44|mux4to2:inst12|mux:inst10                                                                                         ; work         ;
 ;                |lpm_mux:$00001|              ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst44|mux4to2:inst12|mux:inst10|lpm_mux:$00001                                                                          ; work         ;
 ;                   |mux_omc:auto_generated|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst44|mux4to2:inst12|mux:inst10|lpm_mux:$00001|mux_omc:auto_generated                                                   ; work         ;
-;       |ULA1bit:inst45|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst45                                                                                                                   ; work         ;
-;          |Adder:inst7|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst45|Adder:inst7                                                                                                       ; work         ;
-;          |mux1to2:inst14|                    ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst45|mux1to2:inst14                                                                                                    ; work         ;
-;             |mux:inst10|                     ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst45|mux1to2:inst14|mux:inst10                                                                                         ; work         ;
-;                |lpm_mux:$00001|              ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst45|mux1to2:inst14|mux:inst10|lpm_mux:$00001                                                                          ; work         ;
-;                   |mux_lmc:auto_generated|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst45|mux1to2:inst14|mux:inst10|lpm_mux:$00001|mux_lmc:auto_generated                                                   ; work         ;
+;       |ULA1bit:inst45|                       ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst45                                                                                                                   ; work         ;
+;          |Adder:inst7|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst45|Adder:inst7                                                                                                       ; work         ;
 ;          |mux1to2:inst17|                    ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst45|mux1to2:inst17                                                                                                    ; work         ;
 ;             |mux:inst10|                     ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst45|mux1to2:inst17|mux:inst10                                                                                         ; work         ;
 ;                |lpm_mux:$00001|              ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst45|mux1to2:inst17|mux:inst10|lpm_mux:$00001                                                                          ; work         ;
@@ -1578,12 +1573,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;             |mux:inst10|                     ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst45|mux4to2:inst12|mux:inst10                                                                                         ; work         ;
 ;                |lpm_mux:$00001|              ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst45|mux4to2:inst12|mux:inst10|lpm_mux:$00001                                                                          ; work         ;
 ;                   |mux_omc:auto_generated|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst45|mux4to2:inst12|mux:inst10|lpm_mux:$00001|mux_omc:auto_generated                                                   ; work         ;
-;       |ULA1bit:inst46|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst46                                                                                                                   ; work         ;
-;          |Adder:inst7|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst46|Adder:inst7                                                                                                       ; work         ;
-;          |mux1to2:inst14|                    ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst46|mux1to2:inst14                                                                                                    ; work         ;
-;             |mux:inst10|                     ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst46|mux1to2:inst14|mux:inst10                                                                                         ; work         ;
-;                |lpm_mux:$00001|              ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst46|mux1to2:inst14|mux:inst10|lpm_mux:$00001                                                                          ; work         ;
-;                   |mux_lmc:auto_generated|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst46|mux1to2:inst14|mux:inst10|lpm_mux:$00001|mux_lmc:auto_generated                                                   ; work         ;
+;       |ULA1bit:inst46|                       ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst46                                                                                                                   ; work         ;
+;          |Adder:inst7|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst46|Adder:inst7                                                                                                       ; work         ;
 ;          |mux1to2:inst17|                    ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst46|mux1to2:inst17                                                                                                    ; work         ;
 ;             |mux:inst10|                     ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst46|mux1to2:inst17|mux:inst10                                                                                         ; work         ;
 ;                |lpm_mux:$00001|              ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst46|mux1to2:inst17|mux:inst10|lpm_mux:$00001                                                                          ; work         ;
@@ -1623,87 +1614,79 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;                |lpm_mux:$00001|              ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst56|mux4to2:inst12|mux:inst10|lpm_mux:$00001                                                                          ; work         ;
 ;                   |mux_omc:auto_generated|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst56|mux4to2:inst12|mux:inst10|lpm_mux:$00001|mux_omc:auto_generated                                                   ; work         ;
 ;       |ULA1bit:inst|                         ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst                                                                                                                     ; work         ;
-;          |Adder:inst7|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst|Adder:inst7                                                                                                         ; work         ;
-;          |mux4to2:inst12|                    ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst|mux4to2:inst12                                                                                                      ; work         ;
-;             |mux:inst10|                     ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst|mux4to2:inst12|mux:inst10                                                                                           ; work         ;
-;                |lpm_mux:$00001|              ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst|mux4to2:inst12|mux:inst10|lpm_mux:$00001                                                                            ; work         ;
-;                   |mux_omc:auto_generated|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst|mux4to2:inst12|mux:inst10|lpm_mux:$00001|mux_omc:auto_generated                                                     ; work         ;
-;       |ULA1bitLAST:inst59|                   ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bitLAST:inst59                                                                                                               ; work         ;
+;          |Adder:inst7|                       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst|Adder:inst7                                                                                                         ; work         ;
+;          |mux4to2:inst12|                    ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst|mux4to2:inst12                                                                                                      ; work         ;
+;             |mux:inst10|                     ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst|mux4to2:inst12|mux:inst10                                                                                           ; work         ;
+;                |lpm_mux:$00001|              ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst|mux4to2:inst12|mux:inst10|lpm_mux:$00001                                                                            ; work         ;
+;                   |mux_omc:auto_generated|   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bit:inst|mux4to2:inst12|mux:inst10|lpm_mux:$00001|mux_omc:auto_generated                                                     ; work         ;
+;       |ULA1bitLAST:inst59|                   ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bitLAST:inst59                                                                                                               ; work         ;
 ;          |Adder:inst7|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bitLAST:inst59|Adder:inst7                                                                                                   ; work         ;
-;          |mux1to2:inst14|                    ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bitLAST:inst59|mux1to2:inst14                                                                                                ; work         ;
-;             |mux:inst10|                     ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bitLAST:inst59|mux1to2:inst14|mux:inst10                                                                                     ; work         ;
-;                |lpm_mux:$00001|              ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bitLAST:inst59|mux1to2:inst14|mux:inst10|lpm_mux:$00001                                                                      ; work         ;
-;                   |mux_lmc:auto_generated|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bitLAST:inst59|mux1to2:inst14|mux:inst10|lpm_mux:$00001|mux_lmc:auto_generated                                               ; work         ;
 ;          |mux1to2:inst17|                    ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bitLAST:inst59|mux1to2:inst17                                                                                                ; work         ;
 ;             |mux:inst10|                     ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bitLAST:inst59|mux1to2:inst17|mux:inst10                                                                                     ; work         ;
 ;                |lpm_mux:$00001|              ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bitLAST:inst59|mux1to2:inst17|mux:inst10|lpm_mux:$00001                                                                      ; work         ;
 ;                   |mux_lmc:auto_generated|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bitLAST:inst59|mux1to2:inst17|mux:inst10|lpm_mux:$00001|mux_lmc:auto_generated                                               ; work         ;
-;          |mux4to2:inst12|                    ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bitLAST:inst59|mux4to2:inst12                                                                                                ; work         ;
-;             |mux:inst10|                     ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bitLAST:inst59|mux4to2:inst12|mux:inst10                                                                                     ; work         ;
-;                |lpm_mux:$00001|              ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bitLAST:inst59|mux4to2:inst12|mux:inst10|lpm_mux:$00001                                                                      ; work         ;
-;                   |mux_omc:auto_generated|   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bitLAST:inst59|mux4to2:inst12|mux:inst10|lpm_mux:$00001|mux_omc:auto_generated                                               ; work         ;
-;       |clo:inst3|                            ; 112 (24)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|clo:inst3                                                                                                                        ; work         ;
-;          |encoder32:inst2|                   ; 88 (88)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|clo:inst3|encoder32:inst2                                                                                                        ; work         ;
+;          |mux4to2:inst12|                    ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bitLAST:inst59|mux4to2:inst12                                                                                                ; work         ;
+;             |mux:inst10|                     ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bitLAST:inst59|mux4to2:inst12|mux:inst10                                                                                     ; work         ;
+;                |lpm_mux:$00001|              ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bitLAST:inst59|mux4to2:inst12|mux:inst10|lpm_mux:$00001                                                                      ; work         ;
+;                   |mux_omc:auto_generated|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|ULA1bitLAST:inst59|mux4to2:inst12|mux:inst10|lpm_mux:$00001|mux_omc:auto_generated                                               ; work         ;
+;       |clo:inst3|                            ; 116 (23)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|clo:inst3                                                                                                                        ; work         ;
+;          |encoder32:inst2|                   ; 93 (93)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|clo:inst3|encoder32:inst2                                                                                                        ; work         ;
 ;       |mux2to1_32bits:inst13|                ; 119 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|mux2to1_32bits:inst13                                                                                                            ; work         ;
 ;          |lpm_mux:LPM_MUX_component|         ; 119 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|mux2to1_32bits:inst13|lpm_mux:LPM_MUX_component                                                                                  ; work         ;
 ;             |mux_k4e:auto_generated|         ; 119 (119)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|mux2to1_32bits:inst13|lpm_mux:LPM_MUX_component|mux_k4e:auto_generated                                                           ; work         ;
-;       |mux8to1_32bits:inst4|                 ; 249 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|mux8to1_32bits:inst4                                                                                                             ; work         ;
-;          |lpm_mux:LPM_MUX_component|         ; 249 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|mux8to1_32bits:inst4|lpm_mux:LPM_MUX_component                                                                                   ; work         ;
-;             |mux_s4e:auto_generated|         ; 249 (249)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|mux8to1_32bits:inst4|lpm_mux:LPM_MUX_component|mux_s4e:auto_generated                                                            ; work         ;
+;       |mux8to1_32bits:inst4|                 ; 247 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|mux8to1_32bits:inst4                                                                                                             ; work         ;
+;          |lpm_mux:LPM_MUX_component|         ; 247 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|mux8to1_32bits:inst4|lpm_mux:LPM_MUX_component                                                                                   ; work         ;
+;             |mux_s4e:auto_generated|         ; 247 (247)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|mux8to1_32bits:inst4|lpm_mux:LPM_MUX_component|mux_s4e:auto_generated                                                            ; work         ;
 ;       |nor32:inst2|                          ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|nor32:inst2                                                                                                                      ; work         ;
 ;       |xor32:inst12|                         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ULA:inst10|xor32:inst12                                                                                                                     ; work         ;
-;    |control:inst30|                          ; 37 (37)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|control:inst30                                                                                                                              ; work         ;
-;    |controlALU:inst13|                       ; 23 (23)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|controlALU:inst13                                                                                                                           ; work         ;
-;    |controlPC:inst29|                        ; 60 (2)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|controlPC:inst29                                                                                                                            ; work         ;
-;       |mux4to1_32bits:inst|                  ; 58 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|controlPC:inst29|mux4to1_32bits:inst                                                                                                        ; work         ;
-;          |lpm_mux:LPM_MUX_component|         ; 58 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|controlPC:inst29|mux4to1_32bits:inst|lpm_mux:LPM_MUX_component                                                                              ; work         ;
-;             |mux_n4e:auto_generated|         ; 58 (58)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|controlPC:inst29|mux4to1_32bits:inst|lpm_mux:LPM_MUX_component|mux_n4e:auto_generated                                                       ; work         ;
+;    |control:inst30|                          ; 33 (33)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|control:inst30                                                                                                                              ; work         ;
+;    |controlALU:inst13|                       ; 21 (21)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|controlALU:inst13                                                                                                                           ; work         ;
+;    |controlPC:inst29|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|controlPC:inst29                                                                                                                            ; work         ;
 ;    |invalidFunct:inst32|                     ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|invalidFunct:inst32                                                                                                                         ; work         ;
 ;    |mux2to1_32bits:inst15|                   ; 32 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|mux2to1_32bits:inst15                                                                                                                       ; work         ;
 ;       |lpm_mux:LPM_MUX_component|            ; 32 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|mux2to1_32bits:inst15|lpm_mux:LPM_MUX_component                                                                                             ; work         ;
 ;          |mux_k4e:auto_generated|            ; 32 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|mux2to1_32bits:inst15|lpm_mux:LPM_MUX_component|mux_k4e:auto_generated                                                                      ; work         ;
-;    |mux2to1_32bits:inst17|                   ; 70 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|mux2to1_32bits:inst17                                                                                                                       ; work         ;
-;       |lpm_mux:LPM_MUX_component|            ; 70 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|mux2to1_32bits:inst17|lpm_mux:LPM_MUX_component                                                                                             ; work         ;
-;          |mux_k4e:auto_generated|            ; 70 (70)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|mux2to1_32bits:inst17|lpm_mux:LPM_MUX_component|mux_k4e:auto_generated                                                                      ; work         ;
+;    |mux2to1_32bits:inst17|                   ; 93 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|mux2to1_32bits:inst17                                                                                                                       ; work         ;
+;       |lpm_mux:LPM_MUX_component|            ; 93 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|mux2to1_32bits:inst17|lpm_mux:LPM_MUX_component                                                                                             ; work         ;
+;          |mux_k4e:auto_generated|            ; 93 (93)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|mux2to1_32bits:inst17|lpm_mux:LPM_MUX_component|mux_k4e:auto_generated                                                                      ; work         ;
+;    |mux2to1_32bits:inst19|                   ; 32 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|mux2to1_32bits:inst19                                                                                                                       ; work         ;
+;       |lpm_mux:LPM_MUX_component|            ; 32 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|mux2to1_32bits:inst19|lpm_mux:LPM_MUX_component                                                                                             ; work         ;
+;          |mux_k4e:auto_generated|            ; 32 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|mux2to1_32bits:inst19|lpm_mux:LPM_MUX_component|mux_k4e:auto_generated                                                                      ; work         ;
 ;    |mux2to1_32bits:inst20|                   ; 32 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|mux2to1_32bits:inst20                                                                                                                       ; work         ;
 ;       |lpm_mux:LPM_MUX_component|            ; 32 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|mux2to1_32bits:inst20|lpm_mux:LPM_MUX_component                                                                                             ; work         ;
 ;          |mux_k4e:auto_generated|            ; 32 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|mux2to1_32bits:inst20|lpm_mux:LPM_MUX_component|mux_k4e:auto_generated                                                                      ; work         ;
-;    |mux2to1_32bits:inst22|                   ; 32 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|mux2to1_32bits:inst22                                                                                                                       ; work         ;
-;       |lpm_mux:LPM_MUX_component|            ; 32 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|mux2to1_32bits:inst22|lpm_mux:LPM_MUX_component                                                                                             ; work         ;
-;          |mux_k4e:auto_generated|            ; 32 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|mux2to1_32bits:inst22|lpm_mux:LPM_MUX_component|mux_k4e:auto_generated                                                                      ; work         ;
-;    |mux2to1_32bits:inst31|                   ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|mux2to1_32bits:inst31                                                                                                                       ; work         ;
-;       |lpm_mux:LPM_MUX_component|            ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|mux2to1_32bits:inst31|lpm_mux:LPM_MUX_component                                                                                             ; work         ;
-;          |mux_k4e:auto_generated|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|mux2to1_32bits:inst31|lpm_mux:LPM_MUX_component|mux_k4e:auto_generated                                                                      ; work         ;
+;    |mux2to1_32bits:inst31|                   ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|mux2to1_32bits:inst31                                                                                                                       ; work         ;
+;       |lpm_mux:LPM_MUX_component|            ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|mux2to1_32bits:inst31|lpm_mux:LPM_MUX_component                                                                                             ; work         ;
+;          |mux_k4e:auto_generated|            ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|mux2to1_32bits:inst31|lpm_mux:LPM_MUX_component|mux_k4e:auto_generated                                                                      ; work         ;
 ;    |mux3to1_32bits:inst33|                   ; 64 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|mux3to1_32bits:inst33                                                                                                                       ; work         ;
 ;       |lpm_mux:LPM_MUX_component|            ; 64 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|mux3to1_32bits:inst33|lpm_mux:LPM_MUX_component                                                                                             ; work         ;
 ;          |mux_m4e:auto_generated|            ; 64 (64)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|mux3to1_32bits:inst33|lpm_mux:LPM_MUX_component|mux_m4e:auto_generated                                                                      ; work         ;
-;    |mux3to1_32bits:inst34|                   ; 64 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|mux3to1_32bits:inst34                                                                                                                       ; work         ;
-;       |lpm_mux:LPM_MUX_component|            ; 64 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|mux3to1_32bits:inst34|lpm_mux:LPM_MUX_component                                                                                             ; work         ;
-;          |mux_m4e:auto_generated|            ; 64 (64)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|mux3to1_32bits:inst34|lpm_mux:LPM_MUX_component|mux_m4e:auto_generated                                                                      ; work         ;
+;    |mux3to1_32bits:inst34|                   ; 71 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|mux3to1_32bits:inst34                                                                                                                       ; work         ;
+;       |lpm_mux:LPM_MUX_component|            ; 71 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|mux3to1_32bits:inst34|lpm_mux:LPM_MUX_component                                                                                             ; work         ;
+;          |mux_m4e:auto_generated|            ; 71 (71)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|mux3to1_32bits:inst34|lpm_mux:LPM_MUX_component|mux_m4e:auto_generated                                                                      ; work         ;
 ;    |mux3to1_5bits:inst27|                    ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|mux3to1_5bits:inst27                                                                                                                        ; work         ;
 ;       |lpm_mux:LPM_MUX_component|            ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|mux3to1_5bits:inst27|lpm_mux:LPM_MUX_component                                                                                              ; work         ;
 ;          |mux_63e:auto_generated|            ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|mux3to1_5bits:inst27|lpm_mux:LPM_MUX_component|mux_63e:auto_generated                                                                       ; work         ;
 ;    |pc:inst3|                                ; 32 (32)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|pc:inst3                                                                                                                                    ; work         ;
-;    |plusFour32:inst2|                        ; 22 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|plusFour32:inst2                                                                                                                            ; work         ;
-;       |Adder32:inst|                         ; 22 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|plusFour32:inst2|Adder32:inst                                                                                                               ; work         ;
+;    |plusFour32:inst2|                        ; 20 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|plusFour32:inst2                                                                                                                            ; work         ;
+;       |Adder32:inst|                         ; 20 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|plusFour32:inst2|Adder32:inst                                                                                                               ; work         ;
 ;          |Adder:inst10|                      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|plusFour32:inst2|Adder32:inst|Adder:inst10                                                                                                  ; work         ;
 ;          |Adder:inst15|                      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|plusFour32:inst2|Adder32:inst|Adder:inst15                                                                                                  ; work         ;
 ;          |Adder:inst17|                      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|plusFour32:inst2|Adder32:inst|Adder:inst17                                                                                                  ; work         ;
-;          |Adder:inst1|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|plusFour32:inst2|Adder32:inst|Adder:inst1                                                                                                   ; work         ;
+;          |Adder:inst1|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|plusFour32:inst2|Adder32:inst|Adder:inst1                                                                                                   ; work         ;
 ;          |Adder:inst20|                      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|plusFour32:inst2|Adder32:inst|Adder:inst20                                                                                                  ; work         ;
 ;          |Adder:inst21|                      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|plusFour32:inst2|Adder32:inst|Adder:inst21                                                                                                  ; work         ;
 ;          |Adder:inst22|                      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|plusFour32:inst2|Adder32:inst|Adder:inst22                                                                                                  ; work         ;
 ;          |Adder:inst23|                      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|plusFour32:inst2|Adder32:inst|Adder:inst23                                                                                                  ; work         ;
 ;          |Adder:inst25|                      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|plusFour32:inst2|Adder32:inst|Adder:inst25                                                                                                  ; work         ;
 ;          |Adder:inst26|                      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|plusFour32:inst2|Adder32:inst|Adder:inst26                                                                                                  ; work         ;
-;          |Adder:inst27|                      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|plusFour32:inst2|Adder32:inst|Adder:inst27                                                                                                  ; work         ;
 ;          |Adder:inst6|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|plusFour32:inst2|Adder32:inst|Adder:inst6                                                                                                   ; work         ;
 ;          |Adder:inst8|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|plusFour32:inst2|Adder32:inst|Adder:inst8                                                                                                   ; work         ;
 ;    |ramData:inst14|                          ; 0 (0)             ; 0 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ramData:inst14                                                                                                                              ; work         ;
 ;       |altsyncram:altsyncram_component|      ; 0 (0)             ; 0 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ramData:inst14|altsyncram:altsyncram_component                                                                                              ; work         ;
-;          |altsyncram_nqd1:auto_generated|    ; 0 (0)             ; 0 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ramData:inst14|altsyncram:altsyncram_component|altsyncram_nqd1:auto_generated                                                               ; work         ;
-;    |registerBank:inst4|                      ; 1333 (0)          ; 992 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|registerBank:inst4                                                                                                                          ; work         ;
-;       |decoderNTo2N:inst1|                   ; 43 (43)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|registerBank:inst4|decoderNTo2N:inst1                                                                                                       ; work         ;
+;          |altsyncram_pqd1:auto_generated|    ; 0 (0)             ; 0 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|ramData:inst14|altsyncram:altsyncram_component|altsyncram_pqd1:auto_generated                                                               ; work         ;
+;    |registerBank:inst4|                      ; 1328 (0)          ; 992 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|registerBank:inst4                                                                                                                          ; work         ;
+;       |decoderNTo2N:inst1|                   ; 38 (38)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|registerBank:inst4|decoderNTo2N:inst1                                                                                                       ; work         ;
 ;       |mux32to1_32bits:inst65|               ; 645 (645)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|registerBank:inst4|mux32to1_32bits:inst65                                                                                                   ; work         ;
 ;       |mux32to1_32bits:inst70|               ; 645 (645)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|registerBank:inst4|mux32to1_32bits:inst70                                                                                                   ; work         ;
 ;       |register32:inst10|                    ; 0 (0)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|registerBank:inst4|register32:inst10                                                                                                        ; work         ;
@@ -1739,7 +1722,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |register32:inst9|                     ; 0 (0)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|registerBank:inst4|register32:inst9                                                                                                         ; work         ;
 ;    |romInstructions:inst8|                   ; 0 (0)             ; 0 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|romInstructions:inst8                                                                                                                       ; work         ;
 ;       |altsyncram:altsyncram_component|      ; 0 (0)             ; 0 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|romInstructions:inst8|altsyncram:altsyncram_component                                                                                       ; work         ;
-;          |altsyncram_ln81:auto_generated|    ; 0 (0)             ; 0 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|romInstructions:inst8|altsyncram:altsyncram_component|altsyncram_ln81:auto_generated                                                        ; work         ;
+;          |altsyncram_nn81:auto_generated|    ; 0 (0)             ; 0 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|romInstructions:inst8|altsyncram:altsyncram_component|altsyncram_nn81:auto_generated                                                        ; work         ;
+;    |typeIException:inst26|                   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PipelineInit|typeIException:inst26                                                                                                                       ; work         ;
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1749,8 +1733,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+-------+---------------------+
 ; Name                                                                                            ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF                 ;
 +-------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+-------+---------------------+
-; ramData:inst14|altsyncram:altsyncram_component|altsyncram_nqd1:auto_generated|ALTSYNCRAM        ; AUTO ; Single Port ; 1024         ; 32           ; --           ; --           ; 32768 ; nivel3dia1_data.mif ;
-; romInstructions:inst8|altsyncram:altsyncram_component|altsyncram_ln81:auto_generated|ALTSYNCRAM ; AUTO ; ROM         ; 1024         ; 32           ; --           ; --           ; 32768 ; nivel3dia1_code.mif ;
+; ramData:inst14|altsyncram:altsyncram_component|altsyncram_pqd1:auto_generated|ALTSYNCRAM        ; AUTO ; Single Port ; 1024         ; 32           ; --           ; --           ; 32768 ; nivel2dia2_data.mif ;
+; romInstructions:inst8|altsyncram:altsyncram_component|altsyncram_nn81:auto_generated|ALTSYNCRAM ; AUTO ; ROM         ; 1024         ; 32           ; --           ; --           ; 32768 ; nivel2dia2_code.mif ;
 +-------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+-------+---------------------+
 
 
@@ -1804,38 +1788,38 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 +-----------------------------------------------------+---------------------+------------------------+
 ; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
 +-----------------------------------------------------+---------------------+------------------------+
-; pc:inst3|current_address[31]                        ; inst44              ; yes                    ;
-; pc:inst3|current_address[30]                        ; inst44              ; yes                    ;
-; pc:inst3|current_address[29]                        ; inst44              ; yes                    ;
-; pc:inst3|current_address[28]                        ; inst44              ; yes                    ;
-; pc:inst3|current_address[27]                        ; inst44              ; yes                    ;
-; pc:inst3|current_address[26]                        ; inst44              ; yes                    ;
-; pc:inst3|current_address[25]                        ; inst44              ; yes                    ;
-; pc:inst3|current_address[24]                        ; inst44              ; yes                    ;
-; pc:inst3|current_address[23]                        ; inst44              ; yes                    ;
-; pc:inst3|current_address[22]                        ; inst44              ; yes                    ;
-; pc:inst3|current_address[21]                        ; inst44              ; yes                    ;
-; pc:inst3|current_address[20]                        ; inst44              ; yes                    ;
-; pc:inst3|current_address[19]                        ; inst44              ; yes                    ;
-; pc:inst3|current_address[18]                        ; inst44              ; yes                    ;
-; pc:inst3|current_address[17]                        ; inst44              ; yes                    ;
-; pc:inst3|current_address[16]                        ; inst44              ; yes                    ;
-; pc:inst3|current_address[15]                        ; inst44              ; yes                    ;
-; pc:inst3|current_address[14]                        ; inst44              ; yes                    ;
-; pc:inst3|current_address[13]                        ; inst44              ; yes                    ;
-; pc:inst3|current_address[12]                        ; inst44              ; yes                    ;
-; pc:inst3|current_address[11]                        ; inst44              ; yes                    ;
-; pc:inst3|current_address[10]                        ; inst44              ; yes                    ;
-; pc:inst3|current_address[9]                         ; inst44              ; yes                    ;
-; pc:inst3|current_address[8]                         ; inst44              ; yes                    ;
-; pc:inst3|current_address[7]                         ; inst44              ; yes                    ;
-; pc:inst3|current_address[6]                         ; inst44              ; yes                    ;
-; pc:inst3|current_address[5]                         ; inst44              ; yes                    ;
-; pc:inst3|current_address[4]                         ; inst44              ; yes                    ;
-; pc:inst3|current_address[3]                         ; inst44              ; yes                    ;
-; pc:inst3|current_address[2]                         ; inst44              ; yes                    ;
-; pc:inst3|current_address[1]                         ; inst44              ; yes                    ;
-; pc:inst3|current_address[0]                         ; inst44              ; yes                    ;
+; pc:inst3|current_address[31]                        ; inst39              ; yes                    ;
+; pc:inst3|current_address[30]                        ; inst39              ; yes                    ;
+; pc:inst3|current_address[29]                        ; inst39              ; yes                    ;
+; pc:inst3|current_address[28]                        ; inst39              ; yes                    ;
+; pc:inst3|current_address[27]                        ; inst39              ; yes                    ;
+; pc:inst3|current_address[26]                        ; inst39              ; yes                    ;
+; pc:inst3|current_address[25]                        ; inst39              ; yes                    ;
+; pc:inst3|current_address[24]                        ; inst39              ; yes                    ;
+; pc:inst3|current_address[23]                        ; inst39              ; yes                    ;
+; pc:inst3|current_address[22]                        ; inst39              ; yes                    ;
+; pc:inst3|current_address[21]                        ; inst39              ; yes                    ;
+; pc:inst3|current_address[20]                        ; inst39              ; yes                    ;
+; pc:inst3|current_address[19]                        ; inst39              ; yes                    ;
+; pc:inst3|current_address[18]                        ; inst39              ; yes                    ;
+; pc:inst3|current_address[17]                        ; inst39              ; yes                    ;
+; pc:inst3|current_address[16]                        ; inst39              ; yes                    ;
+; pc:inst3|current_address[15]                        ; inst39              ; yes                    ;
+; pc:inst3|current_address[14]                        ; inst39              ; yes                    ;
+; pc:inst3|current_address[13]                        ; inst39              ; yes                    ;
+; pc:inst3|current_address[12]                        ; inst39              ; yes                    ;
+; pc:inst3|current_address[11]                        ; inst39              ; yes                    ;
+; pc:inst3|current_address[10]                        ; inst39              ; yes                    ;
+; pc:inst3|current_address[9]                         ; inst39              ; yes                    ;
+; pc:inst3|current_address[8]                         ; inst39              ; yes                    ;
+; pc:inst3|current_address[7]                         ; inst39              ; yes                    ;
+; pc:inst3|current_address[6]                         ; inst39              ; yes                    ;
+; pc:inst3|current_address[5]                         ; inst39              ; yes                    ;
+; pc:inst3|current_address[4]                         ; inst39              ; yes                    ;
+; pc:inst3|current_address[3]                         ; inst39              ; yes                    ;
+; pc:inst3|current_address[2]                         ; inst39              ; yes                    ;
+; pc:inst3|current_address[1]                         ; inst39              ; yes                    ;
+; pc:inst3|current_address[0]                         ; inst39              ; yes                    ;
 ; Number of user-specified and inferred latches = 32  ;                     ;                        ;
 +-----------------------------------------------------+---------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
@@ -1858,11 +1842,11 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
 ; Total registers                              ; 1464  ;
-; Number of registers using Synchronous Clear  ; 100   ;
-; Number of registers using Synchronous Load   ; 63    ;
+; Number of registers using Synchronous Clear  ; 79    ;
+; Number of registers using Synchronous Load   ; 95    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 1147  ;
+; Number of registers using Clock Enable       ; 1146  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -1872,24 +1856,22 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                               ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; Yes        ; |PipelineInit|Coproc:inst16|register32:inst1|q[17]                                                                       ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |PipelineInit|Coproc:inst16|register32:inst|q[2]                                                                         ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |PipelineInit|IDEX:inst9|registerBarrier149:inst|output[91]                                                              ;
-; 3:1                ; 64 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |PipelineInit|IF2ID:inst|PCOut[16]                                                                                       ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |PipelineInit|mux2to1_32bits:inst17|lpm_mux:LPM_MUX_component|mux_k4e:auto_generated|result_node[22]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |PipelineInit|ULA:inst10|mux2to1_32bits:inst13|lpm_mux:LPM_MUX_component|mux_k4e:auto_generated|result_node[6]           ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |PipelineInit|mux3to1_32bits:inst34|lpm_mux:LPM_MUX_component|mux_m4e:auto_generated|result_node[20]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |PipelineInit|mux3to1_32bits:inst33|lpm_mux:LPM_MUX_component|mux_m4e:auto_generated|result_node[9]                      ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |PipelineInit|pc:inst3|address[0]                                                                                        ;
+; 3:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; Yes        ; |PipelineInit|Coproc:inst16|register32:inst1|q[26]                                                                       ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |PipelineInit|Coproc:inst16|register32:inst|q[1]                                                                         ;
+; 3:1                ; 64 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |PipelineInit|IF2ID:inst|PCOut[7]                                                                                        ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |PipelineInit|ULA:inst10|mux2to1_32bits:inst13|lpm_mux:LPM_MUX_component|mux_k4e:auto_generated|result_node[19]          ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |PipelineInit|mux3to1_32bits:inst34|lpm_mux:LPM_MUX_component|mux_m4e:auto_generated|result_node[16]                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |PipelineInit|mux3to1_32bits:inst33|lpm_mux:LPM_MUX_component|mux_m4e:auto_generated|result_node[21]                     ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |PipelineInit|ULA:inst10|ShiftLeft:inst5|mux1to2:inst227|mux:inst10|lpm_mux:$00001|mux_lmc:auto_generated|result_node[0] ;
-; 8:1                ; 4 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |PipelineInit|controlALU:inst13|Mux9                                                                                     ;
-; 32:1               ; 32 bits   ; 672 LEs       ; 640 LEs              ; 32 LEs                 ; No         ; |PipelineInit|registerBank:inst4|mux32to1_32bits:inst65|Mux17                                                            ;
-; 32:1               ; 32 bits   ; 672 LEs       ; 640 LEs              ; 32 LEs                 ; No         ; |PipelineInit|registerBank:inst4|mux32to1_32bits:inst70|Mux29                                                            ;
-; 64:1               ; 2 bits    ; 84 LEs        ; 26 LEs               ; 58 LEs                 ; No         ; |PipelineInit|control:inst30|Mux7                                                                                        ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |PipelineInit|controlALU:inst13|Mux6                                                                                     ;
+; 32:1               ; 32 bits   ; 672 LEs       ; 640 LEs              ; 32 LEs                 ; No         ; |PipelineInit|registerBank:inst4|mux32to1_32bits:inst70|Mux12                                                            ;
+; 32:1               ; 32 bits   ; 672 LEs       ; 640 LEs              ; 32 LEs                 ; No         ; |PipelineInit|registerBank:inst4|mux32to1_32bits:inst65|Mux11                                                            ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------+
-; Source assignments for ramData:inst14|altsyncram:altsyncram_component|altsyncram_nqd1:auto_generated ;
+; Source assignments for ramData:inst14|altsyncram:altsyncram_component|altsyncram_pqd1:auto_generated ;
 +---------------------------------+--------------------+------+----------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                     ;
 +---------------------------------+--------------------+------+----------------------------------------+
@@ -1898,7 +1880,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 
 
 +-------------------------------------------------------------------------------------------------------------+
-; Source assignments for romInstructions:inst8|altsyncram:altsyncram_component|altsyncram_ln81:auto_generated ;
+; Source assignments for romInstructions:inst8|altsyncram:altsyncram_component|altsyncram_nn81:auto_generated ;
 +---------------------------------+--------------------+------+-----------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                            ;
 +---------------------------------+--------------------+------+-----------------------------------------------+
@@ -1968,7 +1950,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                         ;
 ; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                         ;
 ; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                         ;
-; INIT_FILE                          ; nivel3dia1_data.mif  ; Untyped                         ;
+; INIT_FILE                          ; nivel2dia2_data.mif  ; Untyped                         ;
 ; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                         ;
 ; MAXIMUM_DEPTH                      ; 0                    ; Untyped                         ;
 ; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                         ;
@@ -1981,7 +1963,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                         ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                         ;
 ; DEVICE_FAMILY                      ; Cyclone II           ; Untyped                         ;
-; CBXI_PARAMETER                     ; altsyncram_nqd1      ; Untyped                         ;
+; CBXI_PARAMETER                     ; altsyncram_pqd1      ; Untyped                         ;
 +------------------------------------+----------------------+---------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -2048,7 +2030,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                ;
 ; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                ;
 ; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                ;
-; INIT_FILE                          ; nivel3dia1_code.mif  ; Untyped                                ;
+; INIT_FILE                          ; nivel2dia2_code.mif  ; Untyped                                ;
 ; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                ;
 ; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                ;
 ; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                ;
@@ -2061,7 +2043,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                ;
 ; DEVICE_FAMILY                      ; Cyclone II           ; Untyped                                ;
-; CBXI_PARAMETER                     ; altsyncram_ln81      ; Untyped                                ;
+; CBXI_PARAMETER                     ; altsyncram_nn81      ; Untyped                                ;
 +------------------------------------+----------------------+----------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -7003,7 +6985,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:19     ;
+; Top            ; 00:00:21     ;
 +----------------+--------------+
 
 
@@ -7013,7 +6995,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Dec 01 23:36:35 2018
+    Info: Processing started: Mon Dec 03 21:55:11 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off PipelineMIPS -c PipelineMIPS
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file registerbarrier128.vhd
@@ -7140,6 +7122,9 @@ Info (12021): Found 2 design units, including 1 entities, in source file if2id.v
 Info (12021): Found 2 design units, including 1 entities, in source file invalidfunct.vhd
     Info (12022): Found design unit 1: invalidFunct-bhv
     Info (12023): Found entity 1: invalidFunct
+Info (12021): Found 2 design units, including 1 entities, in source file typeiexception.vhd
+    Info (12022): Found design unit 1: typeIException-bhv
+    Info (12023): Found entity 1: typeIException
 Info (12127): Elaborating entity "PipelineInit" for the top level hierarchy
 Info (12128): Elaborating entity "BranchControl" for hierarchy "BranchControl:inst18"
 Info (12128): Elaborating entity "EXMEM" for hierarchy "EXMEM:inst23"
@@ -7180,7 +7165,7 @@ Info (12130): Elaborated megafunction instantiation "ramData:inst14|altsyncram:a
 Info (12133): Instantiated megafunction "ramData:inst14|altsyncram:altsyncram_component" with the following parameter:
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
-    Info (12134): Parameter "init_file" = "nivel3dia1_data.mif"
+    Info (12134): Parameter "init_file" = "nivel2dia2_data.mif"
     Info (12134): Parameter "intended_device_family" = "Cyclone II"
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "altsyncram"
@@ -7192,9 +7177,9 @@ Info (12133): Instantiated megafunction "ramData:inst14|altsyncram:altsyncram_co
     Info (12134): Parameter "widthad_a" = "10"
     Info (12134): Parameter "width_a" = "32"
     Info (12134): Parameter "width_byteena_a" = "1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_nqd1.tdf
-    Info (12023): Found entity 1: altsyncram_nqd1
-Info (12128): Elaborating entity "altsyncram_nqd1" for hierarchy "ramData:inst14|altsyncram:altsyncram_component|altsyncram_nqd1:auto_generated"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_pqd1.tdf
+    Info (12023): Found entity 1: altsyncram_pqd1
+Info (12128): Elaborating entity "altsyncram_pqd1" for hierarchy "ramData:inst14|altsyncram:altsyncram_component|altsyncram_pqd1:auto_generated"
 Warning (12125): Using design file mux2to1_32bits.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: mux2to1_32bits-SYN
     Info (12023): Found entity 1: mux2to1_32bits
@@ -7224,7 +7209,7 @@ Info (12130): Elaborated megafunction instantiation "romInstructions:inst8|altsy
 Info (12133): Instantiated megafunction "romInstructions:inst8|altsyncram:altsyncram_component" with the following parameter:
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
-    Info (12134): Parameter "init_file" = "nivel3dia1_code.mif"
+    Info (12134): Parameter "init_file" = "nivel2dia2_code.mif"
     Info (12134): Parameter "intended_device_family" = "Cyclone II"
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "altsyncram"
@@ -7235,9 +7220,9 @@ Info (12133): Instantiated megafunction "romInstructions:inst8|altsyncram:altsyn
     Info (12134): Parameter "widthad_a" = "10"
     Info (12134): Parameter "width_a" = "32"
     Info (12134): Parameter "width_byteena_a" = "1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ln81.tdf
-    Info (12023): Found entity 1: altsyncram_ln81
-Info (12128): Elaborating entity "altsyncram_ln81" for hierarchy "romInstructions:inst8|altsyncram:altsyncram_component|altsyncram_ln81:auto_generated"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_nn81.tdf
+    Info (12023): Found entity 1: altsyncram_nn81
+Info (12128): Elaborating entity "altsyncram_nn81" for hierarchy "romInstructions:inst8|altsyncram:altsyncram_component|altsyncram_nn81:auto_generated"
 Info (12128): Elaborating entity "pc" for hierarchy "pc:inst3"
 Warning (10492): VHDL Process Statement warning at pc.vhd(25): signal "enable" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at pc.vhd(26): signal "address" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
@@ -7343,6 +7328,7 @@ Info (12133): Instantiated megafunction "mux3to1_32bits:inst33|LPM_MUX:LPM_MUX_c
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_m4e.tdf
     Info (12023): Found entity 1: mux_m4e
 Info (12128): Elaborating entity "mux_m4e" for hierarchy "mux3to1_32bits:inst33|LPM_MUX:LPM_MUX_component|mux_m4e:auto_generated"
+Info (12128): Elaborating entity "typeIException" for hierarchy "typeIException:inst26"
 Info (12128): Elaborating entity "Coproc" for hierarchy "Coproc:inst16"
 Warning (12125): Using design file divider.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: divider-SYN
@@ -7410,16 +7396,16 @@ Info (13014): Ignored 248 buffer(s)
     Info (13019): Ignored 248 SOFT buffer(s)
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 6182 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 6099 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 585 output pins
-    Info (21061): Implemented 5523 logic cells
+    Info (21059): Implemented 569 output pins
+    Info (21061): Implemented 5456 logic cells
     Info (21064): Implemented 64 RAM segments
     Info (21062): Implemented 8 DSP elements
 Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 13 warnings
-    Info: Peak virtual memory: 474 megabytes
-    Info: Processing ended: Sat Dec 01 23:37:17 2018
-    Info: Elapsed time: 00:00:42
-    Info: Total CPU time (on all processors): 00:00:40
+    Info: Peak virtual memory: 470 megabytes
+    Info: Processing ended: Mon Dec 03 21:55:57 2018
+    Info: Elapsed time: 00:00:46
+    Info: Total CPU time (on all processors): 00:00:44
 
 

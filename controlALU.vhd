@@ -27,7 +27,7 @@ begin
 		when "101010"			  => operation <= "0111"; controlCoproc <= "00"; -- SLT
 		when "000000"			  => operation <= "1000"; controlCoproc <= "00"; -- SLL
 		when "000010"			  => operation <= "1001"; controlCoproc <= "00"; -- SRL
-		when "011001"			  => operation <= "0000"; controlCoproc <= "11"; -- MULT
+		when "011000"			  => operation <= "0000"; controlCoproc <= "11"; -- MULT
 		when "011010"			  => operation <= "0000"; controlCoproc <= "10"; -- DIV
 		when "010000"			  => operation <= "1101"; controlCoproc <= "00"; -- MFHI
 		when "010010"			  => operation <= "1110"; controlCoproc <= "00"; -- MFLO
