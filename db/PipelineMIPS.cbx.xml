@@ -14,8 +14,6 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|PipelineInit|ULA:inst10|ShiftLeft:inst5|mux1to2:inst203|MUX:inst10|LPM_MUX:$00001" CBX_FILE_NAME="mux_lmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|PipelineInit|ULA:inst10|ShiftRight:inst7|mux1to2:inst|MUX:inst10|LPM_MUX:$00001" CBX_FILE_NAME="mux_lmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|PipelineInit|mux2to1_32bits:inst17|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_k4e.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|PipelineInit|ULA:inst10|ShiftRight:inst7|mux1to2:inst287|MUX:inst10|LPM_MUX:$00001" CBX_FILE_NAME="mux_lmc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|PipelineInit|controlALU:inst13|LPM_MUX:Mux11" CBX_FILE_NAME="mux_3nc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|PipelineInit|ULA:inst10|ShiftLeft:inst5|mux1to2:inst160|MUX:inst10|LPM_MUX:$00001" CBX_FILE_NAME="mux_lmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|PipelineInit|ULA:inst10|ShiftLeft:inst5|mux1to2:inst241|MUX:inst10|LPM_MUX:$00001" CBX_FILE_NAME="mux_lmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|PipelineInit|ULA:inst10|ShiftRight:inst7|mux1to2:inst189|MUX:inst10|LPM_MUX:$00001" CBX_FILE_NAME="mux_lmc.tdf"/>
@@ -143,7 +141,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|PipelineInit|ULA:inst10|ShiftRight:inst7|mux1to2:inst225|MUX:inst10|LPM_MUX:$00001" CBX_FILE_NAME="mux_lmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|PipelineInit|ULA:inst10|ULA1bit:inst20|mux1to2:inst17|MUX:inst10|LPM_MUX:$00001" CBX_FILE_NAME="mux_lmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|PipelineInit|ULA:inst10|ULA1bitLAST:inst59|mux1to2:inst17|MUX:inst10|LPM_MUX:$00001" CBX_FILE_NAME="mux_lmc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|PipelineInit|ramData:inst14|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_gji1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|PipelineInit|ramData:inst14|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_iei1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|PipelineInit|registerBank:inst4|mux32to1_32bits:inst65|LPM_MUX:Mux31" CBX_FILE_NAME="mux_ioc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|PipelineInit|registerBank:inst4|mux32to1_32bits:inst70|LPM_MUX:Mux26" CBX_FILE_NAME="mux_ioc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|PipelineInit|ULA:inst10|ShiftLeft:inst5|mux1to2:inst177|MUX:inst10|LPM_MUX:$00001" CBX_FILE_NAME="mux_lmc.tdf"/>
@@ -192,7 +190,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|PipelineInit|ULA:inst10|ShiftRight:inst7|mux1to2:inst230|MUX:inst10|LPM_MUX:$00001" CBX_FILE_NAME="mux_lmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|PipelineInit|registerBank:inst4|mux32to1_32bits:inst65|LPM_MUX:Mux0" CBX_FILE_NAME="mux_ioc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|PipelineInit|registerBank:inst4|mux32to1_32bits:inst70|LPM_MUX:Mux31" CBX_FILE_NAME="mux_ioc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|PipelineInit|romInstructions:inst8|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_egd1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|PipelineInit|romInstructions:inst8|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_gbd1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|PipelineInit|ULA:inst10|ShiftLeft:inst5|mux1to2:inst182|MUX:inst10|LPM_MUX:$00001" CBX_FILE_NAME="mux_lmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|PipelineInit|ULA:inst10|ShiftLeft:inst5|mux1to2:inst263|MUX:inst10|LPM_MUX:$00001" CBX_FILE_NAME="mux_lmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|PipelineInit|ULA:inst10|ShiftRight:inst7|mux1to2:inst132|MUX:inst10|LPM_MUX:$00001" CBX_FILE_NAME="mux_lmc.tdf"/>
@@ -374,8 +372,10 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|PipelineInit|ULA:inst10|ShiftLeft:inst5|mux1to2:inst171|MUX:inst10|LPM_MUX:$00001" CBX_FILE_NAME="mux_lmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|PipelineInit|ULA:inst10|ShiftLeft:inst5|mux1to2:inst252|MUX:inst10|LPM_MUX:$00001" CBX_FILE_NAME="mux_lmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|PipelineInit|ULA:inst10|ShiftRight:inst7|mux1to2:inst202|MUX:inst10|LPM_MUX:$00001" CBX_FILE_NAME="mux_lmc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|PipelineInit|control:inst30|LPM_MUX:Mux17" CBX_FILE_NAME="mux_ioc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|PipelineInit|ULA:inst10|ShiftLeft:inst5|mux1to2:inst154|MUX:inst10|LPM_MUX:$00001" CBX_FILE_NAME="mux_lmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|PipelineInit|ULA:inst10|ShiftLeft:inst5|mux1to2:inst235|MUX:inst10|LPM_MUX:$00001" CBX_FILE_NAME="mux_lmc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|PipelineInit|control:inst30|LPM_MUX:Mux18" CBX_FILE_NAME="mux_ooc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|PipelineInit|ULA:inst10|ShiftLeft:inst5|mux1to2:inst137|MUX:inst10|LPM_MUX:$00001" CBX_FILE_NAME="mux_lmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|PipelineInit|ULA:inst10|ShiftLeft:inst5|mux1to2:inst218|MUX:inst10|LPM_MUX:$00001" CBX_FILE_NAME="mux_lmc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|PipelineInit|ULA:inst10|ShiftRight:inst7|mux1to2:inst240|MUX:inst10|LPM_MUX:$00001" CBX_FILE_NAME="mux_lmc.tdf"/>
@@ -532,5 +532,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|PipelineInit|registerBank:inst4|mux32to1_32bits:inst65|LPM_MUX:Mux19" CBX_FILE_NAME="mux_ioc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|PipelineInit|ULA:inst10|ULA1bit:inst56|mux4to2:inst12|MUX:inst10|LPM_MUX:$00001" CBX_FILE_NAME="mux_omc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|PipelineInit|controlALU:inst13|LPM_MUX:Mux10" CBX_FILE_NAME="mux_3nc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|PipelineInit|ULA:inst10|ShiftRight:inst7|mux1to2:inst287|MUX:inst10|LPM_MUX:$00001" CBX_FILE_NAME="mux_lmc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|PipelineInit|controlALU:inst13|LPM_MUX:Mux11" CBX_FILE_NAME="mux_3nc.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

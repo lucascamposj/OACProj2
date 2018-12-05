@@ -5827,6 +5827,23 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 80 80))
 	)
 )
+(symbol
+	(rect 184 3720 216 3752)
+	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
+	(text "inst1" (rect 3 21 26 33)(font "Arial" )(invisible))
+	(port
+		(pt 16 0)
+		(output)
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(line (pt 16 8)(pt 16 0))
+	)
+	(drawing
+		(line (pt 8 8)(pt 16 16))
+		(line (pt 16 16)(pt 24 8))
+		(line (pt 8 8)(pt 24 8))
+	)
+)
 (connector
 	(pt 488 168)
 	(pt 472 168)
@@ -6249,19 +6266,9 @@ applicable agreement for further details.
 	(pt 488 1976)
 )
 (connector
-	(text "in[0]" (rect 386 1976 407 1988)(font "Arial" ))
-	(pt 376 1992)
-	(pt 488 1992)
-)
-(connector
 	(text "in[17]" (rect 386 2072 413 2084)(font "Arial" ))
 	(pt 376 2088)
 	(pt 488 2088)
-)
-(connector
-	(text "in[1]" (rect 386 2088 407 2100)(font "Arial" ))
-	(pt 376 2104)
-	(pt 488 2104)
 )
 (connector
 	(text "in[18]" (rect 386 2184 413 2196)(font "Arial" ))
@@ -6269,19 +6276,9 @@ applicable agreement for further details.
 	(pt 488 2200)
 )
 (connector
-	(text "in[2]" (rect 386 2200 407 2212)(font "Arial" ))
-	(pt 376 2216)
-	(pt 488 2216)
-)
-(connector
 	(text "in[19]" (rect 386 2296 413 2308)(font "Arial" ))
 	(pt 376 2312)
 	(pt 488 2312)
-)
-(connector
-	(text "in[3]" (rect 386 2312 407 2324)(font "Arial" ))
-	(pt 376 2328)
-	(pt 488 2328)
 )
 (connector
 	(text "in[20]" (rect 386 2408 413 2420)(font "Arial" ))
@@ -6294,24 +6291,9 @@ applicable agreement for further details.
 	(pt 488 2536)
 )
 (connector
-	(text "in[4]" (rect 386 2424 407 2436)(font "Arial" ))
-	(pt 376 2440)
-	(pt 488 2440)
-)
-(connector
-	(text "in[5]" (rect 386 2536 407 2548)(font "Arial" ))
-	(pt 376 2552)
-	(pt 488 2552)
-)
-(connector
 	(text "in[22]" (rect 386 2632 413 2644)(font "Arial" ))
 	(pt 376 2648)
 	(pt 488 2648)
-)
-(connector
-	(text "in[6]" (rect 386 2648 407 2660)(font "Arial" ))
-	(pt 376 2664)
-	(pt 488 2664)
 )
 (connector
 	(text "in[23]" (rect 386 2744 413 2756)(font "Arial" ))
@@ -6319,19 +6301,9 @@ applicable agreement for further details.
 	(pt 488 2760)
 )
 (connector
-	(text "in[7]" (rect 386 2760 407 2772)(font "Arial" ))
-	(pt 376 2776)
-	(pt 488 2776)
-)
-(connector
 	(text "in[24]" (rect 386 2856 413 2868)(font "Arial" ))
 	(pt 376 2872)
 	(pt 488 2872)
-)
-(connector
-	(text "in[8]" (rect 386 2872 407 2884)(font "Arial" ))
-	(pt 376 2888)
-	(pt 488 2888)
 )
 (connector
 	(text "in[25]" (rect 386 2968 413 2980)(font "Arial" ))
@@ -6339,19 +6311,9 @@ applicable agreement for further details.
 	(pt 488 2984)
 )
 (connector
-	(text "in[9]" (rect 386 2984 407 2996)(font "Arial" ))
-	(pt 376 3000)
-	(pt 488 3000)
-)
-(connector
 	(text "in[26]" (rect 386 3080 413 3092)(font "Arial" ))
 	(pt 376 3096)
 	(pt 488 3096)
-)
-(connector
-	(text "in[10]" (rect 386 3096 413 3108)(font "Arial" ))
-	(pt 376 3112)
-	(pt 488 3112)
 )
 (connector
 	(text "in[27]" (rect 386 3192 413 3204)(font "Arial" ))
@@ -6359,19 +6321,9 @@ applicable agreement for further details.
 	(pt 488 3208)
 )
 (connector
-	(text "in[11]" (rect 386 3208 413 3220)(font "Arial" ))
-	(pt 376 3224)
-	(pt 488 3224)
-)
-(connector
 	(text "in[28]" (rect 386 3304 413 3316)(font "Arial" ))
 	(pt 376 3320)
 	(pt 488 3320)
-)
-(connector
-	(text "in[12]" (rect 386 3320 413 3332)(font "Arial" ))
-	(pt 376 3336)
-	(pt 488 3336)
 )
 (connector
 	(text "in[29]" (rect 386 3416 413 3428)(font "Arial" ))
@@ -6379,24 +6331,9 @@ applicable agreement for further details.
 	(pt 488 3432)
 )
 (connector
-	(text "in[13]" (rect 386 3432 413 3444)(font "Arial" ))
-	(pt 376 3448)
-	(pt 488 3448)
-)
-(connector
 	(text "in[30]" (rect 386 3528 413 3540)(font "Arial" ))
 	(pt 376 3544)
 	(pt 488 3544)
-)
-(connector
-	(text "in[14]" (rect 386 3544 413 3556)(font "Arial" ))
-	(pt 376 3560)
-	(pt 488 3560)
-)
-(connector
-	(text "in[15]" (rect 386 3656 413 3668)(font "Arial" ))
-	(pt 376 3672)
-	(pt 488 3672)
 )
 (connector
 	(text "in[31]" (rect 386 3640 413 3652)(font "Arial" ))
@@ -6644,19 +6581,9 @@ applicable agreement for further details.
 	(pt 784 2856)
 )
 (connector
-	(text "S3[0]" (rect 682 2856 707 2868)(font "Arial" ))
-	(pt 672 2872)
-	(pt 784 2872)
-)
-(connector
 	(text "S3[25]" (rect 682 2952 713 2964)(font "Arial" ))
 	(pt 584 2968)
 	(pt 784 2968)
-)
-(connector
-	(text "S3[1]" (rect 682 2968 707 2980)(font "Arial" ))
-	(pt 672 2984)
-	(pt 784 2984)
 )
 (connector
 	(text "S3[26]" (rect 682 3064 713 3076)(font "Arial" ))
@@ -6664,19 +6591,9 @@ applicable agreement for further details.
 	(pt 784 3080)
 )
 (connector
-	(text "S3[2]" (rect 682 3080 707 3092)(font "Arial" ))
-	(pt 672 3096)
-	(pt 784 3096)
-)
-(connector
 	(text "S3[27]" (rect 682 3176 713 3188)(font "Arial" ))
 	(pt 584 3192)
 	(pt 784 3192)
-)
-(connector
-	(text "S3[3]" (rect 682 3192 707 3204)(font "Arial" ))
-	(pt 672 3208)
-	(pt 784 3208)
 )
 (connector
 	(text "S3[28]" (rect 682 3288 713 3300)(font "Arial" ))
@@ -6684,19 +6601,9 @@ applicable agreement for further details.
 	(pt 784 3304)
 )
 (connector
-	(text "S3[4]" (rect 682 3304 707 3316)(font "Arial" ))
-	(pt 672 3320)
-	(pt 784 3320)
-)
-(connector
 	(text "S3[29]" (rect 682 3400 713 3412)(font "Arial" ))
 	(pt 584 3416)
 	(pt 784 3416)
-)
-(connector
-	(text "S3[5]" (rect 682 3416 707 3428)(font "Arial" ))
-	(pt 672 3432)
-	(pt 784 3432)
 )
 (connector
 	(text "S3[30]" (rect 682 3512 713 3524)(font "Arial" ))
@@ -6704,19 +6611,9 @@ applicable agreement for further details.
 	(pt 784 3528)
 )
 (connector
-	(text "S3[6]" (rect 682 3528 707 3540)(font "Arial" ))
-	(pt 672 3544)
-	(pt 784 3544)
-)
-(connector
 	(text "S3[31]" (rect 682 3624 713 3636)(font "Arial" ))
 	(pt 584 3640)
 	(pt 784 3640)
-)
-(connector
-	(text "S3[7]" (rect 682 3640 707 3652)(font "Arial" ))
-	(pt 672 3656)
-	(pt 784 3656)
 )
 (connector
 	(pt 1080 248)
@@ -6976,26 +6873,6 @@ applicable agreement for further details.
 	(text "S2[31]" (rect 978 3176 1009 3188)(font "Arial" ))
 	(pt 968 3192)
 	(pt 1080 3192)
-)
-(connector
-	(text "S2[0]" (rect 978 3288 1003 3300)(font "Arial" ))
-	(pt 968 3304)
-	(pt 1080 3304)
-)
-(connector
-	(text "S2[1]" (rect 978 3400 1003 3412)(font "Arial" ))
-	(pt 968 3416)
-	(pt 1080 3416)
-)
-(connector
-	(text "S2[2]" (rect 978 3512 1003 3524)(font "Arial" ))
-	(pt 968 3528)
-	(pt 1080 3528)
-)
-(connector
-	(text "S2[3]" (rect 978 3624 1003 3636)(font "Arial" ))
-	(pt 968 3640)
-	(pt 1080 3640)
 )
 (connector
 	(text "S2[4]" (rect 978 584 1003 596)(font "Arial" ))
@@ -7414,16 +7291,6 @@ applicable agreement for further details.
 	(text "S1[31]" (rect 1282 3384 1313 3396)(font "Arial" ))
 	(pt 1272 3400)
 	(pt 1384 3400)
-)
-(connector
-	(text "S1[0]" (rect 1282 3496 1307 3508)(font "Arial" ))
-	(pt 1272 3512)
-	(pt 1384 3512)
-)
-(connector
-	(text "S1[1]" (rect 1282 3608 1307 3620)(font "Arial" ))
-	(pt 1272 3624)
-	(pt 1384 3624)
 )
 (connector
 	(text "S1[4]" (rect 1282 568 1307 580)(font "Arial" ))
@@ -7847,11 +7714,6 @@ applicable agreement for further details.
 	(text "S0[31]" (rect 1578 3480 1609 3492)(font "Arial" ))
 	(pt 1568 3496)
 	(pt 1680 3496)
-)
-(connector
-	(text "S0[0]" (rect 1578 3592 1603 3604)(font "Arial" ))
-	(pt 1568 3608)
-	(pt 1680 3608)
 )
 (connector
 	(text "S0[0]" (rect 1578 104 1603 116)(font "Arial" ))
@@ -8891,6 +8753,305 @@ applicable agreement for further details.
 	(pt 880 264)
 	(pt 1080 264)
 )
+(connector
+	(text "<<__$DEF_ALIAS5108>>" (rect 386 3656 509 3668)(font "Arial" )(invisible))
+	(pt 312 3672)
+	(pt 488 3672)
+)
+(connector
+	(text "<<__$DEF_ALIAS5110>>" (rect 378 3544 501 3556)(font "Arial" )(invisible))
+	(pt 488 3560)
+	(pt 312 3560)
+)
+(connector
+	(text "<<__$DEF_ALIAS5112>>" (rect 386 3432 509 3444)(font "Arial" )(invisible))
+	(pt 312 3448)
+	(pt 488 3448)
+)
+(connector
+	(text "<<__$DEF_ALIAS5114>>" (rect 386 3320 509 3332)(font "Arial" )(invisible))
+	(pt 312 3336)
+	(pt 488 3336)
+)
+(connector
+	(text "<<__$DEF_ALIAS5116>>" (rect 386 3208 509 3220)(font "Arial" )(invisible))
+	(pt 312 3224)
+	(pt 488 3224)
+)
+(connector
+	(text "<<__$DEF_ALIAS5118>>" (rect 386 3096 509 3108)(font "Arial" )(invisible))
+	(pt 312 3112)
+	(pt 488 3112)
+)
+(connector
+	(text "<<__$DEF_ALIAS5121>>" (rect 394 2984 517 2996)(font "Arial" )(invisible))
+	(pt 488 3000)
+	(pt 312 3000)
+)
+(connector
+	(text "<<__$DEF_ALIAS5123>>" (rect 386 2872 509 2884)(font "Arial" )(invisible))
+	(pt 312 2888)
+	(pt 488 2888)
+)
+(connector
+	(text "<<__$DEF_ALIAS5125>>" (rect 386 2760 509 2772)(font "Arial" )(invisible))
+	(pt 312 2776)
+	(pt 488 2776)
+)
+(connector
+	(text "<<__$DEF_ALIAS5127>>" (rect 386 2648 509 2660)(font "Arial" )(invisible))
+	(pt 312 2664)
+	(pt 488 2664)
+)
+(connector
+	(text "<<__$DEF_ALIAS5129>>" (rect 386 2536 509 2548)(font "Arial" )(invisible))
+	(pt 312 2552)
+	(pt 488 2552)
+)
+(connector
+	(text "<<__$DEF_ALIAS5131>>" (rect 386 2424 509 2436)(font "Arial" )(invisible))
+	(pt 312 2440)
+	(pt 488 2440)
+)
+(connector
+	(text "<<__$DEF_ALIAS5133>>" (rect 386 2312 509 2324)(font "Arial" )(invisible))
+	(pt 312 2328)
+	(pt 488 2328)
+)
+(connector
+	(text "<<__$DEF_ALIAS5135>>" (rect 386 2200 509 2212)(font "Arial" )(invisible))
+	(pt 312 2216)
+	(pt 488 2216)
+)
+(connector
+	(text "<<__$DEF_ALIAS5137>>" (rect 386 2088 509 2100)(font "Arial" )(invisible))
+	(pt 312 2104)
+	(pt 488 2104)
+)
+(connector
+	(text "<<__$DEF_ALIAS5139>>" (rect 386 1976 509 1988)(font "Arial" )(invisible))
+	(pt 312 1992)
+	(pt 488 1992)
+)
+(connector
+	(pt 312 1992)
+	(pt 312 2104)
+)
+(connector
+	(pt 312 2104)
+	(pt 312 2216)
+)
+(connector
+	(pt 312 2216)
+	(pt 312 2328)
+)
+(connector
+	(pt 312 2328)
+	(pt 312 2440)
+)
+(connector
+	(pt 312 2440)
+	(pt 312 2552)
+)
+(connector
+	(pt 312 2552)
+	(pt 312 2664)
+)
+(connector
+	(pt 312 2664)
+	(pt 312 2776)
+)
+(connector
+	(pt 312 2776)
+	(pt 312 2888)
+)
+(connector
+	(pt 312 2888)
+	(pt 312 3000)
+)
+(connector
+	(pt 312 3000)
+	(pt 312 3112)
+)
+(connector
+	(pt 312 3112)
+	(pt 312 3224)
+)
+(connector
+	(pt 312 3224)
+	(pt 312 3336)
+)
+(connector
+	(pt 312 3336)
+	(pt 312 3448)
+)
+(connector
+	(pt 312 3448)
+	(pt 312 3560)
+)
+(connector
+	(pt 312 3560)
+	(pt 312 3672)
+)
+(connector
+	(pt 312 3672)
+	(pt 312 3720)
+)
+(connector
+	(pt 640 2872)
+	(pt 640 2984)
+)
+(connector
+	(pt 640 2984)
+	(pt 640 3096)
+)
+(connector
+	(pt 640 3096)
+	(pt 640 3208)
+)
+(connector
+	(pt 640 3208)
+	(pt 640 3320)
+)
+(connector
+	(pt 640 3320)
+	(pt 640 3432)
+)
+(connector
+	(pt 640 3432)
+	(pt 640 3544)
+)
+(connector
+	(pt 640 3544)
+	(pt 640 3656)
+)
+(connector
+	(pt 640 3656)
+	(pt 640 3720)
+)
+(connector
+	(pt 200 3720)
+	(pt 312 3720)
+)
+(connector
+	(pt 968 3304)
+	(pt 968 3416)
+)
+(connector
+	(pt 968 3416)
+	(pt 968 3528)
+)
+(connector
+	(pt 968 3528)
+	(pt 968 3640)
+)
+(connector
+	(pt 968 3640)
+	(pt 968 3720)
+)
+(connector
+	(pt 312 3720)
+	(pt 640 3720)
+)
+(connector
+	(pt 1272 3512)
+	(pt 1272 3624)
+)
+(connector
+	(pt 1272 3624)
+	(pt 1272 3720)
+)
+(connector
+	(pt 640 3720)
+	(pt 968 3720)
+)
+(connector
+	(text "<<__$DEF_ALIAS5258>>" (rect 978 3288 1101 3300)(font "Arial" )(invisible))
+	(pt 968 3304)
+	(pt 1080 3304)
+)
+(connector
+	(text "<<__$DEF_ALIAS5260>>" (rect 978 3400 1101 3412)(font "Arial" )(invisible))
+	(pt 968 3416)
+	(pt 1080 3416)
+)
+(connector
+	(text "<<__$DEF_ALIAS5262>>" (rect 978 3512 1101 3524)(font "Arial" )(invisible))
+	(pt 968 3528)
+	(pt 1080 3528)
+)
+(connector
+	(text "<<__$DEF_ALIAS5264>>" (rect 978 3624 1101 3636)(font "Arial" )(invisible))
+	(pt 968 3640)
+	(pt 1080 3640)
+)
+(connector
+	(text "<<__$DEF_ALIAS5266>>" (rect 1282 3496 1405 3508)(font "Arial" )(invisible))
+	(pt 1272 3512)
+	(pt 1384 3512)
+)
+(connector
+	(text "<<__$DEF_ALIAS5268>>" (rect 1282 3608 1405 3620)(font "Arial" )(invisible))
+	(pt 1272 3624)
+	(pt 1384 3624)
+)
+(connector
+	(text "<<__$DEF_ALIAS5270>>" (rect 1578 3592 1701 3604)(font "Arial" )(invisible))
+	(pt 1568 3608)
+	(pt 1680 3608)
+)
+(connector
+	(pt 1568 3608)
+	(pt 1568 3720)
+)
+(connector
+	(pt 968 3720)
+	(pt 1272 3720)
+)
+(connector
+	(pt 1272 3720)
+	(pt 1568 3720)
+)
+(connector
+	(text "<<__$DEF_ALIAS6206>>" (rect 682 3640 805 3652)(font "Arial" )(invisible))
+	(pt 640 3656)
+	(pt 784 3656)
+)
+(connector
+	(text "<<__$DEF_ALIAS6208>>" (rect 682 3528 805 3540)(font "Arial" )(invisible))
+	(pt 640 3544)
+	(pt 784 3544)
+)
+(connector
+	(text "<<__$DEF_ALIAS6210>>" (rect 682 3416 805 3428)(font "Arial" )(invisible))
+	(pt 640 3432)
+	(pt 784 3432)
+)
+(connector
+	(text "<<__$DEF_ALIAS6212>>" (rect 690 3304 813 3316)(font "Arial" )(invisible))
+	(pt 784 3320)
+	(pt 640 3320)
+)
+(connector
+	(text "<<__$DEF_ALIAS6214>>" (rect 682 3192 805 3204)(font "Arial" )(invisible))
+	(pt 640 3208)
+	(pt 784 3208)
+)
+(connector
+	(text "<<__$DEF_ALIAS6216>>" (rect 682 3080 805 3092)(font "Arial" )(invisible))
+	(pt 640 3096)
+	(pt 784 3096)
+)
+(connector
+	(text "<<__$DEF_ALIAS6218>>" (rect 682 2968 805 2980)(font "Arial" )(invisible))
+	(pt 640 2984)
+	(pt 784 2984)
+)
+(connector
+	(text "<<__$DEF_ALIAS6225>>" (rect 682 2856 805 2868)(font "Arial" )(invisible))
+	(pt 640 2872)
+	(pt 784 2872)
+)
 (junction (pt 472 280))
 (junction (pt 472 392))
 (junction (pt 472 504))
@@ -9046,10 +9207,33 @@ applicable agreement for further details.
 (junction (pt 1064 360))
 (junction (pt 1064 584))
 (junction (pt 768 264))
-(text "S3[0]" (rect 682 152 707 164)(font "Arial" ))
-(text "S2[2]" (rect 978 360 1003 372)(font "Arial" ))
-(text "S2[3]" (rect 978 472 1003 484)(font "Arial" ))
-(text "S1[0]" (rect 1282 120 1307 132)(font "Arial" ))
-(text "S1[1]" (rect 1282 232 1307 244)(font "Arial" ))
-(text "S1[2]" (rect 1282 344 1307 356)(font "Arial" ))
-(text "S1[3]" (rect 1282 456 1307 468)(font "Arial" ))
+(junction (pt 312 2104))
+(junction (pt 312 2216))
+(junction (pt 312 2328))
+(junction (pt 312 2440))
+(junction (pt 312 2552))
+(junction (pt 312 2664))
+(junction (pt 312 2776))
+(junction (pt 312 2888))
+(junction (pt 312 3000))
+(junction (pt 312 3112))
+(junction (pt 312 3224))
+(junction (pt 312 3336))
+(junction (pt 312 3448))
+(junction (pt 312 3560))
+(junction (pt 312 3672))
+(junction (pt 640 2984))
+(junction (pt 640 3096))
+(junction (pt 640 3208))
+(junction (pt 640 3320))
+(junction (pt 640 3432))
+(junction (pt 640 3544))
+(junction (pt 640 3656))
+(junction (pt 312 3720))
+(junction (pt 968 3416))
+(junction (pt 968 3528))
+(junction (pt 968 3640))
+(junction (pt 640 3720))
+(junction (pt 1272 3624))
+(junction (pt 968 3720))
+(junction (pt 1272 3720))

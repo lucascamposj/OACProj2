@@ -1,15 +1,15 @@
-Fitter Status : Successful - Tue Dec 04 21:09:28 2018
+Fitter Status : Successful - Wed Dec 05 11:53:49 2018
 Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Full Version
 Revision Name : PipelineMIPS
 Top-level Entity Name : PipelineInit
 Family : Cyclone II
 Device : EP2C70F896I8
 Timing Models : Final
-Total logic elements : 4,785 / 68,416 ( 7 % )
-    Total combinational functions : 4,370 / 68,416 ( 6 % )
-    Dedicated logic registers : 1,464 / 68,416 ( 2 % )
-Total registers : 1464
-Total pins : 603 / 622 ( 97 % )
+Total logic elements : 4,641 / 68,416 ( 7 % )
+    Total combinational functions : 4,346 / 68,416 ( 6 % )
+    Dedicated logic registers : 1,465 / 68,416 ( 2 % )
+Total registers : 1465
+Total pins : 604 / 622 ( 97 % )
 Total virtual pins : 0
 Total memory bits : 65,536 / 1,152,000 ( 6 % )
 Embedded Multiplier 9-bit elements : 8 / 300 ( 3 % )

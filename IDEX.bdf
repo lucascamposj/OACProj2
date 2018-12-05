@@ -279,6 +279,22 @@ applicable agreement for further details.
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
 )
 (pin
+	(input)
+	(rect -48 536 136 552)
+	(text "INPUT" (rect 141 0 169 10)(font "Arial" (font_size 6)))
+	(text "controlOverflowIn" (rect 5 0 93 12)(font "Arial" ))
+	(pt 184 8)
+	(drawing
+		(line (pt 100 12)(pt 125 12))
+		(line (pt 100 4)(pt 125 4))
+		(line (pt 129 8)(pt 184 8))
+		(line (pt 100 12)(pt 100 4))
+		(line (pt 125 4)(pt 129 8))
+		(line (pt 125 12)(pt 129 8))
+	)
+	(text "VCC" (rect 144 7 164 17)(font "Arial" (font_size 6)))
+)
+(pin
 	(output)
 	(rect 976 -88 1152 -72)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
@@ -486,9 +502,25 @@ applicable agreement for further details.
 		(line (pt 78 12)(pt 82 8))
 	)
 )
+(pin
+	(output)
+	(rect 976 448 1167 464)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "controlOverflowOut" (rect 90 0 185 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
 (symbol
 	(rect 328 88 528 200)
-	(text "registerBarrier149" (rect 5 0 91 12)(font "Arial" ))
+	(text "registerBarrier150" (rect 5 0 91 12)(font "Arial" ))
 	(text "inst" (rect 8 96 25 108)(font "Arial" ))
 	(port
 		(pt 0 32)
@@ -514,15 +546,15 @@ applicable agreement for further details.
 	(port
 		(pt 0 80)
 		(input)
-		(text "input[148..0]" (rect 0 0 61 12)(font "Arial" ))
-		(text "input[148..0]" (rect 21 75 82 87)(font "Arial" ))
+		(text "input[149..0]" (rect 0 0 61 12)(font "Arial" ))
+		(text "input[149..0]" (rect 21 75 82 87)(font "Arial" ))
 		(line (pt 0 80)(pt 16 80)(line_width 3))
 	)
 	(port
 		(pt 200 32)
 		(output)
-		(text "output[148..0]" (rect 0 0 68 12)(font "Arial" ))
-		(text "output[148..0]" (rect 122 27 179 39)(font "Arial" ))
+		(text "output[149..0]" (rect 0 0 68 12)(font "Arial" ))
+		(text "output[149..0]" (rect 122 27 190 39)(font "Arial" ))
 		(line (pt 200 32)(pt 184 32)(line_width 3))
 	)
 	(drawing
@@ -694,24 +726,12 @@ applicable agreement for further details.
 	(pt 328 120)
 )
 (connector
-	(text "input[148..0]" (rect 266 176 327 188)(font "Arial" ))
-	(pt 256 168)
-	(pt 328 168)
-	(bus)
-)
-(connector
 	(pt 304 56)
 	(pt 400 56)
 )
 (connector
 	(pt 288 48)
 	(pt 360 48)
-)
-(connector
-	(text "output[148..0]" (rect 802 104 870 116)(font "Arial" ))
-	(pt 528 120)
-	(pt 864 120)
-	(bus)
 )
 (connector
 	(pt 320 40)
@@ -728,4 +748,26 @@ applicable agreement for further details.
 	(pt 136 520)
 	(pt 224 520)
 	(bus)
+)
+(connector
+	(text "input[149..0]" (rect 266 176 327 188)(font "Arial" ))
+	(pt 256 168)
+	(pt 328 168)
+	(bus)
+)
+(connector
+	(text "output[149..0]" (rect 802 104 870 116)(font "Arial" ))
+	(pt 528 120)
+	(pt 864 120)
+	(bus)
+)
+(connector
+	(text "Input[149]" (rect 146 528 195 540)(font "Arial" ))
+	(pt 136 544)
+	(pt 224 544)
+)
+(connector
+	(text "output[149]" (rect 906 440 961 452)(font "Arial" ))
+	(pt 976 456)
+	(pt 896 456)
 )
